@@ -74,8 +74,7 @@
 </template>
 
 <script setup lang="ts">
-    import { ref, computed } from 'vue';
-
+    import { ref, computed, onMounted } from 'vue';
 
     import spiritData from '../static/spirit.json';
     import aalData from '../static/aal.json';
@@ -118,7 +117,7 @@
 
     const selectedAircraft = ref(null);
 
-    const legCountOptions = ref([2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    const legCountOptions = ref([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 20, 30, 50, 100]);
     const legNumber = ref(2);
 
     const hoursLimit = ref(0);
@@ -134,6 +133,16 @@
     const generatedAircraftType = ref<string | null>(null);
 
     const isGeneratingRoute = ref(false);
+
+    onMounted(() => {
+        chrome.storage.sync.get('route', (result) => {
+            if (result) {
+                const parsedResult = JSON.parse(result.route);
+                foundTrip.value = parsedResult.trip;
+                generatedAircraftType.value = parsedResult.aircraftType;
+            }
+        });
+    });
 
     function calculateLegs() {
         if (isGeneratingRoute.value) {
@@ -167,6 +176,10 @@
                     desiredHours
                 );
                 isGeneratingRoute.value = false;
+
+                chrome.storage.sync.set({'route': JSON.stringify(tripsData)})
+                    .then(() => console.log('Saved'))
+                    .catch((error) => console.log({ error }));
 
                 foundTrip.value = tripsData.trip;
                 generatedAircraftType.value = tripsData.aircraftType;
