@@ -23,3 +23,15 @@ export interface Route {
     destinations: Destination[];
     aircrafts: string[];
 }
+
+export interface Airport {
+    name: string;
+    destinations: { icao: string, time: string }[];
+    aircrafts: string[];
+}
+
+
+export interface Trip {
+    legs: { start: string, end: string }[]; // Array of legs
+    destination: string; // Still store the final destination
+}

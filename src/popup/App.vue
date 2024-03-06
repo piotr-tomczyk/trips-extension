@@ -2,6 +2,12 @@
     <div class="popup-body">
         <p>Popup</p>
         <div class="form-container">
+            <span> Airline: </span>
+            <select v-model="selectedAirline">
+                <option v-for="airline in airlinesOptions" :key="airline" :value="airline">
+                    {{ airline }}
+                </option>
+            </select>
             <span> Aircraft: </span>
             <select v-model="selectedAircraft">
                 <option
@@ -51,6 +57,7 @@
         <button @click="calculateLegs">
             Search
         </button>
+        <p>Selected Airline: {{ selectedAirline }}</p>
         <p>Selected Aircraft: {{ selectedAircraft }}</p>
         <p>Selected Departure: {{ selectedDeparture?.name }}</p>
         <p>Selected Destination: {{ selectedDestination?.name }}</p>
@@ -70,30 +77,55 @@
 
 <script setup lang="ts">
     import { ref, computed } from 'vue';
-    import type { Destination, Route } from '../types/Route';
-    import spirit from '../va-routes/spirit.json';
-    const aircrafts = spirit.aircrafts;
-    const routes = spirit.routes;
+
+
+    import spiritData from '../static/spirit.json';
+    import aalData from '../static/aal.json';
+    import ualData from '../static/ual.json';
+
+    import type { Trip, Route } from '../types/Route';
+    import { TripService } from '../services/trip-service';
+
+    const aircrafts = computed(() => {
+        switch(selectedAirline.value) {
+            case 'vSpirit':
+                return spiritData.aircrafts;
+            case 'vAAL':
+                return aalData.aircrafts;
+            case 'vUAL':
+                return ualData.aircrafts;
+            default:
+                return [];
+        }
+    });
+    const routes = computed(() => {
+        switch(selectedAirline.value) {
+            case 'vSpirit':
+                return spiritData.routes;
+            case 'vAAL':
+                return aalData.routes;
+            case 'vUAL':
+                return ualData.routes;
+            default:
+                return [];
+        }
+    });
+
     const selectedAircraft = ref(null);
     const selectedDeparture = ref<Route | null>(null);
     const selectedDestination = ref<Route | null>(null);
-    const legCountOptions = ref([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
+    const legCountOptions = ref([2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    const legNumber = ref(2);
     const hoursLimit = ref(0);
     const hoursLimitOptions = ref([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-    const legNumber = ref(0);
     const searchModes = ref(['Legs', 'Trips']);
     const selectedSearchMode = ref('Trips');
+    const selectedAirline = ref('vSpirit');
+    const airlinesOptions = ref(['vSpirit', 'vUAL', 'vAAL']);
     const foundTrip = ref<Trip | null>(null);
     const departureAirports = computed(() => {
-        return routes.filter(route => selectedAircraft.value ? route.aircrafts.includes(selectedAircraft.value) : true);
+        return routes.value.filter(route => selectedAircraft.value ? route.aircrafts.includes(selectedAircraft.value) : true);
     });
-    // const arrivalAirports = computed(() => {
-    //     if (!selectedDeparture.value) {
-    //         return [];
-    //     } else {
-    //         return selectedDeparture.value.destinations;
-    //     }
-    // });
 
     function calculateLegs() {
         if (!selectedDeparture.value || !selectedSearchMode.value) {
@@ -109,138 +141,22 @@
                 const destinationAirport = selectedDestination.value?.icao;
                 const desiredHours = hoursLimit.value;
                 const desiredLegs = legNumber.value;
-                // @ts-ignore
-                const processedAirports = processData(routes);
-                console.log(processedAirports);
-                const trips: Trip[] = findTrips(processedAirports, startAirport, destinationAirport || startAirport, desiredLegs + 1, selectedAircraft.value || undefined, desiredHours);
-                console.log(trips);
-                console.log(trips[(Math.floor(Math.random() * trips.length))]);
+
+                const tripService = new TripService();
+                const trips: Trip[] = tripService.findTrips(
+                    // @ts-ignore
+                    routes.value,
+                    startAirport,
+                    destinationAirport || startAirport,
+                    desiredLegs + 1,
+                    selectedAircraft.value || undefined,
+                    desiredHours
+                );
                 foundTrip.value = trips[(Math.floor(Math.random() * trips.length))];
                 break;
             default:
                 console.log('Default');
         }
-    }
-
-    function processData(data: Route[]): Record<string, Airport> {
-        const airports: Record<string, Airport> = {};
-
-        for (const base of data) {
-            airports[base.icao] = {
-                name: base.name,
-                destinations: base.destinations.map(dest => ({ icao: dest.icao, time: dest.time })),
-                aircrafts: base.aircrafts
-            };
-        }
-        return airports;
-    }
-    interface Airport {
-        name: string;
-        destinations: { icao: string, time: string }[];
-        aircrafts: string[];
-    }
-
-    interface Trip {
-        legs: { start: string, end: string }[]; // Array of legs
-        destination: string; // Still store the final destination
-    }
-
-    function findTrips(
-        airports: Record<string, Airport>,
-        startAirport: string,
-        destinationAirport: string,
-        desiredLegs: number,
-        aircraftType: string = '',
-        maxLegTime: number // Time in hours
-    ): Trip[] {
-
-        if (maxLegTime === 0) {
-            maxLegTime = Infinity;
-        }
-
-        const allTrips: Trip[] = [];
-
-        function dfs(startAirport: string, currentTrip: string[]) {
-            currentTrip.push(startAirport);
-
-            if (currentTrip.length === desiredLegs && startAirport === destinationAirport) {
-                allTrips.push({
-                    legs: currentTrip.slice(0, -1).map((icao, index) => ({ start: icao, end: currentTrip[index + 1] })),
-                    destination: startAirport
-                });
-                return;
-            }
-
-            if (currentTrip.length >= desiredLegs) {
-                return;
-            }
-
-            let selectedAircraft = aircraftType || null;
-            if (!selectedAircraft) {
-                selectedAircraft = findCompatibleAircraft(startAirport, currentTrip[currentTrip.length - 1]);
-                if (!selectedAircraft) {
-                    return;
-                }
-            }
-
-            const destinations = airports[startAirport].destinations.slice();
-            shuffleArray(destinations);
-
-            for (const destination of destinations) {
-                if (!airports[startAirport].aircrafts.includes(selectedAircraft) ||
-                    !airports[destination.icao].aircrafts.includes(selectedAircraft)) {
-                    continue;
-                }
-
-                const legTime = convertTimeToHours(destination.time);
-                if (legTime > maxLegTime) {
-                    continue;
-                }
-
-                dfs(destination.icao, currentTrip.slice());
-            }
-        }
-
-        dfs(startAirport, []);
-        return filterDuplicates(allTrips);
-
-        function findCompatibleAircraft(startAirport: string, destination: string): string | null {
-            for (const aircraft of airports[startAirport].aircrafts) {
-                if (airports[destination].aircrafts.includes(aircraft)) {
-                    return aircraft;
-                }
-            }
-            return null;
-        }
-        function shuffleArray(array: any[]) {
-            // Fisher-Yates Shuffle Implementation
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
-        function convertTimeToHours(timeString: string): number {
-            const [hoursStr, minutesStr, secondsStr] = timeString.split(':');
-            const hours = parseFloat(hoursStr);
-            const minutes = parseFloat(minutesStr) / 60;
-            const seconds = parseFloat(secondsStr) / 3600;
-            return hours + minutes + seconds;
-        }
-    }
-
-
-    function filterDuplicates(trips: Trip[]): Trip[] {
-        const uniqueTrips = new Set<string>();
-        const filteredTrips: Trip[] = [];
-
-        for (const trip of trips) {
-            const tripKey = trip.legs.map(leg => `${leg.start}-${leg.end}`).join('-') +  '-' + trip.destination;
-            if (!uniqueTrips.has(tripKey)) {
-                uniqueTrips.add(tripKey);
-                filteredTrips.push(trip);
-            }
-        }
-        return filteredTrips;
     }
 </script>
 
