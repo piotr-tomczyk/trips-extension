@@ -35,3 +35,9 @@ export interface Trip {
     legs: { start: string, end: string }[]; // Array of legs
     destination: string; // Still store the final destination
 }
+
+export enum airlines {
+    SPIRIT = "vspirit",
+    AMERICAN = "vAAL",
+    UNITED = "VirtUAL",
+}

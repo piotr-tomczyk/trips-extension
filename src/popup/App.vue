@@ -1,6 +1,5 @@
 <template>
     <div class="popup-body">
-        <p>Popup</p>
         <div class="form-container">
             <span> Airline: </span>
             <select v-model="selectedAirline">
@@ -54,22 +53,21 @@
                 </option>
             </select>
         </div>
-        <button @click="calculateLegs">
+        <button
+            :disabled="isGeneratingRoute"
+            @click="calculateLegs">
             Search
         </button>
-        <p>Selected Airline: {{ selectedAirline }}</p>
-        <p>Selected Aircraft: {{ selectedAircraft }}</p>
-        <p>Selected Departure: {{ selectedDeparture?.name }}</p>
-        <p>Selected Destination: {{ selectedDestination?.name }}</p>
-        <p>Leg Number: {{ legNumber }}</p>
-        <p>Selected Search Mode: {{ selectedSearchMode }}</p>
-        <p>Hours Limit: {{ hoursLimit }}</p>
-        <p>
-            Found Trip:
-            <div v-if="foundTrip">
-                <div v-for="leg in foundTrip.legs" :key="leg.start">
-                    <p>{{ leg.start }} -> {{ leg.end }}</p>
-                </div>
+
+        <p v-if="isGeneratingRoute">
+            Generating Route...
+        </p>
+
+        <p v-if="foundTrip">
+            Found Trip -
+            Aircraft: {{ generatedAircraftType }}, Route:
+            <div v-for="leg in foundTrip.legs" :key="leg.start">
+                <p>{{ leg.start }} -> {{ leg.end }}</p>
             </div>
         </p>
     </div>
@@ -83,16 +81,17 @@
     import aalData from '../static/aal.json';
     import ualData from '../static/ual.json';
 
-    import type { Trip, Route } from '../types/Route';
+    import type { Trip, Route } from '../types/types';
+    import { airlines } from '../types/types';
     import { TripService } from '../services/trip-service';
 
     const aircrafts = computed(() => {
         switch(selectedAirline.value) {
-            case 'vSpirit':
+            case airlines.SPIRIT:
                 return spiritData.aircrafts;
-            case 'vAAL':
+            case airlines.AMERICAN:
                 return aalData.aircrafts;
-            case 'vUAL':
+            case airlines.UNITED:
                 return ualData.aircrafts;
             default:
                 return [];
@@ -100,34 +99,46 @@
     });
     const routes = computed(() => {
         switch(selectedAirline.value) {
-            case 'vSpirit':
+            case airlines.SPIRIT:
                 return spiritData.routes;
-            case 'vAAL':
+            case airlines.AMERICAN:
                 return aalData.routes;
-            case 'vUAL':
+            case airlines.UNITED:
                 return ualData.routes;
             default:
                 return [];
         }
     });
-
-    const selectedAircraft = ref(null);
-    const selectedDeparture = ref<Route | null>(null);
-    const selectedDestination = ref<Route | null>(null);
-    const legCountOptions = ref([2, 3, 4, 5, 6, 7, 8, 9, 10]);
-    const legNumber = ref(2);
-    const hoursLimit = ref(0);
-    const hoursLimitOptions = ref([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-    const searchModes = ref(['Legs', 'Trips']);
-    const selectedSearchMode = ref('Trips');
-    const selectedAirline = ref('vSpirit');
-    const airlinesOptions = ref(['vSpirit', 'vUAL', 'vAAL']);
-    const foundTrip = ref<Trip | null>(null);
     const departureAirports = computed(() => {
         return routes.value.filter(route => selectedAircraft.value ? route.aircrafts.includes(selectedAircraft.value) : true);
     });
 
+    const selectedDeparture = ref<Route | null>(null);
+    const selectedDestination = ref<Route | null>(null);
+
+    const selectedAircraft = ref(null);
+
+    const legCountOptions = ref([2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    const legNumber = ref(2);
+
+    const hoursLimit = ref(0);
+    const hoursLimitOptions = ref([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+    const searchModes = ref(['Legs', 'Trips']);
+    const selectedSearchMode = ref('Trips');
+
+    const selectedAirline = ref(airlines.SPIRIT);
+    const airlinesOptions = ref([airlines.SPIRIT, airlines.UNITED, airlines.AMERICAN]);
+
+    const foundTrip = ref<Trip | null>(null);
+    const generatedAircraftType = ref<string | null>(null);
+
+    const isGeneratingRoute = ref(false);
+
     function calculateLegs() {
+        if (isGeneratingRoute.value) {
+            return;
+        }
         if (!selectedDeparture.value || !selectedSearchMode.value) {
             return null;
         }
@@ -142,8 +153,9 @@
                 const desiredHours = hoursLimit.value;
                 const desiredLegs = legNumber.value;
 
+                isGeneratingRoute.value = true;
                 const tripService = new TripService();
-                const trips: Trip[] = tripService.findTrips(
+                const tripsData = tripService.findTrips(
                     // @ts-ignore
                     routes.value,
                     startAirport,
@@ -152,7 +164,9 @@
                     selectedAircraft.value || undefined,
                     desiredHours
                 );
-                foundTrip.value = trips[(Math.floor(Math.random() * trips.length))];
+                foundTrip.value = tripsData.trips[(Math.floor(Math.random() * tripsData.trips.length))];
+                generatedAircraftType.value = tripsData.aircraftType;
+                isGeneratingRoute.value = false;
                 break;
             default:
                 console.log('Default');
@@ -163,7 +177,7 @@
 <style scoped>
     .popup-body {
         width: 400px;
-        height: 400px;
+        max-height: 600px;
         margin: 10px;
     }
 
