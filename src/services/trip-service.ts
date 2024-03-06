@@ -1,4 +1,4 @@
-import { Route, Trip, Airport } from '../types/Route';
+import { Route, Trip, Airport } from '../types/types';
 
 export class TripService {
     constructor() {
@@ -11,9 +11,8 @@ export class TripService {
         desiredLegs: number,
         aircraftType: string = '',
         maxLegTime: number // Time in hours
-    ): Trip[] {
+    ): { trips: Trip[], aircraftType: string } {
         const airports = this.processData(airportsToProcess);
-        console.log({aircraftType, maxLegTime});
         if (maxLegTime === 0) {
             maxLegTime = Infinity;
         }
@@ -22,6 +21,10 @@ export class TripService {
 
         function dfs(startAirport: string, currentTrip: string[]) {
             currentTrip.push(startAirport);
+
+            if (startAirport === destinationAirport && currentTrip.length > 1 && currentTrip.length !== desiredLegs) {
+                return;
+            }
 
             if (currentTrip.length === desiredLegs && startAirport === destinationAirport) {
                 allTrips.push({
@@ -37,18 +40,19 @@ export class TripService {
 
             let selectedAircraft = aircraftType || null;
             if (!selectedAircraft) {
-                selectedAircraft = findCompatibleAircraft(startAirport, currentTrip[currentTrip.length - 1]);
+                aircraftType = findCompatibleAircraft(startAirport, currentTrip[currentTrip.length - 1]) || '';
+                selectedAircraft = aircraftType;
                 if (!selectedAircraft) {
                     return;
                 }
             }
 
             const destinations = airports[startAirport].destinations.slice();
-            shuffleArray(destinations);
+            // shuffleArray(destinations);
 
             for (const destination of destinations) {
-                if (!airports[startAirport].aircrafts.includes(selectedAircraft) ||
-                    !airports[destination.icao].aircrafts.includes(selectedAircraft)) {
+                if (!airports?.[startAirport]?.aircrafts?.includes(aircraftType) ||
+                    !airports?.[destination.icao]?.aircrafts.includes(aircraftType)) {
                     continue;
                 }
 
@@ -62,15 +66,18 @@ export class TripService {
         }
 
         dfs(startAirport, []);
-        return this.filterDuplicates(allTrips);
+        return { trips: this.filterDuplicates(allTrips), aircraftType };
 
         function findCompatibleAircraft(startAirport: string, destination: string): string | null {
-            for (const aircraft of airports[startAirport].aircrafts) {
-                if (airports[destination].aircrafts.includes(aircraft)) {
-                    return aircraft;
+            const compatibleAircrafts: string[] = [];
+            for (const aircraft of airports?.[startAirport]?.aircrafts) {
+                if (airports?.[destination]?.aircrafts?.includes(aircraft)) {
+                    compatibleAircrafts.push(aircraft);
                 }
             }
-            return null;
+            return compatibleAircrafts.length > 0 ?
+                compatibleAircrafts[Math.floor(Math.random() * compatibleAircrafts.length)] :
+                null;
         }
         function shuffleArray(array: any[]) {
             // Fisher-Yates Shuffle Implementation
