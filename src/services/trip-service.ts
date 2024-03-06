@@ -4,20 +4,20 @@ export class TripService {
     constructor() {
     }
 
-    public findTrips(
+    public findTrip(
         airportsToProcess: Route[],
         startAirport: string,
         destinationAirport: string,
         desiredLegs: number,
         aircraftType: string = '',
         maxLegTime: number // Time in hours
-    ): { trips: Trip[], aircraftType: string } {
+    ): { trip: Trip | null, aircraftType: string } {
         const airports = this.processData(airportsToProcess);
         if (maxLegTime === 0) {
             maxLegTime = Infinity;
         }
 
-        const allTrips: Trip[] = [];
+        let foundTrip: Trip | null = null;
 
         function dfs(startAirport: string, currentTrip: string[]) {
             currentTrip.push(startAirport);
@@ -27,14 +27,14 @@ export class TripService {
             }
 
             if (currentTrip.length === desiredLegs && startAirport === destinationAirport) {
-                allTrips.push({
+                foundTrip = {
                     legs: currentTrip.slice(0, -1).map((icao, index) => ({ start: icao, end: currentTrip[index + 1] })),
                     destination: startAirport
-                });
+                };
                 return;
             }
 
-            if (currentTrip.length >= desiredLegs) {
+            if (currentTrip.length >= desiredLegs || foundTrip) {
                 return;
             }
 
@@ -48,7 +48,7 @@ export class TripService {
             }
 
             const destinations = airports[startAirport].destinations.slice();
-            // shuffleArray(destinations);
+            shuffleArray(destinations);
 
             for (const destination of destinations) {
                 if (!airports?.[startAirport]?.aircrafts?.includes(aircraftType) ||
@@ -66,7 +66,7 @@ export class TripService {
         }
 
         dfs(startAirport, []);
-        return { trips: this.filterDuplicates(allTrips), aircraftType };
+        return { trip: foundTrip, aircraftType };
 
         function findCompatibleAircraft(startAirport: string, destination: string): string | null {
             const compatibleAircrafts: string[] = [];
@@ -79,6 +79,7 @@ export class TripService {
                 compatibleAircrafts[Math.floor(Math.random() * compatibleAircrafts.length)] :
                 null;
         }
+
         function shuffleArray(array: any[]) {
             // Fisher-Yates Shuffle Implementation
             for (let i = array.length - 1; i > 0; i--) {
@@ -86,6 +87,7 @@ export class TripService {
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
+
         function convertTimeToHours(timeString: string): number {
             const [hoursStr, minutesStr, secondsStr] = timeString.split(':');
             const hours = parseFloat(hoursStr);
@@ -94,6 +96,7 @@ export class TripService {
             return hours + minutes + seconds;
         }
     }
+
 
     private processData(data: Route[]): Record<string, Airport> {
         const airports: Record<string, Airport> = {};

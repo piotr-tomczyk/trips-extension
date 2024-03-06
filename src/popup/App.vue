@@ -66,7 +66,7 @@
         <p v-if="foundTrip">
             Found Trip -
             Aircraft: {{ generatedAircraftType }}, Route:
-            <div v-for="leg in foundTrip.legs" :key="leg.start">
+            <div v-for="leg in foundTrip.legs">
                 <p>{{ leg.start }} -> {{ leg.end }}</p>
             </div>
         </p>
@@ -153,9 +153,11 @@
                 const desiredHours = hoursLimit.value;
                 const desiredLegs = legNumber.value;
 
+                generatedAircraftType.value = null;
+                foundTrip.value = null;
                 isGeneratingRoute.value = true;
                 const tripService = new TripService();
-                const tripsData = tripService.findTrips(
+                const tripsData = tripService.findTrip(
                     // @ts-ignore
                     routes.value,
                     startAirport,
@@ -164,9 +166,10 @@
                     selectedAircraft.value || undefined,
                     desiredHours
                 );
-                foundTrip.value = tripsData.trips[(Math.floor(Math.random() * tripsData.trips.length))];
-                generatedAircraftType.value = tripsData.aircraftType;
                 isGeneratingRoute.value = false;
+
+                foundTrip.value = tripsData.trip;
+                generatedAircraftType.value = tripsData.aircraftType;
                 break;
             default:
                 console.log('Default');
