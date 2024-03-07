@@ -1,63 +1,77 @@
 <template>
     <div class="popup-body">
         <div class="form-container">
-            <span> VA: </span>
-            <select v-model="selectedAirline">
-                <option v-for="airline in airlinesOptions" :key="airline" :value="airline">
-                    {{ airline }}
-                </option>
-            </select>
-            <span> Airline: </span>
-            <select v-model="selectedCallsign">
-                <option v-for="callsign in availableCallsigns" :key="callsign" :value="callsign">
-                    {{ callsign }}
-                </option>
-            </select>
+            <div>
+                <span> VA: </span>
+                <select v-model="selectedAirline">
+                    <option v-for="airline in airlinesOptions" :key="airline" :value="airline">
+                        {{ airline }}
+                    </option>
+                </select>
+            </div>
+            <div>
+                <span> Airline: </span>
+                <select v-model="selectedCallsign">
+                    <option v-for="callsign in availableCallsigns" :key="callsign" :value="callsign">
+                        {{ callsign }}
+                    </option>
+                </select>
+            </div>
+            <div>
             <span> Aircraft: </span>
-            <select v-model="selectedAircraft">
-                <option
-                    v-if="aircrafts.length"
-                    :value="null">
-                </option>
-                <option v-for="aircraft in aircrafts" :key="aircraft" :value="aircraft">
-                    {{ aircraft }}
-                </option>
-            </select>
-            <span> Departure: </span>
-            <select v-model="selectedDeparture">
-                <option
-                    v-if="routes.length"
-                    :value="null">
-                </option>
-                <option v-for="airport in routes" :key="airport.id" :value="airport">
-                    {{ airport.icao }} ( {{ airport.name }} )
-                </option>
-            </select>
-            <span> Destination: </span>
-            <select
-                v-model="selectedDestination">
-                <option
-                    v-if="routes.length"
-                    :value="null">
-                </option>
-                <option v-for="airport in routes" :key="airport.id" :value="airport">
-                    {{ airport.icao }} ( {{ airport.name }} )
-                </option>
-            </select>
-            <span> Leg number: </span>
-            <select
-                v-model="legNumber">
-                <option v-for="leg in legCountOptions" :key="leg" :value="leg">
-                    {{ leg }}
-                </option>
-            </select>
-            <span> Hour Limit per leg: </span>
-            <select
-                v-model="hoursLimit">
-                <option v-for="hour in hoursLimitOptions" :key="hour" :value="hour">
-                    {{ hour }}
-                </option>
-            </select>
+                <select v-model="selectedAircraft">
+                    <option
+                        v-if="aircrafts.length"
+                        :value="null">
+                    </option>
+                    <option v-for="aircraft in aircrafts" :key="aircraft" :value="aircraft">
+                        {{ aircraft }}
+                    </option>
+                </select>
+            </div>
+            <div>
+                <span> Departure: </span>
+                <select v-model="selectedDeparture">
+                    <option
+                        v-if="routes.length"
+                        :value="null">
+                    </option>
+                    <option v-for="airport in routes" :key="airport.id" :value="airport">
+                        {{ airport.icao }} ( {{ airport.name }} )
+                    </option>
+                </select>
+            </div>
+            <div>
+                <span> Destination: </span>
+                <select
+                    v-model="selectedDestination">
+                    <option
+                        v-if="routes.length"
+                        :value="null">
+                    </option>
+                    <option v-for="airport in routes" :key="airport.id" :value="airport">
+                        {{ airport.icao }} ( {{ airport.name }} )
+                    </option>
+                </select>
+            </div>
+            <div>
+                <span> Leg number: </span>
+                <select
+                    v-model="legNumber">
+                    <option v-for="leg in legCountOptions" :key="leg" :value="leg">
+                        {{ leg }}
+                    </option>
+                </select>
+            </div>
+            <div>
+                <span> Hour Limit per leg: </span>
+                <select
+                    v-model="hoursLimit">
+                    <option v-for="hour in hoursLimitOptions" :key="hour" :value="hour">
+                        {{ hour }}
+                    </option>
+                </select>
+            </div>
         </div>
         <button
             :disabled="isGeneratingRoute"
@@ -68,13 +82,15 @@
         <span v-if="isGeneratingRoute">
             Generating Route...
         </span>
-        <div  v-if="foundTrip">
-            <span>
-                Found Trip -
-                Aircraft: {{ generatedAircraftType }}
-                <br>
-                Route:
-            </span>
+        <div v-if="foundTrip">
+            <h2>Found Trip</h2>
+            <p>
+                Aircraft:
+                <span class="generated-aircraft-type">
+                    {{ generatedAircraftType }}
+                </span>
+            </p>
+            <h2> Route: </h2>
             <table>
                 <thead>
                 <tr>
@@ -96,7 +112,7 @@
                 </tbody>
             </table>
         </div>
-        <div v-else>
+        <div class="error-message" v-else>
             <span v-if="routes.length === 0">
                 No possible trip found for selected parameters. Try changing parameters.
             </span>
@@ -288,11 +304,88 @@
         width: 400px;
         max-height: 600px;
         margin: 10px;
+        padding: 20px; /* Add padding for visual breathing room */
+        font-family: Arial, sans-serif; /* Consistent font */
+        box-sizing: border-box; /* Prevent padding from expanding the width */
     }
 
     .form-container {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin-bottom: 20px; /* Adds space above the button */
+    }
+
+    .form-container > div > span {
+        font-weight: bold;
+        margin-bottom: 5px;  /* Reduced margin for closer label/select association */
+        font-size: 12px;     /* Slightly increased label size */
+    }
+
+    .form-container > select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-container > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Add transition */
+    }
+
+    button:hover {
+        background-color: #0056b3; /* Slightly darker on hover */
+    }
+
+    button:active {
+        background-color: #00428a; /* Even darker on click */
+    }
+
+    button:disabled {
+        opacity: 0.6;
+        cursor: default;
+    }
+
+    /* Table Styling */
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Remove default cell spacing */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    th {
+        text-align: left;
+        background-color: #f2f2f2; /* Example: slightly darker header */
+    }
+
+    h2 {
+        font-size: 1.2em;  /* Slightly larger */
+        margin-bottom: 10px;
+    }
+
+    .generated-aircraft-type {
+        font-weight: bold;
+    }
+
+    .error-message {
+        color: #d9534f;  /* A prominent red color */
+        background-color: #ffe0e0; /* Light red background */
+        border: 1px solid #d43f3a; /* Slightly darker border */
+        padding: 10px;
+        margin: 15px 0;
     }
 </style>
