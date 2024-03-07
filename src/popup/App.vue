@@ -25,7 +25,7 @@
             <span> Aircraft: </span>
                 <select v-model="selectedAircraft">
                     <option
-                        v-if="aircrafts.length"
+                        v-if="aircrafts?.length"
                         :value="null">
                     </option>
                     <option v-for="aircraft in aircrafts" :key="aircraft" :value="aircraft">
@@ -37,7 +37,7 @@
                 <span> Departure: </span>
                 <select v-model="selectedDeparture">
                     <option
-                        v-if="routes.length"
+                        v-if="routes?.length"
                         :value="null">
                     </option>
                     <option v-for="airport in routes" :key="airport.id" :value="airport">
@@ -50,7 +50,7 @@
                 <select
                     v-model="selectedDestination">
                     <option
-                        v-if="routes.length"
+                        v-if="routes?.length"
                         :value="null">
                     </option>
                     <option v-for="airport in routes" :key="airport.id" :value="airport">
@@ -118,7 +118,7 @@
             </table>
         </div>
         <div class="error-message" v-else-if="generatedAircraftType || isError">
-            <span v-if="routes.length === 0">
+            <span v-if="routes?.length === 0">
                 No possible trip found for selected parameters. Try changing parameters.
             </span>
             <span v-else-if="generatedAircraftType">
@@ -335,11 +335,11 @@
     }
 
     function getRandomDepartureAirport() {
-        return routes.value[Math.floor(Math.random() * routes.value.length)];
+        return routes.value[Math.floor(Math.random() * routes.value?.length)];
     }
 
     function getRandomAircraft() {
-        return aircrafts.value[Math.floor(Math.random() * aircrafts.value.length)];
+        return aircrafts.value[Math.floor(Math.random() * aircrafts.value?.length)];
     }
 </script>
 
