@@ -7,7 +7,7 @@ export interface Destination {
     latitude: string;
     longitude: string;
     callsigns: string;
-    types: string[];
+    types: string;
     distance: number;
     time: string;
 }
