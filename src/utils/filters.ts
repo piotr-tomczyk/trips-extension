@@ -6,9 +6,9 @@ export class FilterUtils {
         const allCallsigns = new Set<string>(); // Use a Set to ensure unique callsigns
 
         data.forEach(route => {
-            route.destinations.forEach((destination: Destination) => {
-                destination.callsigns.split(',').forEach((callsign: string) => {
-                    allCallsigns.add(callsign.trim());
+            route?.destinations?.forEach((destination: Destination) => {
+                destination?.callsigns?.split(',')?.forEach((callsign: string) => {
+                    allCallsigns?.add(callsign.trim());
                 });
             });
         });
@@ -32,11 +32,11 @@ export class FilterUtils {
         const filteredRoutes: Route[] = [];
 
         data.forEach((route: Route) => {
-            const filteredDestinations = route.destinations.filter(destination => {
+            const filteredDestinations = route?.destinations?.filter(destination => {
                 return destination.callsigns.includes(callsign);
             });
 
-            if (filteredDestinations.length > 0) {
+            if (filteredDestinations?.length > 0) {
                 filteredRoutes.push({
                     ...route, // Copy the route properties
                     destinations: filteredDestinations
@@ -50,7 +50,7 @@ export class FilterUtils {
     static filterDataByAircraft(data: Route[], aircraftType: string | null = null) {
         const filteredRoutes: Route[] = [];
         data.forEach(route => {
-            const filteredDestinations = route.destinations.filter((destination) => {
+            const filteredDestinations = route?.destinations?.filter((destination) => {
                 if (aircraftType === null) {
                     return true; // Keep all destinations if aircraftType is null
                 } else {
@@ -58,7 +58,7 @@ export class FilterUtils {
                 }
             });
 
-            if (filteredDestinations.length > 0) {
+            if (filteredDestinations?.length > 0) {
                 filteredRoutes.push({
                     ...route,
                     destinations: filteredDestinations
@@ -72,11 +72,11 @@ export class FilterUtils {
     static filterDataByHours(data :Route[], hoursLimit: number) {
         const filteredRoutes: Route[] = [];
         data.forEach(route => {
-            const filteredDestinations = route.destinations.filter((destination) => {
+            const filteredDestinations = route?.destinations?.filter((destination) => {
                     return FilterUtils.convertTimeToHours(destination.time) <= hoursLimit;
             });
 
-            if (filteredDestinations.length > 0) {
+            if (filteredDestinations?.length > 0) {
                 filteredRoutes.push({
                     ...route,
                     destinations: filteredDestinations
