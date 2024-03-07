@@ -41,7 +41,9 @@ export class TripService {
 
             const destinations = airports[startAirport].destinations.slice();
             shuffleArray(destinations);
-
+            if (!destinations) {
+                return;
+            }
             for (const destination of destinations) {
                 if (!airports?.[startAirport]?.aircrafts?.includes(aircraftType) ||
                     !airports?.[destination.icao]?.aircrafts.includes(aircraftType)) {
@@ -62,7 +64,7 @@ export class TripService {
 
         function shuffleArray(array: any[]) {
             // Fisher-Yates Shuffle Implementation
-            for (let i = array.length - 1; i > 0; i--) {
+            for (let i = array?.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [array[i], array[j]] = [array[j], array[i]];
             }
@@ -74,10 +76,10 @@ export class TripService {
         const airports: Record<string, Airport> = {};
 
         for (const base of data) {
-            airports[base.icao] = {
-                name: base.name,
-                destinations: base.destinations.map(dest => ({ icao: dest.icao, time: dest.time })),
-                aircrafts: base.aircrafts
+            airports[base?.icao] = {
+                name: base?.name,
+                destinations: base?.destinations?.map(dest => ({ icao: dest.icao, time: dest.time })),
+                aircrafts: base?.aircrafts
             };
         }
         return airports;
