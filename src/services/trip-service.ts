@@ -38,15 +38,6 @@ export class TripService {
                 return;
             }
 
-            let selectedAircraft = aircraftType || null;
-            if (!selectedAircraft) {
-                aircraftType = findCompatibleAircraft(startAirport, currentTrip[currentTrip.length - 1]) || '';
-                selectedAircraft = aircraftType;
-                if (!selectedAircraft) {
-                    return;
-                }
-            }
-
             const destinations = airports[startAirport].destinations.slice();
             shuffleArray(destinations);
 
@@ -67,18 +58,6 @@ export class TripService {
 
         dfs(startAirport, []);
         return { trip: foundTrip, aircraftType };
-
-        function findCompatibleAircraft(startAirport: string, destination: string): string | null {
-            const compatibleAircrafts: string[] = [];
-            for (const aircraft of airports?.[startAirport]?.aircrafts) {
-                if (airports?.[destination]?.aircrafts?.includes(aircraft)) {
-                    compatibleAircrafts.push(aircraft);
-                }
-            }
-            return compatibleAircrafts.length > 0 ?
-                compatibleAircrafts[Math.floor(Math.random() * compatibleAircrafts.length)] :
-                null;
-        }
 
         function shuffleArray(array: any[]) {
             // Fisher-Yates Shuffle Implementation

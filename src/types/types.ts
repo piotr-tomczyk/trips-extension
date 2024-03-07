@@ -6,7 +6,7 @@ export interface Destination {
     iata: string;
     latitude: string;
     longitude: string;
-    callsigns: string[];
+    callsigns: string;
     types: string[];
     distance: number;
     time: string;

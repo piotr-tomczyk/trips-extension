@@ -1,10 +1,16 @@
 <template>
     <div class="popup-body">
         <div class="form-container">
-            <span> Airline: </span>
+            <span> VA: </span>
             <select v-model="selectedAirline">
                 <option v-for="airline in airlinesOptions" :key="airline" :value="airline">
                     {{ airline }}
+                </option>
+            </select>
+            <span> Airline: </span>
+            <select v-model="selectedCallsign">
+                <option v-for="callsign in availableCallsigns" :key="callsign" :value="callsign">
+                    {{ callsign }}
                 </option>
             </select>
             <span> Aircraft: </span>
@@ -63,6 +69,8 @@
             Generating Route...
         </p>
 
+        {{ availableCallsigns }}
+
         <p v-if="foundTrip">
             Found Trip -
             Aircraft: {{ generatedAircraftType }}, Route:
@@ -80,7 +88,7 @@
     import aalData from '../static/aal.json';
     import ualData from '../static/ual.json';
 
-    import type { Trip, Route } from '../types/types';
+    import type { Trip, Route, Destination } from '../types/types';
     import { airlines } from '../types/types';
     import { TripService } from '../services/trip-service';
 
@@ -99,18 +107,24 @@
     const routes = computed(() => {
         switch(selectedAirline.value) {
             case airlines.SPIRIT:
-                return spiritData.routes;
+                return spiritData.routes.sort((a, b) => sortAlphabetically(a.name, b.name));
             case airlines.AMERICAN:
-                return aalData.routes;
+                return aalData.routes.sort((a, b) => sortAlphabetically(a.name, b.name));
             case airlines.UNITED:
-                return ualData.routes;
+                return ualData.routes.sort((a, b) => sortAlphabetically(a.name, b.name));
             default:
                 return [];
         }
     });
     const departureAirports = computed(() => {
-        return routes.value.filter(route => selectedAircraft.value ? route.aircrafts.includes(selectedAircraft.value) : true);
+        return routes.value
+            .filter(route => selectedAircraft.value ? route.aircrafts.includes(selectedAircraft.value) : true);
     });
+
+    //@ts-ignore
+    const availableCallsigns = computed(() => getAllCallsigns(routes.value));
+
+    const selectedCallsign = ref(null);
 
     const selectedDeparture = ref<Route | null>(null);
     const selectedDestination = ref<Route | null>(null);
@@ -144,12 +158,33 @@
         });
     });
 
+    function getAllCallsigns(data: Route[]): string[] {
+        const allCallsigns = new Set<string>(); // Use a Set to ensure unique callsigns
+
+        data.forEach(route => {
+            route.destinations.forEach((destination: Destination) => {
+                destination.callsigns.split(',').forEach((callsign: string) => {
+                    allCallsigns.add(callsign.trim());
+                });
+            });
+        });
+
+        return Array.from(allCallsigns).sort(sortAlphabetically); // Convert Set back to array
+    }
+
+    function sortAlphabetically(a: string, b: string) {
+        return a <= b ? -1 : 1;
+    }
+
     function calculateLegs() {
         if (isGeneratingRoute.value) {
             return;
         }
-        if (!selectedDeparture.value || !selectedSearchMode.value) {
-            return null;
+
+        const randomDepartureAirport = departureAirports.value[Math.floor(Math.random() * departureAirports.value.length)];
+        const randomAircraft = randomDepartureAirport.aircrafts[Math.floor(Math.random() * randomDepartureAirport.aircrafts.length)];
+        if (!randomDepartureAirport) {
+            return;
         }
 
         switch (selectedSearchMode.value) {
@@ -157,32 +192,38 @@
                 console.log('Legs');
                 break;
             case 'Trips':
-                const startAirport = selectedDeparture.value.icao;
-                const destinationAirport = selectedDestination.value?.icao;
+                const startAirport = selectedDeparture.value?.icao ?? randomDepartureAirport.icao;
+                const destinationAirport = selectedDestination.value?.icao ?? startAirport;
                 const desiredHours = hoursLimit.value;
+                const aircraftType = selectedAircraft.value ?? randomAircraft;
                 const desiredLegs = legNumber.value;
 
                 generatedAircraftType.value = null;
                 foundTrip.value = null;
-                isGeneratingRoute.value = true;
-                const tripService = new TripService();
-                const tripsData = tripService.findTrip(
-                    // @ts-ignore
-                    routes.value,
-                    startAirport,
-                    destinationAirport || startAirport,
-                    desiredLegs + 1,
-                    selectedAircraft.value || undefined,
-                    desiredHours
-                );
-                isGeneratingRoute.value = false;
+                try {
+                    isGeneratingRoute.value = true;
+                    const tripService = new TripService();
+                    const tripsData = tripService.findTrip(
+                        // @ts-ignore
+                        routes.value,
+                        startAirport,
+                        destinationAirport,
+                        desiredLegs + 1,
+                        aircraftType,
+                        desiredHours
+                    );
 
-                chrome.storage.sync.set({'route': JSON.stringify(tripsData)})
-                    .then(() => console.log('Saved'))
-                    .catch((error) => console.log({ error }));
+                    chrome.storage.sync.set({'route': JSON.stringify(tripsData)})
+                        .then(() => console.log('Saved'))
+                        .catch((error) => console.log({ error }));
 
-                foundTrip.value = tripsData.trip;
-                generatedAircraftType.value = tripsData.aircraftType;
+                    foundTrip.value = tripsData.trip;
+                    generatedAircraftType.value = tripsData.aircraftType;
+                } catch (error) {
+                    console.log({ error });
+                } finally {
+                    isGeneratingRoute.value = false;
+                }
                 break;
             default:
                 console.log('Default');
