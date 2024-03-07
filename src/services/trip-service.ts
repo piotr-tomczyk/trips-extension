@@ -29,7 +29,7 @@ export class TripService {
 
             if (currentTrip.length === desiredLegs && startAirport === destinationAirport) {
                 foundTrip = {
-                    legs: currentTrip.slice(0, -1).map((icao, index) => ({ start: icao, end: currentTrip[index + 1] })),
+                    legs: currentTrip?.slice(0, -1).map((icao, index) => ({ start: icao, end: currentTrip[index + 1] })),
                     destination: startAirport
                 };
                 return;
@@ -55,7 +55,7 @@ export class TripService {
                     continue;
                 }
 
-                dfs(destination.icao, currentTrip.slice());
+                dfs(destination.icao, currentTrip?.slice());
             }
         }
 

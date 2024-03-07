@@ -329,7 +329,13 @@
     }
 
     function getRandomAircraft() {
-        return aircrafts.value[Math.floor(Math.random() * aircrafts.value?.length)];
+        if (selectedDeparture.value) {
+            selectedDeparture.value.aircrafts = selectedDeparture.value?.aircrafts.filter(
+                (aircraft) => aircrafts.value.find((aircraftType) => aircraftType === aircraft)
+            );
+        }
+        const aircraftsToProcess = selectedDeparture.value ? selectedDeparture.value.aircrafts : aircrafts.value;
+        return aircraftsToProcess?.[Math.floor(Math.random() * aircraftsToProcess?.length)];
     }
 </script>
 
