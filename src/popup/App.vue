@@ -219,12 +219,13 @@
 
     const isError = ref(false);
 
-    watch(selectedAirline, () => {
+    watch(selectedAirline, async () => {
         selectedCallsign.value = availableCallsigns.value[0] ?? null;
         selectedDeparture.value = null;
         selectedDestination.value = null;
         selectedAircraft.value = null;
-        chrome.storage.sync.get(selectedAirline.value, (result) => {
+        try {
+            const result = await browser.storage.local.get(selectedAirline.value);
             if (result && Object.keys(result).length > 0) {
                 const parsedResult = JSON.parse(result?.[selectedAirline.value]);
                 foundTrip.value = parsedResult?.trip ?? null;
@@ -233,32 +234,43 @@
                 foundTrip.value = null;
                 generatedAircraftType.value = null;
             }
-        });
-        chrome.storage.sync.set({ 'lastVisited': selectedAirline.value })
-            .then(() => {})
-            .catch((error) => console.log({ error }));
-    }, );
+        } catch (error) {
+            foundTrip.value = null;
+            generatedAircraftType.value = null;
+            console.log('Failed to get items from browser storage', { error });
+        }
 
-    onMounted(() => {
-        chrome.storage.sync.get('lastVisited', (result) => {
-            if (result) {
-                selectedAirline.value = result.lastVisited ?? airlines.SPIRIT;
-                selectedCallsign.value = availableCallsigns.value[0] ?? null;
-                chrome.storage.sync.get(selectedAirline.value, (result) => {
-                    if (result && Object.keys(result).length > 0) {
-                        const parsedResult = JSON.parse(result?.[selectedAirline.value]);
-                        foundTrip.value = parsedResult?.trip ?? null;
-                        generatedAircraftType.value = parsedResult?.aircraftType ?? null;
-                    } else {
-                        foundTrip.value = null;
-                        generatedAircraftType.value = null;
-                    }
-                });
-            }
-        });
+        browser.storage.local.set({ 'lastVisited': selectedAirline.value })
+            .then(() => {})
+            .catch((error) => console.log('Error setting lastVisted item', { error }));
     });
 
-    function calculateLegs() {
+    onMounted(async () => {
+        try {
+            const lastVisitedResult = await browser.storage.local.get('lastVisited');
+            if (lastVisitedResult) {
+                selectedAirline.value = lastVisitedResult.lastVisited ?? airlines.SPIRIT;
+                selectedCallsign.value = availableCallsigns.value[0] ?? null;
+                const airlineResult = await browser.storage.local.get(selectedAirline.value)
+                if (airlineResult && Object.keys(airlineResult).length > 0) {
+                    const parsedResult = JSON.parse(airlineResult?.[selectedAirline.value]);
+                    foundTrip.value = parsedResult?.trip ?? null;
+                    generatedAircraftType.value = parsedResult?.aircraftType ?? null;
+                } else {
+                    foundTrip.value = null;
+                    generatedAircraftType.value = null;
+                }
+            }
+        } catch (error) {
+            selectedAirline.value = airlines.SPIRIT;
+            selectedCallsign.value = availableCallsigns.value[0] ?? null;
+            foundTrip.value = null;
+            generatedAircraftType.value = null;
+            console.log('Failed to get items from browser storage', { error });
+        }
+    });
+
+    async function calculateLegs() {
         if (isGeneratingRoute.value) {
             return;
         }
@@ -301,9 +313,7 @@
                     }
 
                     if (tripsData?.trip) {
-                        chrome.storage.sync.set({
-                            [selectedAirline.value]: JSON.stringify(tripsData)
-                        }).then(() => {}).catch((error) => console.log({ error }));
+                        await browser.storage.local.set({ [selectedAirline.value]: JSON.stringify(tripsData) });
                     }
 
                     foundTrip.value = tripsData?.trip ?? null;
@@ -311,7 +321,7 @@
                     generatedDeparture.value = destinationAirport;
                 } catch (error) {
                     isError.value = true;
-                    console.log({ error });
+                    console.log('Error generating route', { error });
                 } finally {
                     if (!isSelectedAircraft) {
                         selectedAircraft.value = null;
@@ -335,7 +345,6 @@
 
 <style scoped>
     .popup-body {
-        width: 400px;
         padding: 30px;
         font-family: Arial, sans-serif;
         box-sizing: border-box;

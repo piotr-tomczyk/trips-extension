@@ -12,6 +12,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "types": [
+      "firefox-webext-browser"
+    ],
     "lib": [
       "esnext",
       "dom"
