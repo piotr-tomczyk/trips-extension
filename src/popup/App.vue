@@ -30,7 +30,7 @@
                     :value="null">
                 </option>
                 <option v-for="airport in routes" :key="airport.id" :value="airport">
-                    {{ airport.name }}
+                    {{ airport.icao }} ( {{ airport.name }} )
                 </option>
             </select>
             <span> Destination: </span>
@@ -41,7 +41,7 @@
                     :value="null">
                 </option>
                 <option v-for="airport in routes" :key="airport.id" :value="airport">
-                    {{ airport.name }}
+                    {{ airport.icao }} ( {{ airport.name }} )
                 </option>
             </select>
             <span> Leg number: </span>
@@ -140,11 +140,11 @@
     const allRoutes = computed(() => {
         switch(selectedAirline.value) {
             case airlines.SPIRIT:
-                return spiritData.routes.sort((a, b) => FilterUtils.sortAlphabetically(a.name, b.name));
+                return spiritData.routes.sort((a, b) => FilterUtils.sortAlphabetically(a.icao, b.icao));
             case airlines.AMERICAN:
-                return aalData.routes.sort((a, b) => FilterUtils.sortAlphabetically(a.name, b.name));
+                return aalData.routes.sort((a, b) => FilterUtils.sortAlphabetically(a.icao, b.icao));
             case airlines.UNITED:
-                return ualData.routes.sort((a, b) => FilterUtils.sortAlphabetically(a.name, b.name));
+                return ualData.routes.sort((a, b) => FilterUtils.sortAlphabetically(a.icao, b.icao));
             default:
                 return [];
         }
