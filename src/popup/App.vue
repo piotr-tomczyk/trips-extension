@@ -85,21 +85,29 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="(leg, index) in foundTrip?.legs" :key="leg.start + leg.end">
+                <tr v-for="(leg, index) in foundTrip?.legs">
                     <td>{{ index + 1 }}</td>
                     <td>{{ leg.start }}</td>
                     <td>{{ leg.end }}</td>
                     <td>
-                        {{ routes?.find((route) => route.icao === leg.start)?.destinations?.find((destination) => destination.icao === leg.end)?.time }}
+                        {{ allRoutes?.find((route) => route.icao === leg.start)?.destinations?.find((destination) => destination.icao === leg.end)?.time }}
                     </td>
                 </tr>
                 </tbody>
             </table>
         </div>
         <div v-else>
-            No trip found
-            {{ generatedAircraftType ? `for generated aircraft: ${generatedAircraftType} and ${generatedDeparture} departure airport` : '' }}
-            , it might take a few attempts or try changing parameters. Try Again.
+            <span v-if="routes.length === 0">
+                No possible trip found for selected parameters. Try changing parameters.
+            </span>
+            <span v-else-if="generatedAircraftType">
+                No trip found for generated aircraft:
+                {{ generatedAircraftType }}  and {{generatedDeparture}} departure airport,
+                it might take a few attempts. Try changing parameters or search again.
+            </span>
+            <span v-else>
+                No trip found for selected parameters. Try changing parameters or search again.
+            </span>
         </div>
     </div>
 </template>
@@ -214,44 +222,45 @@
             return;
         }
 
-        const randomDepartureAirport = routes.value[Math.floor(Math.random() * routes.value.length)];
-        const randomAircraft = randomDepartureAirport.aircrafts[Math.floor(Math.random() * randomDepartureAirport.aircrafts.length)];
-        if (!randomDepartureAirport) {
-            return;
-        }
-
         switch (selectedSearchMode.value) {
             case 'Legs':
                 console.log('Legs');
                 break;
             case 'Trips':
-                const startAirport = selectedDeparture.value?.icao ?? randomDepartureAirport.icao;
+                const startAirport = selectedDeparture.value?.icao ?? getRandomDepartureAirport()?.icao;
                 const destinationAirport = selectedDestination.value?.icao ?? startAirport;
                 const desiredHours = hoursLimit.value;
-                const aircraftType = selectedAircraft.value ?? randomAircraft;
+                const aircraftType = selectedAircraft.value ?? getRandomAircraftForAirport(startAirport);
                 const desiredLegs = legNumber.value;
 
                 generatedAircraftType.value = null;
                 foundTrip.value = null;
                 try {
                     isGeneratingRoute.value = true;
+                    let tripsData;
                     const tripService = new TripService();
-                    const tripsData = tripService.findTrip(
-                        // @ts-ignore
-                        routes.value,
-                        startAirport,
-                        destinationAirport,
-                        desiredLegs + 1,
-                        aircraftType,
-                        desiredHours
-                    );
+                    for (let i = 0; i < 50; i++) {
+                        const departureAirport = i == 0 ? startAirport : getRandomDepartureAirport()?.icao;
+                        tripsData = tripService.findTrip(
+                            // @ts-ignore
+                            routes.value,
+                            departureAirport,
+                            destinationAirport,
+                            desiredLegs + 1,
+                            i == 0 ? aircraftType : getRandomAircraftForAirport(departureAirport),
+                            desiredHours
+                        );
 
+                        if ((tripsData.trip) || selectedDeparture.value?.icao) {
+                            break;
+                        }
+                    }
                     chrome.storage.sync.set({
                         'extensionData': JSON.stringify({ ...tripsData, selectedAirline: selectedAirline.value })
                     }).then(() => {}).catch((error) => console.log({ error }));
 
-                    foundTrip.value = tripsData.trip;
-                    generatedAircraftType.value = tripsData.aircraftType;
+                    foundTrip.value = tripsData?.trip ?? null;
+                    generatedAircraftType.value = tripsData?.aircraftType ?? null;
                     generatedDeparture.value = destinationAirport;
                 } catch (error) {
                     console.log({ error });
@@ -262,6 +271,15 @@
             default:
                 console.log('Default');
         }
+    }
+
+    function getRandomDepartureAirport() {
+        return routes.value[Math.floor(Math.random() * routes.value.length)];
+    }
+
+    function getRandomAircraftForAirport(airport: string) {
+        const aircraftsForAirport = routes.value.find((route) => route.icao === airport)?.aircrafts;
+        return aircraftsForAirport ? aircraftsForAirport[Math.floor(Math.random() * aircraftsForAirport.length)] : undefined;
     }
 </script>
 
