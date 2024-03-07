@@ -45,7 +45,7 @@
                     </option>
                 </select>
             </div>
-            <div>
+            <div v-if="selectedDeparture">
                 <span> Destination: </span>
                 <select
                     v-model="selectedDestination">
@@ -117,7 +117,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="error-message" v-else-if="generatedAircraftType">
+        <div class="error-message" v-else-if="generatedAircraftType || isError">
             <span v-if="routes.length === 0">
                 No possible trip found for selected parameters. Try changing parameters.
             </span>
@@ -139,20 +139,26 @@
     import spiritData from '../static/spirit.json';
     import aalData from '../static/aal.json';
     import ualData from '../static/ual.json';
+    import spiritAircrafts from '../static/spiritAircrafts.json';
+    import aalAircrafts from '../static/aalAircrafts.json';
+    import ualAircrafts from '../static/unitedAircrafts.json';
 
-    import type { Trip, Route, Destination } from '../types/types';
+    import type { Trip, Route } from '../types/types';
     import { airlines } from '../types/types';
     import { TripService } from '../services/trip-service';
     import { FilterUtils } from '../utils/filters';
 
-    const aircrafts = computed(() => {
+    const aircrafts = computed<string[]>(() => {
         switch(selectedAirline.value) {
             case airlines.SPIRIT:
-                return spiritData.aircrafts;
+                //@ts-ignore
+                return selectedCallsign.value ? spiritAircrafts[selectedCallsign.value] : spiritAircrafts['NKS'];
             case airlines.AMERICAN:
-                return aalData.aircrafts;
+                //@ts-ignore
+                return selectedCallsign.value ? aalAircrafts[selectedCallsign.value] : aalAircrafts['AAL'];
             case airlines.UNITED:
-                return ualData.aircrafts;
+                //@ts-ignore
+                return selectedCallsign.value ? ualAircrafts[selectedCallsign.value] : ualAircrafts['UAL'];
             default:
                 return [];
         }
@@ -191,7 +197,7 @@
     const selectedDeparture = ref<Route | null>(null);
     const selectedDestination = ref<Route | null>(null);
 
-    const selectedAircraft = ref(null);
+    const selectedAircraft = ref<string | null>(null);
 
     const legCountOptions = ref([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 20, 30, 50, 100]);
     const legNumber = ref(2);
@@ -210,6 +216,8 @@
     const generatedDeparture = ref<string | null>(null);
 
     const isGeneratingRoute = ref(false);
+
+    const isError = ref(false);
 
     watch(selectedAirline, () => {
         selectedCallsign.value = availableCallsigns.value[0] ?? null;
@@ -255,15 +263,18 @@
             return;
         }
 
+        isError.value = false;
+
         switch (selectedSearchMode.value) {
             case 'Legs':
                 console.log('Legs');
                 break;
             case 'Trips':
+                const isSelectedAircraft = !!selectedAircraft.value;
+                selectedAircraft.value ??=  getRandomAircraft();
                 const startAirport = selectedDeparture.value?.icao ?? getRandomDepartureAirport()?.icao;
                 const destinationAirport = selectedDestination.value?.icao ?? startAirport;
                 const desiredHours = hoursLimit.value;
-                const aircraftType = selectedAircraft.value ?? getRandomAircraftForAirport(startAirport);
                 const desiredLegs = legNumber.value;
 
                 generatedAircraftType.value = null;
@@ -280,7 +291,7 @@
                             departureAirport,
                             destinationAirport,
                             desiredLegs + 1,
-                            i == 0 ? aircraftType : getRandomAircraftForAirport(departureAirport),
+                            selectedAircraft.value || undefined,
                             desiredHours
                         );
 
@@ -299,8 +310,12 @@
                     generatedAircraftType.value = tripsData?.aircraftType ?? null;
                     generatedDeparture.value = destinationAirport;
                 } catch (error) {
+                    isError.value = true;
                     console.log({ error });
                 } finally {
+                    if (!isSelectedAircraft) {
+                        selectedAircraft.value = null;
+                    }
                     isGeneratingRoute.value = false;
                 }
                 break;
@@ -313,9 +328,8 @@
         return routes.value[Math.floor(Math.random() * routes.value.length)];
     }
 
-    function getRandomAircraftForAirport(airport: string) {
-        const aircraftsForAirport = routes.value.find((route) => route.icao === airport)?.aircrafts;
-        return aircraftsForAirport ? aircraftsForAirport[Math.floor(Math.random() * aircraftsForAirport.length)] : undefined;
+    function getRandomAircraft() {
+        return aircrafts.value[Math.floor(Math.random() * aircrafts.value.length)];
     }
 </script>
 

@@ -47,7 +47,7 @@ export class FilterUtils {
         return filteredRoutes;
     }
 
-    static filterDataByAircraft(data: Route[], aircraftType = null) {
+    static filterDataByAircraft(data: Route[], aircraftType: string | null = null) {
         const filteredRoutes: Route[] = [];
         data.forEach(route => {
             const filteredDestinations = route.destinations.filter((destination) => {
