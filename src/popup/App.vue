@@ -1,5 +1,9 @@
 <template>
-    <div class="popup-body">
+    <div class="popup-body"
+         :class="{
+            'spirit-theme': selectedAirline === airlines.SPIRIT,
+            'american-theme': selectedAirline === airlines.AMERICAN,
+            'united-theme': selectedAirline === airlines.UNITED }">
         <div class="form-container">
             <div>
                 <span> VA: </span>
@@ -74,6 +78,7 @@
             </div>
         </div>
         <button
+            class="search-button"
             :disabled="isGeneratingRoute"
             @click="calculateLegs">
             Search
@@ -112,7 +117,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="error-message" v-else>
+        <div class="error-message" v-else-if="generatedAircraftType">
             <span v-if="routes.length === 0">
                 No possible trip found for selected parameters. Try changing parameters.
             </span>
@@ -208,27 +213,36 @@
 
     watch(selectedAirline, () => {
         selectedCallsign.value = availableCallsigns.value[0] ?? null;
-        chrome.storage.sync.get('extensionData', (result) => {
-            if (result) {
-                const parsedResult = JSON.parse(result.extensionData);
-                const dataToSave = {
-                    ...parsedResult,
-                    selectedAirline: selectedAirline.value,
-                };
-                chrome.storage.sync.set({ 'extensionData': JSON.stringify(dataToSave) })
-                    .then(() => console.log('Saved'))
-                    .catch((error) => console.log({ error }));
+        chrome.storage.sync.get(selectedAirline.value, (result) => {
+            if (result && Object.keys(result).length > 0) {
+                const parsedResult = JSON.parse(result?.[selectedAirline.value]);
+                foundTrip.value = parsedResult?.trip ?? null;
+                generatedAircraftType.value = parsedResult?.aircraftType ?? null;
+            } else {
+                foundTrip.value = null;
+                generatedAircraftType.value = null;
             }
         });
-    }, { immediate: true });
+        chrome.storage.sync.set({ 'lastVisited': selectedAirline.value })
+            .then(() => {})
+            .catch((error) => console.log({ error }));
+    }, );
 
     onMounted(() => {
-        chrome.storage.sync.get('extensionData', (result) => {
+        chrome.storage.sync.get('lastVisited', (result) => {
             if (result) {
-                const parsedResult = JSON.parse(result.extensionData);
-                foundTrip.value = parsedResult.trip;
-                generatedAircraftType.value = parsedResult.aircraftType;
-                selectedAirline.value = parsedResult.selectedAirline;
+                selectedAirline.value = result.lastVisited ?? airlines.SPIRIT;
+                chrome.storage.sync.get(selectedAirline.value, (result) => {
+                    if (result && Object.keys(result).length > 0) {
+                        console.log({ result });
+                        const parsedResult = JSON.parse(result?.[selectedAirline.value]);
+                        foundTrip.value = parsedResult?.trip ?? null;
+                        generatedAircraftType.value = parsedResult?.aircraftType ?? null;
+                    } else {
+                        foundTrip.value = null;
+                        generatedAircraftType.value = null;
+                    }
+                });
             }
         });
     });
@@ -271,9 +285,12 @@
                             break;
                         }
                     }
-                    chrome.storage.sync.set({
-                        'extensionData': JSON.stringify({ ...tripsData, selectedAirline: selectedAirline.value })
-                    }).then(() => {}).catch((error) => console.log({ error }));
+
+                    if (tripsData?.trip) {
+                        chrome.storage.sync.set({
+                            [selectedAirline.value]: JSON.stringify(tripsData)
+                        }).then(() => {}).catch((error) => console.log({ error }));
+                    }
 
                     foundTrip.value = tripsData?.trip ?? null;
                     generatedAircraftType.value = tripsData?.aircraftType ?? null;
@@ -302,24 +319,22 @@
 <style scoped>
     .popup-body {
         width: 400px;
-        max-height: 600px;
-        margin: 10px;
-        padding: 20px; /* Add padding for visual breathing room */
-        font-family: Arial, sans-serif; /* Consistent font */
-        box-sizing: border-box; /* Prevent padding from expanding the width */
+        padding: 30px;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
     }
 
     .form-container {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin-bottom: 20px; /* Adds space above the button */
+        margin-bottom: 20px;
     }
 
     .form-container > div > span {
         font-weight: bold;
-        margin-bottom: 5px;  /* Reduced margin for closer label/select association */
-        font-size: 12px;     /* Slightly increased label size */
+        margin-bottom: 5px;
+        font-size: 12px;
     }
 
     .form-container > select {
@@ -340,15 +355,15 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        transition: background-color 0.3s ease; /* Add transition */
+        transition: background-color 0.3s ease;
     }
 
     button:hover {
-        background-color: #0056b3; /* Slightly darker on hover */
+        background-color: #0056b3;
     }
 
     button:active {
-        background-color: #00428a; /* Even darker on click */
+        background-color: #00428a;
     }
 
     button:disabled {
@@ -356,10 +371,9 @@
         cursor: default;
     }
 
-    /* Table Styling */
     table {
         width: 100%;
-        border-collapse: collapse; /* Remove default cell spacing */
+        border-collapse: collapse;
     }
 
     th, td {
@@ -369,11 +383,11 @@
 
     th {
         text-align: left;
-        background-color: #f2f2f2; /* Example: slightly darker header */
+        background-color: #f2f2f2;
     }
 
     h2 {
-        font-size: 1.2em;  /* Slightly larger */
+        font-size: 1.2em;
         margin-bottom: 10px;
     }
 
@@ -382,10 +396,119 @@
     }
 
     .error-message {
-        color: #d9534f;  /* A prominent red color */
-        background-color: #ffe0e0; /* Light red background */
-        border: 1px solid #d43f3a; /* Slightly darker border */
+        color: #d9534f;
+        background-color: #ffe0e0;
+        border: 1px solid #d43f3a;
         padding: 10px;
         margin: 15px 0;
+    }
+
+    .spirit-theme {
+        background-color: #FAD303;
+        color: #000;
+    }
+
+    .spirit-theme table th {
+        background-color: #E6C100;
+        color: #000;
+        border: 1px solid #D8B900;
+        padding: 8px;
+    }
+
+    .spirit-theme table td {
+        background-color: #FCF6CA;
+        border: 1px solid #D8B900;
+        padding: 8px;
+    }
+
+    .spirit-theme table tr:hover td {
+        background-color: #ECDF8B;
+    }
+
+    .american-theme {
+        background-color: #CBCBCB;
+        color: #000;
+    }
+
+    .american-theme table th {
+        background-color: #AEAEAE;
+        color: #000;
+        border: 1px solid #A0A0A0;
+        padding: 8px;
+    }
+
+    .american-theme table td {
+        background-color: #E0E0E0;
+        border: 1px solid #A0A0A0;
+        padding: 8px;
+    }
+
+    .american-theme table tr:hover td {
+        background-color: #D7D7D7;
+    }
+
+    .united-theme {
+        background-color: #182742;
+        color: #FFF;
+    }
+
+    .united-theme table th {
+        background-color: #0D1D33;
+        color: #FFF;
+        border: 1px solid #0A1A2D;
+        padding: 8px;
+    }
+
+    .united-theme table td {
+        background-color: #203354;
+        border: 1px solid #0A1A2D;
+        padding: 8px;
+    }
+
+    .united-theme table tr:hover td {
+        background-color: #29426A;
+    }
+
+
+    .spirit-theme .search-button {
+        background-color: black;
+        color: #fad400;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .spirit-theme .search-button:hover {
+        background-color: #424242;
+    }
+
+    .american-theme .search-button {
+        background-color: #5867dd;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .american-theme .search-button:hover {
+        background-color: #282c34;
+    }
+
+    .united-theme .search-button {
+        background-color: #173d91;
+        color: #FFF;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .united-theme .search-button:hover {
+        background-color: #213a65;
     }
 </style>
