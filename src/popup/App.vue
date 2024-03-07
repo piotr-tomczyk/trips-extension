@@ -72,7 +72,7 @@
                 <select
                     v-model="hoursLimit">
                     <option v-for="hour in hoursLimitOptions" :key="hour" :value="hour">
-                        {{ hour }}
+                        {{ hour > 0 ? hour : 'No limit' }}
                     </option>
                 </select>
             </div>
@@ -404,20 +404,21 @@
     }
 
     .spirit-theme {
-        background-color: #FAD303;
+        background-color: #EFEFEF;
         color: #000;
     }
 
     .spirit-theme table th {
-        background-color: #E6C100;
-        color: #000;
-        border: 1px solid #D8B900;
+        background-color: black;
+        color: #FAD400;
+        border: 1px solid black;
         padding: 8px;
     }
 
     .spirit-theme table td {
-        background-color: #FCF6CA;
-        border: 1px solid #D8B900;
+        background-color: #FAD400;
+        color: black;
+        border: 1px solid black;
         padding: 8px;
     }
 
@@ -426,20 +427,21 @@
     }
 
     .american-theme {
-        background-color: #CBCBCB;
+        background-color: #F9F9FC;
         color: #000;
     }
 
     .american-theme table th {
-        background-color: #AEAEAE;
-        color: #000;
-        border: 1px solid #A0A0A0;
+        background-color: #2A376E;
+        color: #FFF;
+        border: 1px solid black;
         padding: 8px;
     }
 
     .american-theme table td {
-        background-color: #E0E0E0;
-        border: 1px solid #A0A0A0;
+        background-color: #CBCBCB;
+        color: #000;
+        border: 1px solid black;
         padding: 8px;
     }
 
@@ -448,27 +450,27 @@
     }
 
     .united-theme {
-        background-color: #182742;
-        color: #FFF;
+        background-color: #DEE6FC;
+        color: #000;
     }
 
     .united-theme table th {
-        background-color: #0D1D33;
+        background-color: #D13E2B;
         color: #FFF;
-        border: 1px solid #0A1A2D;
+        border: 1px solid black;
         padding: 8px;
     }
 
     .united-theme table td {
-        background-color: #203354;
-        border: 1px solid #0A1A2D;
+        background-color: #172742;
+        color: #FFF;
+        border: 1px solid black;
         padding: 8px;
     }
 
     .united-theme table tr:hover td {
         background-color: #29426A;
     }
-
 
     .spirit-theme .search-button {
         background-color: black;
@@ -481,7 +483,20 @@
     }
 
     .spirit-theme .search-button:hover {
-        background-color: #424242;
+        background-color: #212121; /* Dark background */
+        color: #fad400; /* Your yellow color */
+    }
+
+    .spirit-theme .search-button:active {
+        background-color: #fad400; /* Your yellow color */
+        color: #212121; /* Dark text */
+    }
+
+    .spirit-theme .search-button:disabled {
+        background-color: #D1D1D1;
+        color: #8C8C8C;
+        opacity: 0.6;
+        cursor: default;
     }
 
     .american-theme .search-button {
@@ -495,7 +510,18 @@
     }
 
     .american-theme .search-button:hover {
-        background-color: #282c34;
+        background-color: #8a94ff; /* Brighter color */
+    }
+
+    .american-theme .search-button:active {
+        background-color: #303a61; /* Significantly darker */
+    }
+
+    .american-theme .search-button:disabled {
+        background-color: #D1D1D1;
+        color: #8C8C8C;
+        opacity: 0.6;
+        cursor: default;
     }
 
     .united-theme .search-button {
@@ -510,5 +536,16 @@
 
     .united-theme .search-button:hover {
         background-color: #213a65;
+    }
+
+    .united-theme .search-button:active {
+        background-color: #0A1A2D;
+    }
+
+    .united-theme .search-button:disabled {
+        background-color: #D1D1D1;
+        color: #8C8C8C;
+        opacity: 0.6;
+        cursor: default;
     }
 </style>
