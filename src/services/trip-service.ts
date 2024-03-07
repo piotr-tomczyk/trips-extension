@@ -1,4 +1,5 @@
 import { Route, Trip, Airport } from '../types/types';
+import { FilterUtils } from '../utils/filters';
 
 export class TripService {
     constructor() {
@@ -47,7 +48,7 @@ export class TripService {
                     continue;
                 }
 
-                const legTime = convertTimeToHours(destination.time);
+                const legTime = FilterUtils.convertTimeToHours(destination.time);
                 if (legTime > maxLegTime) {
                     continue;
                 }
@@ -66,14 +67,6 @@ export class TripService {
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
-
-        function convertTimeToHours(timeString: string): number {
-            const [hoursStr, minutesStr, secondsStr] = timeString.split(':');
-            const hours = parseFloat(hoursStr);
-            const minutes = parseFloat(minutesStr) / 60;
-            const seconds = parseFloat(secondsStr) / 3600;
-            return hours + minutes + seconds;
-        }
     }
 
 
@@ -88,21 +81,5 @@ export class TripService {
             };
         }
         return airports;
-    }
-
-
-
-    private filterDuplicates(trips: Trip[]): Trip[] {
-        const uniqueTrips = new Set<string>();
-        const filteredTrips: Trip[] = [];
-
-        for (const trip of trips) {
-            const tripKey = trip.legs.map(leg => `${leg.start}-${leg.end}`).join('-') +  '-' + trip.destination;
-            if (!uniqueTrips.has(tripKey)) {
-                uniqueTrips.add(tripKey);
-                filteredTrips.push(trip);
-            }
-        }
-        return filteredTrips;
     }
 }

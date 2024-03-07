@@ -65,19 +65,42 @@
             Search
         </button>
 
-        <p v-if="isGeneratingRoute">
+        <span v-if="isGeneratingRoute">
             Generating Route...
-        </p>
-        <p v-if="!isGeneratingRoute && !foundTrip">
-            No Route Found
-        </p>
-        <p v-if="foundTrip">
-            Found Trip -
-            Aircraft: {{ generatedAircraftType }}, Route:
-            <div v-for="leg in foundTrip.legs">
-                <p>{{ leg.start }} -> {{ leg.end }}</p>
-            </div>
-        </p>
+        </span>
+        <div  v-if="foundTrip">
+            <span>
+                Found Trip -
+                Aircraft: {{ generatedAircraftType }}
+                <br>
+                Route:
+            </span>
+            <table>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                    <th>Duration</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="(leg, index) in foundTrip?.legs" :key="leg.start + leg.end">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ leg.start }}</td>
+                    <td>{{ leg.end }}</td>
+                    <td>
+                        {{ routes?.find((route) => route.icao === leg.start)?.destinations?.find((destination) => destination.icao === leg.end)?.time }}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div v-else>
+            No trip found
+            {{ generatedAircraftType ? `for generated aircraft: ${generatedAircraftType} and ${generatedDeparture} departure airport` : '' }}
+            , it might take a few attempts or try changing parameters. Try Again.
+        </div>
     </div>
 </template>
 
@@ -124,7 +147,11 @@
             //@ts-ignore
             ? FilterUtils.filterDataByCallsign(allRoutes.value, selectedCallsign.value)
             : allRoutes.value;
-        return FilterUtils.filterDataByAircraft(routeFilteredByCallsing, selectedAircraft.value);
+
+        const routeFilteredByHours = hoursLimit.value !== 0
+            ? FilterUtils.filterDataByHours(routeFilteredByCallsing, hoursLimit.value)
+            : routeFilteredByCallsing;
+        return FilterUtils.filterDataByAircraft(routeFilteredByHours, selectedAircraft.value);
     });
 
     //@ts-ignore
@@ -151,6 +178,7 @@
 
     const foundTrip = ref<Trip | null>(null);
     const generatedAircraftType = ref<string | null>(null);
+    const generatedDeparture = ref<string | null>(null);
 
     const isGeneratingRoute = ref(false);
 
@@ -224,6 +252,7 @@
 
                     foundTrip.value = tripsData.trip;
                     generatedAircraftType.value = tripsData.aircraftType;
+                    generatedDeparture.value = destinationAirport;
                 } catch (error) {
                     console.log({ error });
                 } finally {

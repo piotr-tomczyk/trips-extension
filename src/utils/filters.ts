@@ -68,4 +68,31 @@ export class FilterUtils {
 
         return filteredRoutes;
     }
+
+    static filterDataByHours(data :Route[], hoursLimit: number) {
+        const filteredRoutes: Route[] = [];
+        data.forEach(route => {
+            const filteredDestinations = route.destinations.filter((destination) => {
+                    return FilterUtils.convertTimeToHours(destination.time) <= hoursLimit;
+            });
+
+            if (filteredDestinations.length > 0) {
+                filteredRoutes.push({
+                    ...route,
+                    destinations: filteredDestinations
+                });
+            }
+        });
+
+        return filteredRoutes;
+    }
+
+    static convertTimeToHours(timeString: string): number {
+        const [hoursStr, minutesStr, secondsStr] = timeString.split(':');
+        const hours = parseFloat(hoursStr);
+        const minutes = parseFloat(minutesStr) / 60;
+        const seconds = parseFloat(secondsStr) / 3600;
+
+        return hours + minutes + seconds;
+    }
 }
