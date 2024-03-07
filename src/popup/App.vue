@@ -213,6 +213,9 @@
 
     watch(selectedAirline, () => {
         selectedCallsign.value = availableCallsigns.value[0] ?? null;
+        selectedDeparture.value = null;
+        selectedDestination.value = null;
+        selectedAircraft.value = null;
         chrome.storage.sync.get(selectedAirline.value, (result) => {
             if (result && Object.keys(result).length > 0) {
                 const parsedResult = JSON.parse(result?.[selectedAirline.value]);
@@ -234,7 +237,6 @@
                 selectedAirline.value = result.lastVisited ?? airlines.SPIRIT;
                 chrome.storage.sync.get(selectedAirline.value, (result) => {
                     if (result && Object.keys(result).length > 0) {
-                        console.log({ result });
                         const parsedResult = JSON.parse(result?.[selectedAirline.value]);
                         foundTrip.value = parsedResult?.trip ?? null;
                         generatedAircraftType.value = parsedResult?.aircraftType ?? null;
