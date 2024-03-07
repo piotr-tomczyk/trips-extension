@@ -235,6 +235,7 @@
         chrome.storage.sync.get('lastVisited', (result) => {
             if (result) {
                 selectedAirline.value = result.lastVisited ?? airlines.SPIRIT;
+                selectedCallsign.value = availableCallsigns.value[0] ?? null;
                 chrome.storage.sync.get(selectedAirline.value, (result) => {
                     if (result && Object.keys(result).length > 0) {
                         const parsedResult = JSON.parse(result?.[selectedAirline.value]);
