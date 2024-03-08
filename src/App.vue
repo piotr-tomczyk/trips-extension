@@ -364,8 +364,24 @@
         font-family: Arial, sans-serif;
         box-sizing: border-box;
         font-size: 12px;
-        border-radius: 5px;
         margin: 20px;
+    }
+    @media (min-width: 600px) {
+        .popup-body {
+            border-radius: 5px;
+        }
+
+        .spirit-theme {
+            border: 1px solid #666666;
+        }
+
+        .american-theme {
+            border: 1px solid #333333;
+        }
+
+        .united-theme {
+            border: 1px solid #005599; /* Slightly darker blue */
+        }
     }
 
     .form-container {
@@ -452,7 +468,6 @@
     .spirit-theme {
         background-color: #EFEFEF;
         color: #000;
-        border: 1px solid #666666; /* Medium gray */
     }
 
     .spirit-theme table th {
@@ -476,7 +491,6 @@
     .american-theme {
         background-color: #F9F9FC;
         color: #000;
-        border: 1px solid #333333; /* Dark gray */
     }
 
     .american-theme table th {
@@ -500,7 +514,6 @@
     .united-theme {
         background-color: #DEE6FC;
         color: #000;
-        border: 1px solid #005599; /* Slightly darker blue */
     }
 
     .united-theme table th {
