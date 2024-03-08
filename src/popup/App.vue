@@ -186,7 +186,12 @@
         const routeFilteredByHours = hoursLimit.value !== 0
             ? FilterUtils.filterDataByHours(routeFilteredByCallsing, hoursLimit.value)
             : routeFilteredByCallsing;
-        return FilterUtils.filterDataByAircraft(routeFilteredByHours, selectedAircraft.value);
+
+        const routesFilteredByAircraft = selectedAircraft.value
+            ? FilterUtils.filterDataByAircraft(routeFilteredByHours, selectedAircraft.value)
+            : routeFilteredByHours;
+
+        return routesFilteredByAircraft;
     });
 
     //@ts-ignore
@@ -239,6 +244,17 @@
             .catch((error) => console.log({ error }));
     }, );
 
+    watch(selectedAircraft, () => {
+        selectedDeparture.value = null;
+        selectedDestination.value = null;
+    });
+
+    watch(selectedCallsign, () => {
+        selectedDeparture.value = null;
+        selectedDestination.value = null;
+        selectedAircraft.value = null;
+    });
+
     onMounted(() => {
         chrome.storage.sync.get('lastVisited', (result) => {
             if (result) {
@@ -259,6 +275,11 @@
     });
 
     function calculateLegs() {
+        console.log({
+            selectedDeparture: selectedDeparture.value,
+            selectedDestination: selectedDestination.value,
+            selectedAircraft: selectedAircraft.value
+        });
         if (isGeneratingRoute.value) {
             return;
         }
@@ -422,6 +443,8 @@
         border: 1px solid #d43f3a;
         padding: 10px;
         margin: 15px 0;
+        max-width: 380px;
+        word-wrap: break-word;
     }
 
     .spirit-theme {
