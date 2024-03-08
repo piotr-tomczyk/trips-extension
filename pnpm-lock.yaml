@@ -16,6 +16,9 @@ devDependencies:
   '@types/chrome':
     specifier: ^0.0.262
     version: 0.0.262
+  '@types/node':
+    specifier: ^20.11.25
+    version: 20.11.25
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
     version: 5.0.4(vite@5.1.5)(vue@3.4.21)
@@ -24,7 +27,7 @@ devDependencies:
     version: 5.3.3
   vite:
     specifier: ^5.1.5
-    version: 5.1.5
+    version: 5.1.5(@types/node@20.11.25)
   vue-tsc:
     specifier: ^2.0.5
     version: 2.0.5(typescript@5.3.3)
@@ -447,6 +450,12 @@ packages:
     resolution: {integrity: sha512-RpQH4rXLuvTXKR0zqHq3go0RVXYv/YVqv4TnPH95VbwUxZdQlK1EtcMvQvMpDngHbt13Csh9Z4qT9AbkiQH5BA==}
     dev: true
 
+  /@types/node@20.11.25:
+    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
   /@vitejs/plugin-vue@5.0.4(vite@5.1.5)(vue@3.4.21):
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -454,7 +463,7 @@ packages:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.1.5
+      vite: 5.1.5(@types/node@20.11.25)
       vue: 3.4.21(typescript@5.3.3)
     dev: true
 
@@ -1049,12 +1058,16 @@ packages:
     resolution: {integrity: sha512-pGtPAQmLwh+R9w81WVHzui1FfedpQWQpiaIIfPCwhtsBez4q6DYbJFfyXPVHPUTNFnedAvNEnkoFiLuhXIR94w==}
     dev: true
 
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
+
   /universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /vite@5.1.5:
+  /vite@5.1.5(@types/node@20.11.25):
     resolution: {integrity: sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -1082,6 +1095,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.11.25
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.0

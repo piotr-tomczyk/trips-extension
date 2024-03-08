@@ -136,17 +136,17 @@
 <script setup lang="ts">
     import { ref, computed, watch, onMounted } from 'vue';
 
-    import spiritData from '../static/spirit.json';
-    import aalData from '../static/aal.json';
-    import ualData from '../static/ual.json';
-    import spiritAircrafts from '../static/spiritAircrafts.json';
-    import aalAircrafts from '../static/aalAircrafts.json';
-    import ualAircrafts from '../static/unitedAircrafts.json';
+    import spiritData from './static/spirit.json';
+    import aalData from './static/aal.json';
+    import ualData from './static/ual.json';
+    import spiritAircrafts from './static/spiritAircrafts.json';
+    import aalAircrafts from './static/aalAircrafts.json';
+    import ualAircrafts from './static/unitedAircrafts.json';
 
-    import type { Trip, Route } from '../types/types';
-    import { airlines } from '../types/types';
-    import { TripService } from '../services/trip-service';
-    import { FilterUtils } from '../utils/filters';
+    import type { Trip, Route } from './types/types';
+    import { airlines } from './types/types';
+    import { TripService } from './services/trip-service';
+    import { FilterUtils } from './utils/filters';
 
     const aircrafts = computed<string[]>(() => {
         switch(selectedAirline.value) {
@@ -213,7 +213,7 @@
     const searchModes = ref(['Legs', 'Trips']);
     const selectedSearchMode = ref('Trips');
 
-    const selectedAirline = ref(airlines.SPIRIT);
+    const selectedAirline = ref<string>(airlines.SPIRIT);
     const airlinesOptions = ref([airlines.SPIRIT, airlines.UNITED, airlines.AMERICAN]);
 
     const foundTrip = ref<Trip | null>(null);
@@ -229,19 +229,17 @@
         selectedDeparture.value = null;
         selectedDestination.value = null;
         selectedAircraft.value = null;
-        chrome.storage.sync.get(selectedAirline.value, (result) => {
-            if (result && Object.keys(result)?.length > 0) {
-                const parsedResult = JSON.parse(result?.[selectedAirline.value]);
-                foundTrip.value = parsedResult?.trip ?? null;
-                generatedAircraftType.value = parsedResult?.aircraftType ?? null;
-            } else {
-                foundTrip.value = null;
-                generatedAircraftType.value = null;
-            }
-        });
-        chrome.storage.sync.set({ 'lastVisited': selectedAirline.value })
-            .then(() => {})
-            .catch((error) => console.log({ error }));
+
+        const tripData = localStorage.getItem(selectedAirline.value);
+        if (tripData) {
+            const parsedResult = JSON.parse(tripData);
+            foundTrip.value = parsedResult?.trip ?? null;
+            generatedAircraftType.value = parsedResult?.aircraftType ?? null;
+        } else {
+            foundTrip.value = null;
+            generatedAircraftType.value = null;
+        }
+        localStorage.setItem('lastVisited', selectedAirline.value);
     }, );
 
     watch(selectedAircraft, () => {
@@ -256,22 +254,25 @@
     });
 
     onMounted(() => {
-        chrome.storage.sync.get('lastVisited', (result) => {
-            if (result) {
-                selectedAirline.value = result.lastVisited ?? airlines.SPIRIT;
-                selectedCallsign.value = availableCallsigns.value[0] ?? null;
-                chrome.storage.sync.get(selectedAirline.value, (result) => {
-                    if (result && Object.keys(result)?.length > 0) {
-                        const parsedResult = JSON.parse(result?.[selectedAirline.value]);
-                        foundTrip.value = parsedResult?.trip ?? null;
-                        generatedAircraftType.value = parsedResult?.aircraftType ?? null;
-                    } else {
-                        foundTrip.value = null;
-                        generatedAircraftType.value = null;
-                    }
-                });
+        const lastVistedAirline = localStorage.getItem('lastVisited');
+        if (lastVistedAirline) {
+            selectedAirline.value = lastVistedAirline;
+            selectedCallsign.value = availableCallsigns.value[0];
+            const tripData = localStorage.getItem(selectedAirline.value);
+            if (tripData) {
+                const parsedResult = JSON.parse(tripData);
+                foundTrip.value = parsedResult?.trip ?? null;
+                generatedAircraftType.value = parsedResult?.aircraftType ?? null;
+            } else {
+                foundTrip.value = null;
+                generatedAircraftType.value = null;
             }
-        });
+        } else {
+            selectedAirline.value = airlines.SPIRIT;
+            selectedCallsign.value = availableCallsigns.value[0];
+            foundTrip.value = null;
+            generatedAircraftType.value = null;
+        }
     });
 
     function calculateLegs() {
@@ -322,9 +323,7 @@
                     }
 
                     if (tripsData?.trip) {
-                        chrome.storage.sync.set({
-                            [selectedAirline.value]: JSON.stringify(tripsData)
-                        }).then(() => {}).catch((error) => console.log({ error }));
+                        localStorage.setItem(selectedAirline.value, JSON.stringify(tripsData));
                     }
 
                     foundTrip.value = tripsData?.trip ?? null;
