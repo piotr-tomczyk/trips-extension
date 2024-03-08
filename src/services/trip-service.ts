@@ -39,11 +39,12 @@ export class TripService {
                 return;
             }
 
-            const destinations = airports[startAirport].destinations.slice();
-            shuffleArray(destinations);
+            const destinations = airports[startAirport]?.destinations?.slice();
             if (!destinations) {
                 return;
             }
+            shuffleArray(destinations);
+
             for (const destination of destinations) {
                 if (!airports?.[startAirport]?.aircrafts?.includes(aircraftType) ||
                     !airports?.[destination.icao]?.aircrafts.includes(aircraftType)) {
