@@ -8,7 +8,7 @@
     "MD82",
     "MD83"
   ],
-  "generated_at": "2024-05-18 05:21:53",
+  "generated_at": "2024-08-13 18:40:28",
   "routes": [
     {
       "id": 10083,
@@ -21,7 +21,7 @@
       "destinations": [
         {
           "id": 10097,
-          "pair_id": 2561267,
+          "pair_id": 2693368,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -34,7 +34,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560650,
+          "pair_id": 2692727,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -47,7 +47,7 @@
         },
         {
           "id": 10122,
-          "pair_id": 2560654,
+          "pair_id": 2692731,
           "name": "Fort Myers, FL",
           "icao": "KRSW",
           "iata": "RSW",
@@ -60,7 +60,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2560652,
+          "pair_id": 2692729,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -73,7 +73,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560651,
+          "pair_id": 2692728,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -86,7 +86,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560655,
+          "pair_id": 2692732,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -99,7 +99,7 @@
         },
         {
           "id": 10115,
-          "pair_id": 2560653,
+          "pair_id": 2692730,
           "name": "West Palm Beach, FL",
           "icao": "KPBI",
           "iata": "PBI",
@@ -132,7 +132,7 @@
       "destinations": [
         {
           "id": 10090,
-          "pair_id": 2560657,
+          "pair_id": 2692734,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -145,7 +145,7 @@
         },
         {
           "id": 10088,
-          "pair_id": 2560656,
+          "pair_id": 2692733,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -158,7 +158,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560658,
+          "pair_id": 2692735,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -171,7 +171,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2560659,
+          "pair_id": 2692736,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -184,7 +184,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560661,
+          "pair_id": 2692738,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -197,7 +197,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2560662,
+          "pair_id": 2692739,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -210,7 +210,7 @@
         },
         {
           "id": 10106,
-          "pair_id": 2560665,
+          "pair_id": 2692742,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -223,7 +223,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560663,
+          "pair_id": 2692740,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -236,7 +236,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560664,
+          "pair_id": 2692741,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -248,21 +248,8 @@
           "time": "04:40:42"
         },
         {
-          "id": 46848,
-          "pair_id": 2560667,
-          "name": "Miami, FL",
-          "icao": "KMIA",
-          "iata": "MIA",
-          "latitude": "25.7931995",
-          "longitude": "-80.2906036",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 517,
-          "time": "01:52:43"
-        },
-        {
           "id": 10110,
-          "pair_id": 2560668,
+          "pair_id": 2692744,
           "name": "Minneapolis\/Saint Paul, MN",
           "icao": "KMSP",
           "iata": "MSP",
@@ -275,7 +262,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2560669,
+          "pair_id": 2692745,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -288,7 +275,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560660,
+          "pair_id": 2692737,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -301,7 +288,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2560670,
+          "pair_id": 2692746,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -314,7 +301,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560666,
+          "pair_id": 2692743,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -327,7 +314,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2560671,
+          "pair_id": 2692747,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -340,7 +327,7 @@
         },
         {
           "id": 10154,
-          "pair_id": 2560673,
+          "pair_id": 2692749,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -353,7 +340,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560672,
+          "pair_id": 2692748,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -384,7 +371,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2560675,
+          "pair_id": 2692751,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -397,7 +384,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560676,
+          "pair_id": 2692752,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -410,7 +397,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560674,
+          "pair_id": 2692750,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -423,7 +410,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560677,
+          "pair_id": 2692753,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -453,21 +440,8 @@
       "longitude": "-72.6880660",
       "destinations": [
         {
-          "id": 10099,
-          "pair_id": 2560678,
-          "name": "Fort Lauderdale, FL",
-          "icao": "KFLL",
-          "iata": "FLL",
-          "latitude": "26.0725990",
-          "longitude": "-80.1527020",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1021,
-          "time": "03:05:05"
-        },
-        {
           "id": 10112,
-          "pair_id": 2560680,
+          "pair_id": 2692754,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -477,19 +451,6 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 577,
           "time": "02:01:20"
-        },
-        {
-          "id": 10108,
-          "pair_id": 2560679,
-          "name": "Orlando, FL",
-          "icao": "KMCO",
-          "iata": "MCO",
-          "latitude": "28.4293995",
-          "longitude": "-81.3089981",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 913,
-          "time": "02:49:34"
         }
       ],
       "aircrafts": [
@@ -511,7 +472,7 @@
       "destinations": [
         {
           "id": 10088,
-          "pair_id": 2560681,
+          "pair_id": 2692755,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -524,7 +485,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560682,
+          "pair_id": 2692756,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -536,8 +497,21 @@
           "time": "01:57:01"
         },
         {
+          "id": 10097,
+          "pair_id": 2692757,
+          "name": "Detroit, MI",
+          "icao": "KDTW",
+          "iata": "DTW",
+          "latitude": "42.2123985",
+          "longitude": "-83.3534012",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 397,
+          "time": "01:35:29"
+        },
+        {
           "id": 10099,
-          "pair_id": 2560684,
+          "pair_id": 2692759,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -550,7 +524,7 @@
         },
         {
           "id": 10106,
-          "pair_id": 2560687,
+          "pair_id": 2692762,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -563,7 +537,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560685,
+          "pair_id": 2692760,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -576,7 +550,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560686,
+          "pair_id": 2692761,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -589,7 +563,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2560689,
+          "pair_id": 2692764,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -602,7 +576,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560683,
+          "pair_id": 2692758,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -615,7 +589,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560688,
+          "pair_id": 2692763,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -628,7 +602,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2560690,
+          "pair_id": 2692765,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -659,7 +633,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560692,
+          "pair_id": 2692767,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -672,7 +646,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2560694,
+          "pair_id": 2692769,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -685,7 +659,7 @@
         },
         {
           "id": 106305,
-          "pair_id": 2560695,
+          "pair_id": 2692770,
           "name": "Charleston, SC",
           "icao": "KCHS",
           "iata": "CHS",
@@ -698,7 +672,7 @@
         },
         {
           "id": 10093,
-          "pair_id": 2560696,
+          "pair_id": 2692771,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -710,8 +684,21 @@
           "time": "02:09:13"
         },
         {
+          "id": 10094,
+          "pair_id": 2692772,
+          "name": "Columbus, OH",
+          "icao": "KCMH",
+          "iata": "CMH",
+          "latitude": "39.9980010",
+          "longitude": "-82.8918990",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 555,
+          "time": "01:58:10"
+        },
+        {
           "id": 10096,
-          "pair_id": 2560697,
+          "pair_id": 2692773,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -723,8 +710,21 @@
           "time": "03:52:53"
         },
         {
+          "id": 10097,
+          "pair_id": 2692774,
+          "name": "Detroit, MI",
+          "icao": "KDTW",
+          "iata": "DTW",
+          "latitude": "42.2123985",
+          "longitude": "-83.3534012",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 548,
+          "time": "01:57:10"
+        },
+        {
           "id": 10099,
-          "pair_id": 2560699,
+          "pair_id": 2692776,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -736,21 +736,8 @@
           "time": "03:12:58"
         },
         {
-          "id": 10122,
-          "pair_id": 2560705,
-          "name": "Fort Myers, FL",
-          "icao": "KRSW",
-          "iata": "RSW",
-          "latitude": "26.5361996",
-          "longitude": "-81.7552032",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1086,
-          "time": "03:14:25"
-        },
-        {
           "id": 10100,
-          "pair_id": 2560700,
+          "pair_id": 2692777,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -762,21 +749,21 @@
           "time": "03:57:20"
         },
         {
-          "id": 46848,
-          "pair_id": 2560702,
-          "name": "Miami, FL",
-          "icao": "KMIA",
-          "iata": "MIA",
-          "latitude": "25.7931995",
-          "longitude": "-80.2906036",
+          "id": 10107,
+          "pair_id": 2692778,
+          "name": "Kansas City, MO",
+          "icao": "KMCI",
+          "iata": "MCI",
+          "latitude": "39.2976000",
+          "longitude": "-94.7138980",
           "callsigns": "NKS",
           "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1094,
-          "time": "03:15:33"
+          "distance": 1088,
+          "time": "03:14:42"
         },
         {
           "id": 10112,
-          "pair_id": 2560703,
+          "pair_id": 2692780,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -789,7 +776,7 @@
         },
         {
           "id": 10087,
-          "pair_id": 2560693,
+          "pair_id": 2692768,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -802,7 +789,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560698,
+          "pair_id": 2692775,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -815,7 +802,7 @@
         },
         {
           "id": 88010,
-          "pair_id": 2560704,
+          "pair_id": 2692782,
           "name": "Norfolk, VA",
           "icao": "KORF",
           "iata": "ORF",
@@ -827,8 +814,21 @@
           "time": "01:36:47"
         },
         {
+          "id": 10157,
+          "pair_id": 2692781,
+          "name": "ORD-Chicago, IL",
+          "icao": "KORD",
+          "iata": "ORD",
+          "latitude": "41.9786000",
+          "longitude": "-87.9048000",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 751,
+          "time": "02:26:19"
+        },
+        {
           "id": 10108,
-          "pair_id": 2560701,
+          "pair_id": 2692779,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -840,8 +840,21 @@
           "time": "02:58:20"
         },
         {
+          "id": 10119,
+          "pair_id": 2692783,
+          "name": "Pittsburgh, PA",
+          "icao": "KPIT",
+          "iata": "PIT",
+          "latitude": "40.4915009",
+          "longitude": "-80.2329025",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 430,
+          "time": "01:40:13"
+        },
+        {
           "id": 10154,
-          "pair_id": 2560707,
+          "pair_id": 2692784,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -851,19 +864,6 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 1458,
           "time": "04:07:49"
-        },
-        {
-          "id": 10127,
-          "pair_id": 2560706,
-          "name": "Tampa, FL",
-          "icao": "KTPA",
-          "iata": "TPA",
-          "latitude": "27.9755001",
-          "longitude": "-82.5332031",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1030,
-          "time": "03:06:22"
         }
       ],
       "aircrafts": [
@@ -885,7 +885,7 @@
       "destinations": [
         {
           "id": 10102,
-          "pair_id": 2560708,
+          "pair_id": 2692785,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -898,7 +898,7 @@
         },
         {
           "id": 10114,
-          "pair_id": 2560709,
+          "pair_id": 2692786,
           "name": "Oakland, CA",
           "icao": "KOAK",
           "iata": "OAK",
@@ -908,6 +908,19 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 283,
           "time": "01:19:07"
+        },
+        {
+          "id": 10116,
+          "pair_id": 2692787,
+          "name": "Portland, OR",
+          "icao": "KPDX",
+          "iata": "PDX",
+          "latitude": "45.5886993",
+          "longitude": "-122.5979996",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 710,
+          "time": "02:20:25"
         }
       ],
       "aircrafts": [
@@ -929,7 +942,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560710,
+          "pair_id": 2692788,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -942,7 +955,7 @@
         },
         {
           "id": 10088,
-          "pair_id": 2560711,
+          "pair_id": 2692789,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -955,7 +968,7 @@
         },
         {
           "id": 10136,
-          "pair_id": 2560724,
+          "pair_id": 2692803,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -968,7 +981,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560712,
+          "pair_id": 2692790,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -981,7 +994,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560713,
+          "pair_id": 2692791,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -994,7 +1007,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2560714,
+          "pair_id": 2692792,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -1007,7 +1020,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560715,
+          "pair_id": 2692793,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -1020,7 +1033,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560716,
+          "pair_id": 2692794,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -1033,7 +1046,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2560718,
+          "pair_id": 2692796,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -1045,21 +1058,8 @@
           "time": "02:36:39"
         },
         {
-          "id": 10112,
-          "pair_id": 2560720,
-          "name": "Myrtle Beach, SC",
-          "icao": "KMYR",
-          "iata": "MYR",
-          "latitude": "33.6796989",
-          "longitude": "-78.9282990",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 347,
-          "time": "01:28:18"
-        },
-        {
           "id": 10111,
-          "pair_id": 2560719,
+          "pair_id": 2692797,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -1072,7 +1072,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560717,
+          "pair_id": 2692795,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -1085,7 +1085,7 @@
         },
         {
           "id": 10116,
-          "pair_id": 2560721,
+          "pair_id": 2692798,
           "name": "Portland, OR",
           "icao": "KPDX",
           "iata": "PDX",
@@ -1097,8 +1097,21 @@
           "time": "05:31:49"
         },
         {
+          "id": 10125,
+          "pair_id": 2692801,
+          "name": "Sacramento, CA",
+          "icao": "KSMF",
+          "iata": "SMF",
+          "latitude": "38.6954002",
+          "longitude": "-121.5910034",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 2075,
+          "time": "05:36:25"
+        },
+        {
           "id": 10123,
-          "pair_id": 2560722,
+          "pair_id": 2692799,
           "name": "San Diego, CA",
           "icao": "KSAN",
           "iata": "SAN",
@@ -1110,8 +1123,21 @@
           "time": "05:24:04"
         },
         {
+          "id": 121856,
+          "pair_id": 2692800,
+          "name": "San Jose, CA",
+          "icao": "KSJC",
+          "iata": "SJC",
+          "latitude": "37.3624520",
+          "longitude": "-121.9291880",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 2113,
+          "time": "05:41:52"
+        },
+        {
           "id": 10154,
-          "pair_id": 2560725,
+          "pair_id": 2692804,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -1124,7 +1150,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560723,
+          "pair_id": 2692802,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -1155,7 +1181,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2560731,
+          "pair_id": 2692811,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -1168,7 +1194,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560732,
+          "pair_id": 2692812,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -1181,7 +1207,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2560734,
+          "pair_id": 2692814,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -1194,7 +1220,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560733,
+          "pair_id": 2692813,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -1225,7 +1251,7 @@
       "destinations": [
         {
           "id": 10088,
-          "pair_id": 2560735,
+          "pair_id": 2692815,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -1238,7 +1264,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560736,
+          "pair_id": 2692816,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -1251,7 +1277,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560738,
+          "pair_id": 2692818,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -1263,8 +1289,21 @@
           "time": "01:57:27"
         },
         {
+          "id": 10100,
+          "pair_id": 2692819,
+          "name": "IAH-Houston, TX",
+          "icao": "KIAH",
+          "iata": "IAH",
+          "latitude": "29.9843998",
+          "longitude": "-95.3414001",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 791,
+          "time": "02:32:03"
+        },
+        {
           "id": 10106,
-          "pair_id": 2560741,
+          "pair_id": 2692822,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -1277,7 +1316,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560739,
+          "pair_id": 2692820,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -1290,7 +1329,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560740,
+          "pair_id": 2692821,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -1303,7 +1342,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2560743,
+          "pair_id": 2692824,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -1316,7 +1355,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560737,
+          "pair_id": 2692817,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -1329,7 +1368,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2560744,
+          "pair_id": 2692825,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -1342,7 +1381,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560742,
+          "pair_id": 2692823,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -1355,7 +1394,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560745,
+          "pair_id": 2692826,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -1385,8 +1424,34 @@
       "longitude": "-82.8918990",
       "destinations": [
         {
+          "id": 10088,
+          "pair_id": 2692827,
+          "name": "Boston, MA",
+          "icao": "KBOS",
+          "iata": "BOS",
+          "latitude": "42.3643000",
+          "longitude": "-71.0052030",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 555,
+          "time": "01:58:10"
+        },
+        {
+          "id": 10096,
+          "pair_id": 2692828,
+          "name": "Dallas\/Fort Worth, TX",
+          "icao": "KDFW",
+          "iata": "DFW",
+          "latitude": "32.8968010",
+          "longitude": "-97.0380020",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 803,
+          "time": "02:33:47"
+        },
+        {
           "id": 10099,
-          "pair_id": 2560746,
+          "pair_id": 2692830,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -1399,7 +1464,7 @@
         },
         {
           "id": 10106,
-          "pair_id": 2560749,
+          "pair_id": 2692833,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -1412,7 +1477,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560747,
+          "pair_id": 2692831,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -1425,7 +1490,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560748,
+          "pair_id": 2692832,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -1437,21 +1502,21 @@
           "time": "04:46:44"
         },
         {
-          "id": 10112,
-          "pair_id": 2560751,
-          "name": "Myrtle Beach, SC",
-          "icao": "KMYR",
-          "iata": "MYR",
-          "latitude": "33.6796989",
-          "longitude": "-78.9282990",
+          "id": 10098,
+          "pair_id": 2692829,
+          "name": "Newark, NJ",
+          "icao": "KEWR",
+          "iata": "EWR",
+          "latitude": "40.6925010",
+          "longitude": "-74.1687010",
           "callsigns": "NKS",
           "types": "A20N,A21N,A319,A320,A321",
-          "distance": 424,
-          "time": "01:39:22"
+          "distance": 401,
+          "time": "01:36:03"
         },
         {
           "id": 10108,
-          "pair_id": 2560750,
+          "pair_id": 2692834,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -1482,7 +1547,7 @@
       "destinations": [
         {
           "id": 10097,
-          "pair_id": 2561272,
+          "pair_id": 2693373,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -1495,7 +1560,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561271,
+          "pair_id": 2693372,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -1523,7 +1588,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560752,
+          "pair_id": 2692835,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -1536,7 +1601,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2560755,
+          "pair_id": 2692838,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -1549,7 +1614,7 @@
         },
         {
           "id": 10088,
-          "pair_id": 2560754,
+          "pair_id": 2692837,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -1562,7 +1627,7 @@
         },
         {
           "id": 10136,
-          "pair_id": 2560772,
+          "pair_id": 2692860,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -1575,7 +1640,7 @@
         },
         {
           "id": 10093,
-          "pair_id": 2560756,
+          "pair_id": 2692839,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -1587,8 +1652,21 @@
           "time": "02:34:56"
         },
         {
+          "id": 10094,
+          "pair_id": 2692840,
+          "name": "Columbus, OH",
+          "icao": "KCMH",
+          "iata": "CMH",
+          "latitude": "39.9980010",
+          "longitude": "-82.8918990",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 803,
+          "time": "02:33:47"
+        },
+        {
           "id": 10097,
-          "pair_id": 2560757,
+          "pair_id": 2692841,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -1601,7 +1679,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560759,
+          "pair_id": 2692843,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -1613,8 +1691,21 @@
           "time": "02:57:54"
         },
         {
+          "id": 10107,
+          "pair_id": 2692847,
+          "name": "Kansas City, MO",
+          "icao": "KMCI",
+          "iata": "MCI",
+          "latitude": "39.2976000",
+          "longitude": "-94.7138980",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 400,
+          "time": "01:35:55"
+        },
+        {
           "id": 10106,
-          "pair_id": 2560762,
+          "pair_id": 2692846,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -1627,7 +1718,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560760,
+          "pair_id": 2692844,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -1640,7 +1731,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560761,
+          "pair_id": 2692845,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -1652,21 +1743,21 @@
           "time": "03:12:07"
         },
         {
-          "id": 13085,
-          "pair_id": 2560769,
-          "name": "Louisville, KY",
-          "icao": "KSDF",
-          "iata": "SDF",
-          "latitude": "38.1744000",
-          "longitude": "-85.7360000",
+          "id": 82588,
+          "pair_id": 2692849,
+          "name": "Memphis, TN",
+          "icao": "KMEM",
+          "iata": "MEM",
+          "latitude": "35.0424004",
+          "longitude": "-89.9766998",
           "callsigns": "NKS",
           "types": "A20N,A21N,A319,A320,A321",
-          "distance": 636,
-          "time": "02:09:48"
+          "distance": 374,
+          "time": "01:32:11"
         },
         {
           "id": 46848,
-          "pair_id": 2560764,
+          "pair_id": 2692850,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -1678,8 +1769,21 @@
           "time": "02:58:02"
         },
         {
+          "id": 21491,
+          "pair_id": 2692851,
+          "name": "Milwaukee, WI",
+          "icao": "KMKE",
+          "iata": "MKE",
+          "latitude": "42.9472008",
+          "longitude": "-87.8965988",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 741,
+          "time": "02:24:52"
+        },
+        {
           "id": 10087,
-          "pair_id": 2560753,
+          "pair_id": 2692836,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -1692,7 +1796,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2560765,
+          "pair_id": 2692852,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -1705,7 +1809,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560758,
+          "pair_id": 2692842,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -1718,7 +1822,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2560766,
+          "pair_id": 2692853,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -1731,7 +1835,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560763,
+          "pair_id": 2692848,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -1744,7 +1848,7 @@
         },
         {
           "id": 20970,
-          "pair_id": 2560768,
+          "pair_id": 2692856,
           "name": "Pensacola, FL",
           "icao": "KPNS",
           "iata": "PNS",
@@ -1756,8 +1860,21 @@
           "time": "01:53:34"
         },
         {
+          "id": 10117,
+          "pair_id": 2692854,
+          "name": "Philadelphia, PA",
+          "icao": "KPHL",
+          "iata": "PHL",
+          "latitude": "39.8718987",
+          "longitude": "-75.2410965",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1129,
+          "time": "03:20:35"
+        },
+        {
           "id": 10118,
-          "pair_id": 2560767,
+          "pair_id": 2692855,
           "name": "Phoenix, AZ",
           "icao": "KPHX",
           "iata": "PHX",
@@ -1769,8 +1886,21 @@
           "time": "02:26:27"
         },
         {
+          "id": 94114,
+          "pair_id": 2692857,
+          "name": "San Antonio, TX",
+          "icao": "KSAT",
+          "iata": "SAT",
+          "latitude": "29.5337010",
+          "longitude": "-98.4698030",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 215,
+          "time": "01:09:21"
+        },
+        {
           "id": 121856,
-          "pair_id": 2560770,
+          "pair_id": 2692858,
           "name": "San Jose, CA",
           "icao": "KSJC",
           "iata": "SJC",
@@ -1783,7 +1913,7 @@
         },
         {
           "id": 10154,
-          "pair_id": 2560773,
+          "pair_id": 2692861,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -1796,7 +1926,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560771,
+          "pair_id": 2692859,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -1827,7 +1957,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560774,
+          "pair_id": 2692862,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -1840,7 +1970,7 @@
         },
         {
           "id": 10083,
-          "pair_id": 2561273,
+          "pair_id": 2693374,
           "name": "Atlantic City, NJ",
           "icao": "KACY",
           "iata": "ACY",
@@ -1852,21 +1982,8 @@
           "time": "01:40:22"
         },
         {
-          "id": 10090,
-          "pair_id": 2560776,
-          "name": "Baltimore, MD",
-          "icao": "KBWI",
-          "iata": "BWI",
-          "latitude": "39.1754000",
-          "longitude": "-76.6682970",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 354,
-          "time": "01:29:19"
-        },
-        {
           "id": 10088,
-          "pair_id": 2560775,
+          "pair_id": 2692864,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -1879,7 +1996,7 @@
         },
         {
           "id": 10136,
-          "pair_id": 2560792,
+          "pair_id": 2692881,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -1891,8 +2008,21 @@
           "time": "03:42:42"
         },
         {
+          "id": 106305,
+          "pair_id": 2692865,
+          "name": "Charleston, SC",
+          "icao": "KCHS",
+          "iata": "CHS",
+          "latitude": "32.8986020",
+          "longitude": "-80.0404970",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 580,
+          "time": "02:01:45"
+        },
+        {
           "id": 76730,
-          "pair_id": 2561276,
+          "pair_id": 2693377,
           "name": "DCA-Washington, DC",
           "icao": "KDCA",
           "iata": "DCA",
@@ -1905,7 +2035,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560777,
+          "pair_id": 2692866,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -1918,7 +2048,7 @@
         },
         {
           "id": 10095,
-          "pair_id": 2561274,
+          "pair_id": 2693375,
           "name": "Denver, CO",
           "icao": "KDEN",
           "iata": "DEN",
@@ -1931,7 +2061,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560779,
+          "pair_id": 2692868,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -1944,7 +2074,7 @@
         },
         {
           "id": 10122,
-          "pair_id": 2560790,
+          "pair_id": 2692879,
           "name": "Fort Myers, FL",
           "icao": "KRSW",
           "iata": "RSW",
@@ -1957,7 +2087,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2560780,
+          "pair_id": 2692869,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -1969,8 +2099,21 @@
           "time": "02:52:35"
         },
         {
+          "id": 10107,
+          "pair_id": 2692873,
+          "name": "Kansas City, MO",
+          "icao": "KMCI",
+          "iata": "MCI",
+          "latitude": "39.2976000",
+          "longitude": "-94.7138980",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 545,
+          "time": "01:56:44"
+        },
+        {
           "id": 10106,
-          "pair_id": 2560783,
+          "pair_id": 2692872,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -1983,7 +2126,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560781,
+          "pair_id": 2692870,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -1996,7 +2139,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560782,
+          "pair_id": 2692871,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -2008,21 +2151,8 @@
           "time": "04:44:43"
         },
         {
-          "id": 46848,
-          "pair_id": 2560785,
-          "name": "Miami, FL",
-          "icao": "KMIA",
-          "iata": "MIA",
-          "latitude": "25.7931995",
-          "longitude": "-80.2906036",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 997,
-          "time": "03:01:38"
-        },
-        {
           "id": 10110,
-          "pair_id": 2560786,
+          "pair_id": 2692875,
           "name": "Minneapolis\/Saint Paul, MN",
           "icao": "KMSP",
           "iata": "MSP",
@@ -2035,7 +2165,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2560788,
+          "pair_id": 2692877,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -2047,8 +2177,21 @@
           "time": "01:57:53"
         },
         {
+          "id": 10087,
+          "pair_id": 2692863,
+          "name": "Nashville, TN",
+          "icao": "KBNA",
+          "iata": "BNA",
+          "latitude": "36.1245003",
+          "longitude": "-86.6781998",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 397,
+          "time": "01:35:29"
+        },
+        {
           "id": 10111,
-          "pair_id": 2560787,
+          "pair_id": 2692876,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -2061,7 +2204,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560778,
+          "pair_id": 2692867,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -2074,7 +2217,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560784,
+          "pair_id": 2692874,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -2087,7 +2230,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2560789,
+          "pair_id": 2692878,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -2100,7 +2243,7 @@
         },
         {
           "id": 138034,
-          "pair_id": 2561275,
+          "pair_id": 2693376,
           "name": "Providence, RI",
           "icao": "KPVD",
           "iata": "PVD",
@@ -2113,7 +2256,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560791,
+          "pair_id": 2692880,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -2146,7 +2289,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560793,
+          "pair_id": 2692882,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -2159,7 +2302,7 @@
         },
         {
           "id": 10085,
-          "pair_id": 2560794,
+          "pair_id": 2692883,
           "name": "Austin, TX",
           "icao": "KAUS",
           "iata": "AUS",
@@ -2172,7 +2315,7 @@
         },
         {
           "id": 10088,
-          "pair_id": 2560796,
+          "pair_id": 2692885,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -2185,7 +2328,7 @@
         },
         {
           "id": 106305,
-          "pair_id": 2560797,
+          "pair_id": 2692886,
           "name": "Charleston, SC",
           "icao": "KCHS",
           "iata": "CHS",
@@ -2198,7 +2341,7 @@
         },
         {
           "id": 10093,
-          "pair_id": 2560798,
+          "pair_id": 2692887,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -2210,8 +2353,21 @@
           "time": "01:44:23"
         },
         {
+          "id": 10094,
+          "pair_id": 2692888,
+          "name": "Columbus, OH",
+          "icao": "KCMH",
+          "iata": "CMH",
+          "latitude": "39.9980010",
+          "longitude": "-82.8918990",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 401,
+          "time": "01:36:03"
+        },
+        {
           "id": 10096,
-          "pair_id": 2560799,
+          "pair_id": 2692889,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -2224,7 +2380,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2560800,
+          "pair_id": 2692890,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -2237,7 +2393,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560801,
+          "pair_id": 2692891,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -2250,7 +2406,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2560802,
+          "pair_id": 2692892,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -2263,7 +2419,7 @@
         },
         {
           "id": 10101,
-          "pair_id": 2560803,
+          "pair_id": 2692893,
           "name": "Indianapolis, IN",
           "icao": "KIND",
           "iata": "IND",
@@ -2275,8 +2431,21 @@
           "time": "01:58:36"
         },
         {
+          "id": 10107,
+          "pair_id": 2692896,
+          "name": "Kansas City, MO",
+          "icao": "KMCI",
+          "iata": "MCI",
+          "latitude": "39.2976000",
+          "longitude": "-94.7138980",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 946,
+          "time": "02:54:19"
+        },
+        {
           "id": 10102,
-          "pair_id": 2560804,
+          "pair_id": 2692894,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -2289,7 +2458,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560805,
+          "pair_id": 2692895,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -2301,21 +2470,8 @@
           "time": "05:43:44"
         },
         {
-          "id": 13085,
-          "pair_id": 2560814,
-          "name": "Louisville, KY",
-          "icao": "KSDF",
-          "iata": "SDF",
-          "latitude": "38.1744000",
-          "longitude": "-85.7360000",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 556,
-          "time": "01:58:19"
-        },
-        {
           "id": 46848,
-          "pair_id": 2560807,
+          "pair_id": 2692898,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -2328,7 +2484,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2560809,
+          "pair_id": 2692900,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -2341,7 +2497,7 @@
         },
         {
           "id": 10087,
-          "pair_id": 2560795,
+          "pair_id": 2692884,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -2354,7 +2510,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2560808,
+          "pair_id": 2692899,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -2366,8 +2522,21 @@
           "time": "03:03:56"
         },
         {
+          "id": 10157,
+          "pair_id": 2692902,
+          "name": "ORD-Chicago, IL",
+          "icao": "KORD",
+          "iata": "ORD",
+          "latitude": "41.9786000",
+          "longitude": "-87.9048000",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 623,
+          "time": "02:07:56"
+        },
+        {
           "id": 10114,
-          "pair_id": 2560810,
+          "pair_id": 2692901,
           "name": "Oakland, CA",
           "icao": "KOAK",
           "iata": "OAK",
@@ -2380,7 +2549,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560806,
+          "pair_id": 2692897,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -2393,7 +2562,7 @@
         },
         {
           "id": 10118,
-          "pair_id": 2560811,
+          "pair_id": 2692903,
           "name": "Phoenix, AZ",
           "icao": "KPHX",
           "iata": "PHX",
@@ -2406,7 +2575,7 @@
         },
         {
           "id": 10119,
-          "pair_id": 2560812,
+          "pair_id": 2692904,
           "name": "Pittsburgh, PA",
           "icao": "KPIT",
           "iata": "PIT",
@@ -2419,7 +2588,7 @@
         },
         {
           "id": 94114,
-          "pair_id": 2560813,
+          "pair_id": 2692905,
           "name": "San Antonio, TX",
           "icao": "KSAT",
           "iata": "SAT",
@@ -2429,19 +2598,6 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 1361,
           "time": "03:53:54"
-        },
-        {
-          "id": 10154,
-          "pair_id": 2560815,
-          "name": "San Juan, Puerto Rico",
-          "icao": "TJSJ",
-          "iata": "SJU",
-          "latitude": "18.4393997",
-          "longitude": "-66.0018005",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1400,
-          "time": "03:59:30"
         }
       ],
       "aircrafts": [
@@ -2463,7 +2619,7 @@
       "destinations": [
         {
           "id": 10143,
-          "pair_id": 2560865,
+          "pair_id": 2692956,
           "name": "Armenia, Colombia",
           "icao": "SKAR",
           "iata": "AXM",
@@ -2476,7 +2632,7 @@
         },
         {
           "id": 10084,
-          "pair_id": 2560817,
+          "pair_id": 2692907,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -2489,7 +2645,7 @@
         },
         {
           "id": 10083,
-          "pair_id": 2560816,
+          "pair_id": 2692906,
           "name": "Atlantic City, NJ",
           "icao": "KACY",
           "iata": "ACY",
@@ -2502,7 +2658,7 @@
         },
         {
           "id": 10085,
-          "pair_id": 2560818,
+          "pair_id": 2692908,
           "name": "Austin, TX",
           "icao": "KAUS",
           "iata": "AUS",
@@ -2515,7 +2671,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2560822,
+          "pair_id": 2692911,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -2528,7 +2684,7 @@
         },
         {
           "id": 10146,
-          "pair_id": 2560867,
+          "pair_id": 2692958,
           "name": "Barranquilla, Colombia",
           "icao": "SKBQ",
           "iata": "BAQ",
@@ -2541,7 +2697,7 @@
         },
         {
           "id": 10145,
-          "pair_id": 2560866,
+          "pair_id": 2692957,
           "name": "Bogota, Colombia",
           "icao": "SKBO",
           "iata": "BOG",
@@ -2554,7 +2710,7 @@
         },
         {
           "id": 10088,
-          "pair_id": 2560821,
+          "pair_id": 2692910,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -2567,7 +2723,7 @@
         },
         {
           "id": 10148,
-          "pair_id": 2560869,
+          "pair_id": 2692960,
           "name": "Cali, Colombia",
           "icao": "SKCL",
           "iata": "CLO",
@@ -2580,7 +2736,7 @@
         },
         {
           "id": 10136,
-          "pair_id": 2560859,
+          "pair_id": 2692949,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -2593,7 +2749,7 @@
         },
         {
           "id": 10140,
-          "pair_id": 2560863,
+          "pair_id": 2692953,
           "name": "Cap-Haitien, Haiti",
           "icao": "MTCH",
           "iata": "CAP",
@@ -2606,7 +2762,7 @@
         },
         {
           "id": 10147,
-          "pair_id": 2560868,
+          "pair_id": 2692959,
           "name": "Cartagena, Colombia",
           "icao": "SKCG",
           "iata": "CTG",
@@ -2619,7 +2775,7 @@
         },
         {
           "id": 106305,
-          "pair_id": 2560823,
+          "pair_id": 2692912,
           "name": "Charleston, SC",
           "icao": "KCHS",
           "iata": "CHS",
@@ -2632,7 +2788,7 @@
         },
         {
           "id": 10093,
-          "pair_id": 2560825,
+          "pair_id": 2692914,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -2645,7 +2801,7 @@
         },
         {
           "id": 10092,
-          "pair_id": 2560824,
+          "pair_id": 2692913,
           "name": "Cleveland, OH",
           "icao": "KCLE",
           "iata": "CLE",
@@ -2658,7 +2814,7 @@
         },
         {
           "id": 10094,
-          "pair_id": 2560826,
+          "pair_id": 2692915,
           "name": "Columbus, OH",
           "icao": "KCMH",
           "iata": "CMH",
@@ -2671,7 +2827,7 @@
         },
         {
           "id": 83158,
-          "pair_id": 2560856,
+          "pair_id": 2692946,
           "name": "Comayagua, Honduras",
           "icao": "MHPR",
           "iata": "XPL",
@@ -2684,7 +2840,7 @@
         },
         {
           "id": 76730,
-          "pair_id": 2561279,
+          "pair_id": 2693380,
           "name": "DCA-Washington, DC",
           "icao": "KDCA",
           "iata": "DCA",
@@ -2697,7 +2853,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560827,
+          "pair_id": 2692916,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -2710,7 +2866,7 @@
         },
         {
           "id": 10095,
-          "pair_id": 2561277,
+          "pair_id": 2693378,
           "name": "Denver, CO",
           "icao": "KDEN",
           "iata": "DEN",
@@ -2723,7 +2879,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2560828,
+          "pair_id": 2692917,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -2736,7 +2892,7 @@
         },
         {
           "id": 10131,
-          "pair_id": 2560854,
+          "pair_id": 2692944,
           "name": "Guatemala City, Guatemala",
           "icao": "MGGT",
           "iata": "GUA",
@@ -2749,7 +2905,7 @@
         },
         {
           "id": 10142,
-          "pair_id": 2560864,
+          "pair_id": 2692955,
           "name": "Guayaquil, Ecuador",
           "icao": "SEGU",
           "iata": "GYE",
@@ -2761,21 +2917,8 @@
           "time": "04:41:42"
         },
         {
-          "id": 10086,
-          "pair_id": 2560819,
-          "name": "Hartford, CT",
-          "icao": "KBDL",
-          "iata": "BDL",
-          "latitude": "41.9385100",
-          "longitude": "-72.6880660",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1021,
-          "time": "03:05:05"
-        },
-        {
           "id": 10100,
-          "pair_id": 2560830,
+          "pair_id": 2692919,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -2788,7 +2931,7 @@
         },
         {
           "id": 10101,
-          "pair_id": 2560831,
+          "pair_id": 2692920,
           "name": "Indianapolis, IN",
           "icao": "KIND",
           "iata": "IND",
@@ -2801,7 +2944,7 @@
         },
         {
           "id": 10107,
-          "pair_id": 2560835,
+          "pair_id": 2692924,
           "name": "Kansas City, MO",
           "icao": "KMCI",
           "iata": "MCI",
@@ -2814,7 +2957,7 @@
         },
         {
           "id": 10134,
-          "pair_id": 2560857,
+          "pair_id": 2692947,
           "name": "Kingston, Jamaica",
           "icao": "MKJP",
           "iata": "KIN",
@@ -2827,7 +2970,7 @@
         },
         {
           "id": 10106,
-          "pair_id": 2560834,
+          "pair_id": 2692923,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -2840,7 +2983,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560832,
+          "pair_id": 2692921,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -2853,7 +2996,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560833,
+          "pair_id": 2692922,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -2866,7 +3009,7 @@
         },
         {
           "id": 13085,
-          "pair_id": 2560848,
+          "pair_id": 2692937,
           "name": "Louisville, KY",
           "icao": "KSDF",
           "iata": "SDF",
@@ -2879,7 +3022,7 @@
         },
         {
           "id": 10149,
-          "pair_id": 2560870,
+          "pair_id": 2692961,
           "name": "MDE-Medellin, Colombia",
           "icao": "SKRG",
           "iata": "MDE",
@@ -2892,7 +3035,7 @@
         },
         {
           "id": 12203,
-          "pair_id": 2560860,
+          "pair_id": 2692950,
           "name": "Managua, Nicaragua",
           "icao": "MNMG",
           "iata": "MGA",
@@ -2905,7 +3048,7 @@
         },
         {
           "id": 10135,
-          "pair_id": 2560858,
+          "pair_id": 2692948,
           "name": "Montego Bay, Jamaica",
           "icao": "MKJS",
           "iata": "MBJ",
@@ -2918,7 +3061,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2560838,
+          "pair_id": 2692927,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -2931,7 +3074,7 @@
         },
         {
           "id": 10087,
-          "pair_id": 2560820,
+          "pair_id": 2692909,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -2944,7 +3087,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2560837,
+          "pair_id": 2692926,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -2957,7 +3100,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560829,
+          "pair_id": 2692918,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -2970,7 +3113,7 @@
         },
         {
           "id": 88010,
-          "pair_id": 2560840,
+          "pair_id": 2692929,
           "name": "Norfolk, VA",
           "icao": "KORF",
           "iata": "ORF",
@@ -2983,7 +3126,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2560839,
+          "pair_id": 2692928,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -2996,7 +3139,7 @@
         },
         {
           "id": 10155,
-          "pair_id": 2560874,
+          "pair_id": 2692965,
           "name": "Oranjestad, Aruba",
           "icao": "TNCA",
           "iata": "AUA",
@@ -3009,7 +3152,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560836,
+          "pair_id": 2692925,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -3022,7 +3165,7 @@
         },
         {
           "id": 20970,
-          "pair_id": 2560844,
+          "pair_id": 2692933,
           "name": "Pensacola, FL",
           "icao": "KPNS",
           "iata": "PNS",
@@ -3035,7 +3178,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2560841,
+          "pair_id": 2692930,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -3048,7 +3191,7 @@
         },
         {
           "id": 10118,
-          "pair_id": 2560842,
+          "pair_id": 2692931,
           "name": "Phoenix, AZ",
           "icao": "KPHX",
           "iata": "PHX",
@@ -3061,7 +3204,7 @@
         },
         {
           "id": 10119,
-          "pair_id": 2560843,
+          "pair_id": 2692932,
           "name": "Pittsburgh, PA",
           "icao": "KPIT",
           "iata": "PIT",
@@ -3073,8 +3216,21 @@
           "time": "02:42:41"
         },
         {
+          "id": 10141,
+          "pair_id": 2692954,
+          "name": "Port-au-Prince, Haiti",
+          "icao": "MTPP",
+          "iata": "PAP",
+          "latitude": "18.5800000",
+          "longitude": "-72.2925030",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 626,
+          "time": "02:08:22"
+        },
+        {
           "id": 138034,
-          "pair_id": 2561278,
+          "pair_id": 2693379,
           "name": "Providence, RI",
           "icao": "KPVD",
           "iata": "PVD",
@@ -3087,7 +3243,7 @@
         },
         {
           "id": 10128,
-          "pair_id": 2560851,
+          "pair_id": 2692941,
           "name": "Punta Cana, Dominican Republic",
           "icao": "MDPC",
           "iata": "PUJ",
@@ -3100,7 +3256,7 @@
         },
         {
           "id": 10120,
-          "pair_id": 2560845,
+          "pair_id": 2692934,
           "name": "Raleigh\/Durham, NC",
           "icao": "KRDU",
           "iata": "RDU",
@@ -3113,7 +3269,7 @@
         },
         {
           "id": 10121,
-          "pair_id": 2560846,
+          "pair_id": 2692935,
           "name": "Richmond, VA",
           "icao": "KRIC",
           "iata": "RIC",
@@ -3126,7 +3282,7 @@
         },
         {
           "id": 10152,
-          "pair_id": 2560872,
+          "pair_id": 2692963,
           "name": "Saint Croix, USVI",
           "icao": "TISX",
           "iata": "STX",
@@ -3139,7 +3295,7 @@
         },
         {
           "id": 10151,
-          "pair_id": 2560871,
+          "pair_id": 2692962,
           "name": "Saint Thomas, USVI",
           "icao": "TIST",
           "iata": "STT",
@@ -3151,8 +3307,21 @@
           "time": "02:56:28"
         },
         {
+          "id": 82587,
+          "pair_id": 2692938,
+          "name": "Salt Lake City, UT",
+          "icao": "KSLC",
+          "iata": "SLC",
+          "latitude": "40.7857490",
+          "longitude": "-111.9797460",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1807,
+          "time": "04:57:56"
+        },
+        {
           "id": 94114,
-          "pair_id": 2560847,
+          "pair_id": 2692936,
           "name": "San Antonio, TX",
           "icao": "KSAT",
           "iata": "SAT",
@@ -3165,7 +3334,7 @@
         },
         {
           "id": 10138,
-          "pair_id": 2560861,
+          "pair_id": 2692951,
           "name": "San Jose, Costa Rica",
           "icao": "MROC",
           "iata": "SJO",
@@ -3178,7 +3347,7 @@
         },
         {
           "id": 10154,
-          "pair_id": 2560873,
+          "pair_id": 2692964,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -3191,7 +3360,7 @@
         },
         {
           "id": 10132,
-          "pair_id": 2560855,
+          "pair_id": 2692945,
           "name": "San Pedro Sula, Honduras",
           "icao": "MHLM",
           "iata": "SAP",
@@ -3204,7 +3373,7 @@
         },
         {
           "id": 10139,
-          "pair_id": 2560862,
+          "pair_id": 2692952,
           "name": "San Salvador, El Salvador",
           "icao": "MSLP",
           "iata": "SAL",
@@ -3217,7 +3386,7 @@
         },
         {
           "id": 10130,
-          "pair_id": 2560853,
+          "pair_id": 2692943,
           "name": "Santiago, Dominican Republic",
           "icao": "MDST",
           "iata": "STI",
@@ -3230,7 +3399,7 @@
         },
         {
           "id": 10129,
-          "pair_id": 2560852,
+          "pair_id": 2692942,
           "name": "Santo Domingo, Dominican Republic",
           "icao": "MDSD",
           "iata": "SDQ",
@@ -3243,7 +3412,7 @@
         },
         {
           "id": 10156,
-          "pair_id": 2560875,
+          "pair_id": 2692966,
           "name": "Sint Maarten",
           "icao": "TNCM",
           "iata": "SXM",
@@ -3256,7 +3425,7 @@
         },
         {
           "id": 20971,
-          "pair_id": 2560849,
+          "pair_id": 2692939,
           "name": "St. Louis, MO",
           "icao": "KSTL",
           "iata": "STL",
@@ -3269,7 +3438,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560850,
+          "pair_id": 2692940,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -3302,7 +3471,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560876,
+          "pair_id": 2692967,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -3315,7 +3484,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2560878,
+          "pair_id": 2692969,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -3328,7 +3497,7 @@
         },
         {
           "id": 10088,
-          "pair_id": 2560877,
+          "pair_id": 2692968,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -3341,7 +3510,7 @@
         },
         {
           "id": 10136,
-          "pair_id": 2560893,
+          "pair_id": 2692988,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -3353,8 +3522,34 @@
           "time": "02:19:42"
         },
         {
+          "id": 10093,
+          "pair_id": 2692970,
+          "name": "Charlotte, NC",
+          "icao": "KCLT",
+          "iata": "CLT",
+          "latitude": "35.2140007",
+          "longitude": "-80.9431000",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 791,
+          "time": "02:32:03"
+        },
+        {
+          "id": 83158,
+          "pair_id": 2692987,
+          "name": "Comayagua, Honduras",
+          "icao": "MHPR",
+          "iata": "XPL",
+          "latitude": "14.3824000",
+          "longitude": "-87.6212010",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1029,
+          "time": "03:06:14"
+        },
+        {
           "id": 10097,
-          "pair_id": 2560879,
+          "pair_id": 2692971,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -3367,7 +3562,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560881,
+          "pair_id": 2692973,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -3379,8 +3574,21 @@
           "time": "02:38:39"
         },
         {
+          "id": 10131,
+          "pair_id": 2692985,
+          "name": "Guatemala City, Guatemala",
+          "icao": "MGGT",
+          "iata": "GUA",
+          "latitude": "14.5833000",
+          "longitude": "-90.5274960",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 962,
+          "time": "02:56:36"
+        },
+        {
           "id": 10106,
-          "pair_id": 2560884,
+          "pair_id": 2692976,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -3393,7 +3601,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560882,
+          "pair_id": 2692974,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -3406,7 +3614,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560883,
+          "pair_id": 2692975,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -3419,7 +3627,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2560886,
+          "pair_id": 2692978,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -3432,7 +3640,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2560887,
+          "pair_id": 2692979,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -3445,7 +3653,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560880,
+          "pair_id": 2692972,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -3458,7 +3666,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2560888,
+          "pair_id": 2692980,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -3471,7 +3679,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560885,
+          "pair_id": 2692977,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -3484,7 +3692,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2560889,
+          "pair_id": 2692981,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -3496,8 +3704,21 @@
           "time": "03:23:27"
         },
         {
+          "id": 10119,
+          "pair_id": 2692982,
+          "name": "Pittsburgh, PA",
+          "icao": "KPIT",
+          "iata": "PIT",
+          "latitude": "40.4915009",
+          "longitude": "-80.2329025",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 970,
+          "time": "02:57:45"
+        },
+        {
           "id": 10123,
-          "pair_id": 2560890,
+          "pair_id": 2692983,
           "name": "San Diego, CA",
           "icao": "KSAN",
           "iata": "SAN",
@@ -3509,21 +3730,8 @@
           "time": "03:20:35"
         },
         {
-          "id": 10138,
-          "pair_id": 2560894,
-          "name": "San Jose, Costa Rica",
-          "icao": "MROC",
-          "iata": "SJO",
-          "latitude": "9.9938600",
-          "longitude": "-84.2088010",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1352,
-          "time": "03:52:36"
-        },
-        {
           "id": 10154,
-          "pair_id": 2560895,
+          "pair_id": 2692989,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -3536,7 +3744,7 @@
         },
         {
           "id": 10132,
-          "pair_id": 2560892,
+          "pair_id": 2692986,
           "name": "San Pedro Sula, Honduras",
           "icao": "MHLM",
           "iata": "SAP",
@@ -3549,7 +3757,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560891,
+          "pair_id": 2692984,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -3580,7 +3788,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2560897,
+          "pair_id": 2692991,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -3592,21 +3800,8 @@
           "time": "02:44:07"
         },
         {
-          "id": 10122,
-          "pair_id": 2560901,
-          "name": "Fort Myers, FL",
-          "icao": "KRSW",
-          "iata": "RSW",
-          "latitude": "26.5361996",
-          "longitude": "-81.7552032",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 823,
-          "time": "02:36:39"
-        },
-        {
           "id": 10102,
-          "pair_id": 2560898,
+          "pair_id": 2692992,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -3618,21 +3813,8 @@
           "time": "03:56:11"
         },
         {
-          "id": 10112,
-          "pair_id": 2560900,
-          "name": "Myrtle Beach, SC",
-          "icao": "KMYR",
-          "iata": "MYR",
-          "latitude": "33.6796989",
-          "longitude": "-78.9282990",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 506,
-          "time": "01:51:08"
-        },
-        {
           "id": 10098,
-          "pair_id": 2560896,
+          "pair_id": 2692990,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -3645,7 +3827,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560899,
+          "pair_id": 2692993,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -3655,19 +3837,6 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 721,
           "time": "02:22:00"
-        },
-        {
-          "id": 10127,
-          "pair_id": 2560902,
-          "name": "Tampa, FL",
-          "icao": "KTPA",
-          "iata": "TPA",
-          "latitude": "27.9755001",
-          "longitude": "-82.5332031",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 729,
-          "time": "02:23:09"
         }
       ],
       "aircrafts": [
@@ -3689,7 +3858,7 @@
       "destinations": [
         {
           "id": 83161,
-          "pair_id": 2560903,
+          "pair_id": 2692994,
           "name": "Albuquerque, NM",
           "icao": "KABQ",
           "iata": "ABQ",
@@ -3702,7 +3871,7 @@
         },
         {
           "id": 10084,
-          "pair_id": 2560904,
+          "pair_id": 2692995,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -3715,7 +3884,7 @@
         },
         {
           "id": 10085,
-          "pair_id": 2560905,
+          "pair_id": 2692996,
           "name": "Austin, TX",
           "icao": "KAUS",
           "iata": "AUS",
@@ -3728,7 +3897,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2560909,
+          "pair_id": 2693000,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -3741,7 +3910,7 @@
         },
         {
           "id": 83160,
-          "pair_id": 2560907,
+          "pair_id": 2692998,
           "name": "Boise, ID",
           "icao": "KBOI",
           "iata": "BOI",
@@ -3754,7 +3923,7 @@
         },
         {
           "id": 10089,
-          "pair_id": 2560908,
+          "pair_id": 2692999,
           "name": "Burbank, CA",
           "icao": "KBUR",
           "iata": "BUR",
@@ -3767,7 +3936,7 @@
         },
         {
           "id": 106305,
-          "pair_id": 2560910,
+          "pair_id": 2693001,
           "name": "Charleston, SC",
           "icao": "KCHS",
           "iata": "CHS",
@@ -3780,7 +3949,7 @@
         },
         {
           "id": 10093,
-          "pair_id": 2560911,
+          "pair_id": 2693002,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -3793,7 +3962,7 @@
         },
         {
           "id": 10094,
-          "pair_id": 2560912,
+          "pair_id": 2693003,
           "name": "Columbus, OH",
           "icao": "KCMH",
           "iata": "CMH",
@@ -3806,7 +3975,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560913,
+          "pair_id": 2693004,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -3819,7 +3988,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2560914,
+          "pair_id": 2693005,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -3832,7 +4001,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560916,
+          "pair_id": 2693007,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -3845,7 +4014,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2560917,
+          "pair_id": 2693008,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -3858,7 +4027,7 @@
         },
         {
           "id": 10101,
-          "pair_id": 2560918,
+          "pair_id": 2693009,
           "name": "Indianapolis, IN",
           "icao": "KIND",
           "iata": "IND",
@@ -3871,7 +4040,7 @@
         },
         {
           "id": 10107,
-          "pair_id": 2560920,
+          "pair_id": 2693011,
           "name": "Kansas City, MO",
           "icao": "KMCI",
           "iata": "MCI",
@@ -3884,7 +4053,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560919,
+          "pair_id": 2693010,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -3897,7 +4066,7 @@
         },
         {
           "id": 13085,
-          "pair_id": 2560937,
+          "pair_id": 2693028,
           "name": "Louisville, KY",
           "icao": "KSDF",
           "iata": "SDF",
@@ -3910,7 +4079,7 @@
         },
         {
           "id": 82588,
-          "pair_id": 2560922,
+          "pair_id": 2693013,
           "name": "Memphis, TN",
           "icao": "KMEM",
           "iata": "MEM",
@@ -3923,7 +4092,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2560923,
+          "pair_id": 2693014,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -3936,7 +4105,7 @@
         },
         {
           "id": 21491,
-          "pair_id": 2560924,
+          "pair_id": 2693015,
           "name": "Milwaukee, WI",
           "icao": "KMKE",
           "iata": "MKE",
@@ -3949,7 +4118,7 @@
         },
         {
           "id": 10110,
-          "pair_id": 2560925,
+          "pair_id": 2693016,
           "name": "Minneapolis\/Saint Paul, MN",
           "icao": "KMSP",
           "iata": "MSP",
@@ -3962,7 +4131,7 @@
         },
         {
           "id": 10087,
-          "pair_id": 2560906,
+          "pair_id": 2692997,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -3975,7 +4144,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2560926,
+          "pair_id": 2693017,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -3988,7 +4157,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560915,
+          "pair_id": 2693006,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -4001,7 +4170,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2560928,
+          "pair_id": 2693019,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -4014,7 +4183,7 @@
         },
         {
           "id": 10114,
-          "pair_id": 2560927,
+          "pair_id": 2693018,
           "name": "Oakland, CA",
           "icao": "KOAK",
           "iata": "OAK",
@@ -4027,7 +4196,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560921,
+          "pair_id": 2693012,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -4040,7 +4209,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2560930,
+          "pair_id": 2693021,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -4053,7 +4222,7 @@
         },
         {
           "id": 10118,
-          "pair_id": 2560931,
+          "pair_id": 2693022,
           "name": "Phoenix, AZ",
           "icao": "KPHX",
           "iata": "PHX",
@@ -4066,7 +4235,7 @@
         },
         {
           "id": 10119,
-          "pair_id": 2560932,
+          "pair_id": 2693023,
           "name": "Pittsburgh, PA",
           "icao": "KPIT",
           "iata": "PIT",
@@ -4079,7 +4248,7 @@
         },
         {
           "id": 10116,
-          "pair_id": 2560929,
+          "pair_id": 2693020,
           "name": "Portland, OR",
           "icao": "KPDX",
           "iata": "PDX",
@@ -4092,7 +4261,7 @@
         },
         {
           "id": 83159,
-          "pair_id": 2560934,
+          "pair_id": 2693025,
           "name": "Reno, NV",
           "icao": "KRNO",
           "iata": "RNO",
@@ -4105,7 +4274,7 @@
         },
         {
           "id": 10121,
-          "pair_id": 2560933,
+          "pair_id": 2693024,
           "name": "Richmond, VA",
           "icao": "KRIC",
           "iata": "RIC",
@@ -4118,7 +4287,7 @@
         },
         {
           "id": 10125,
-          "pair_id": 2560941,
+          "pair_id": 2693032,
           "name": "Sacramento, CA",
           "icao": "KSMF",
           "iata": "SMF",
@@ -4131,7 +4300,7 @@
         },
         {
           "id": 82587,
-          "pair_id": 2560940,
+          "pair_id": 2693031,
           "name": "Salt Lake City, UT",
           "icao": "KSLC",
           "iata": "SLC",
@@ -4144,7 +4313,7 @@
         },
         {
           "id": 94114,
-          "pair_id": 2560936,
+          "pair_id": 2693027,
           "name": "San Antonio, TX",
           "icao": "KSAT",
           "iata": "SAT",
@@ -4157,7 +4326,7 @@
         },
         {
           "id": 10123,
-          "pair_id": 2560935,
+          "pair_id": 2693026,
           "name": "San Diego, CA",
           "icao": "KSAN",
           "iata": "SAN",
@@ -4170,7 +4339,7 @@
         },
         {
           "id": 121856,
-          "pair_id": 2560939,
+          "pair_id": 2693030,
           "name": "San Jose, CA",
           "icao": "KSJC",
           "iata": "SJC",
@@ -4183,7 +4352,7 @@
         },
         {
           "id": 10126,
-          "pair_id": 2560942,
+          "pair_id": 2693033,
           "name": "Santa Ana, CA",
           "icao": "KSNA",
           "iata": "SNA",
@@ -4196,7 +4365,7 @@
         },
         {
           "id": 10124,
-          "pair_id": 2560938,
+          "pair_id": 2693029,
           "name": "Seattle, WA",
           "icao": "KSEA",
           "iata": "SEA",
@@ -4209,7 +4378,7 @@
         },
         {
           "id": 20971,
-          "pair_id": 2560943,
+          "pair_id": 2693034,
           "name": "St. Louis, MO",
           "icao": "KSTL",
           "iata": "STL",
@@ -4222,7 +4391,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2560944,
+          "pair_id": 2693035,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -4255,7 +4424,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560945,
+          "pair_id": 2693036,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -4268,7 +4437,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2560947,
+          "pair_id": 2693038,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -4281,7 +4450,7 @@
         },
         {
           "id": 10093,
-          "pair_id": 2560949,
+          "pair_id": 2693040,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -4294,7 +4463,7 @@
         },
         {
           "id": 10092,
-          "pair_id": 2560948,
+          "pair_id": 2693039,
           "name": "Cleveland, OH",
           "icao": "KCLE",
           "iata": "CLE",
@@ -4307,7 +4476,7 @@
         },
         {
           "id": 10094,
-          "pair_id": 2560950,
+          "pair_id": 2693041,
           "name": "Columbus, OH",
           "icao": "KCMH",
           "iata": "CMH",
@@ -4320,7 +4489,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560951,
+          "pair_id": 2693042,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -4333,7 +4502,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2560952,
+          "pair_id": 2693043,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -4346,7 +4515,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560954,
+          "pair_id": 2693045,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -4359,7 +4528,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2560955,
+          "pair_id": 2693046,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -4372,7 +4541,7 @@
         },
         {
           "id": 10107,
-          "pair_id": 2560957,
+          "pair_id": 2693048,
           "name": "Kansas City, MO",
           "icao": "KMCI",
           "iata": "MCI",
@@ -4385,7 +4554,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560956,
+          "pair_id": 2693047,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -4398,7 +4567,7 @@
         },
         {
           "id": 13085,
-          "pair_id": 2560964,
+          "pair_id": 2693057,
           "name": "Louisville, KY",
           "icao": "KSDF",
           "iata": "SDF",
@@ -4411,7 +4580,7 @@
         },
         {
           "id": 10087,
-          "pair_id": 2560946,
+          "pair_id": 2693037,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -4424,7 +4593,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2560958,
+          "pair_id": 2693049,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -4437,7 +4606,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560953,
+          "pair_id": 2693044,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -4450,7 +4619,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2560960,
+          "pair_id": 2693051,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -4463,7 +4632,7 @@
         },
         {
           "id": 10114,
-          "pair_id": 2560959,
+          "pair_id": 2693050,
           "name": "Oakland, CA",
           "icao": "KOAK",
           "iata": "OAK",
@@ -4476,7 +4645,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2560961,
+          "pair_id": 2693053,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -4489,7 +4658,7 @@
         },
         {
           "id": 10119,
-          "pair_id": 2560962,
+          "pair_id": 2693054,
           "name": "Pittsburgh, PA",
           "icao": "KPIT",
           "iata": "PIT",
@@ -4501,8 +4670,34 @@
           "time": "05:04:15"
         },
         {
+          "id": 10116,
+          "pair_id": 2693052,
+          "name": "Portland, OR",
+          "icao": "KPDX",
+          "iata": "PDX",
+          "latitude": "45.5886993",
+          "longitude": "-122.5979996",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 725,
+          "time": "02:22:35"
+        },
+        {
+          "id": 83159,
+          "pair_id": 2693055,
+          "name": "Reno, NV",
+          "icao": "KRNO",
+          "iata": "RNO",
+          "latitude": "39.4990997",
+          "longitude": "-119.7679977",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 340,
+          "time": "01:27:18"
+        },
+        {
           "id": 82587,
-          "pair_id": 2560965,
+          "pair_id": 2693060,
           "name": "Salt Lake City, UT",
           "icao": "KSLC",
           "iata": "SLC",
@@ -4515,7 +4710,7 @@
         },
         {
           "id": 94114,
-          "pair_id": 2560963,
+          "pair_id": 2693056,
           "name": "San Antonio, TX",
           "icao": "KSAT",
           "iata": "SAT",
@@ -4525,6 +4720,32 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 1049,
           "time": "03:09:06"
+        },
+        {
+          "id": 121856,
+          "pair_id": 2693059,
+          "name": "San Jose, CA",
+          "icao": "KSJC",
+          "iata": "SJC",
+          "latitude": "37.3624520",
+          "longitude": "-121.9291880",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 267,
+          "time": "01:16:49"
+        },
+        {
+          "id": 10124,
+          "pair_id": 2693058,
+          "name": "Seattle, WA",
+          "icao": "KSEA",
+          "iata": "SEA",
+          "latitude": "47.4491620",
+          "longitude": "-122.3111340",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 829,
+          "time": "02:37:31"
         }
       ],
       "aircrafts": [
@@ -4548,7 +4769,7 @@
       "destinations": [
         {
           "id": 10112,
-          "pair_id": 2560967,
+          "pair_id": 2693062,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -4561,7 +4782,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560966,
+          "pair_id": 2693061,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -4592,7 +4813,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560968,
+          "pair_id": 2693063,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -4605,7 +4826,7 @@
         },
         {
           "id": 106305,
-          "pair_id": 2560970,
+          "pair_id": 2693065,
           "name": "Charleston, SC",
           "icao": "KCHS",
           "iata": "CHS",
@@ -4618,7 +4839,7 @@
         },
         {
           "id": 10093,
-          "pair_id": 2560971,
+          "pair_id": 2693066,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -4631,7 +4852,7 @@
         },
         {
           "id": 10094,
-          "pair_id": 2560972,
+          "pair_id": 2693067,
           "name": "Columbus, OH",
           "icao": "KCMH",
           "iata": "CMH",
@@ -4644,7 +4865,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560973,
+          "pair_id": 2693068,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -4657,7 +4878,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2560974,
+          "pair_id": 2693069,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -4670,7 +4891,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560975,
+          "pair_id": 2693070,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -4683,7 +4904,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2560976,
+          "pair_id": 2693071,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -4696,7 +4917,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2560978,
+          "pair_id": 2693073,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -4709,7 +4930,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2560979,
+          "pair_id": 2693074,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -4722,7 +4943,7 @@
         },
         {
           "id": 10087,
-          "pair_id": 2560969,
+          "pair_id": 2693064,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -4735,7 +4956,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2560980,
+          "pair_id": 2693075,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -4748,7 +4969,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2560977,
+          "pair_id": 2693072,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -4761,7 +4982,7 @@
         },
         {
           "id": 10119,
-          "pair_id": 2560981,
+          "pair_id": 2693076,
           "name": "Pittsburgh, PA",
           "icao": "KPIT",
           "iata": "PIT",
@@ -4793,8 +5014,47 @@
       "longitude": "-94.7138980",
       "destinations": [
         {
+          "id": 10088,
+          "pair_id": 2693077,
+          "name": "Boston, MA",
+          "icao": "KBOS",
+          "iata": "BOS",
+          "latitude": "42.3643000",
+          "longitude": "-71.0052030",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1088,
+          "time": "03:14:42"
+        },
+        {
+          "id": 10096,
+          "pair_id": 2693078,
+          "name": "Dallas\/Fort Worth, TX",
+          "icao": "KDFW",
+          "iata": "DFW",
+          "latitude": "32.8968010",
+          "longitude": "-97.0380020",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 400,
+          "time": "01:35:55"
+        },
+        {
+          "id": 10097,
+          "pair_id": 2693079,
+          "name": "Detroit, MI",
+          "icao": "KDTW",
+          "iata": "DTW",
+          "latitude": "42.2123985",
+          "longitude": "-83.3534012",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 545,
+          "time": "01:56:44"
+        },
+        {
           "id": 10099,
-          "pair_id": 2560982,
+          "pair_id": 2693081,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -4807,7 +5067,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560983,
+          "pair_id": 2693082,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -4820,7 +5080,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2560984,
+          "pair_id": 2693083,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -4832,8 +5092,21 @@
           "time": "03:28:03"
         },
         {
+          "id": 10098,
+          "pair_id": 2693080,
+          "name": "Newark, NJ",
+          "icao": "KEWR",
+          "iata": "EWR",
+          "latitude": "40.6925010",
+          "longitude": "-74.1687010",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 946,
+          "time": "02:54:19"
+        },
+        {
           "id": 10108,
-          "pair_id": 2560985,
+          "pair_id": 2693084,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -4864,7 +5137,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2560987,
+          "pair_id": 2693086,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -4877,7 +5150,7 @@
         },
         {
           "id": 10083,
-          "pair_id": 2560986,
+          "pair_id": 2693085,
           "name": "Atlantic City, NJ",
           "icao": "KACY",
           "iata": "ACY",
@@ -4890,7 +5163,7 @@
         },
         {
           "id": 10085,
-          "pair_id": 2560988,
+          "pair_id": 2693087,
           "name": "Austin, TX",
           "icao": "KAUS",
           "iata": "AUS",
@@ -4903,7 +5176,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2560992,
+          "pair_id": 2693090,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -4916,7 +5189,7 @@
         },
         {
           "id": 10145,
-          "pair_id": 2561029,
+          "pair_id": 2693126,
           "name": "Bogota, Colombia",
           "icao": "SKBO",
           "iata": "BOG",
@@ -4929,7 +5202,7 @@
         },
         {
           "id": 10088,
-          "pair_id": 2560991,
+          "pair_id": 2693089,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -4942,7 +5215,7 @@
         },
         {
           "id": 10136,
-          "pair_id": 2561027,
+          "pair_id": 2693124,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -4954,8 +5227,21 @@
           "time": "01:55:35"
         },
         {
+          "id": 10147,
+          "pair_id": 2693127,
+          "name": "Cartagena, Colombia",
+          "icao": "SKCG",
+          "iata": "CTG",
+          "latitude": "10.4424000",
+          "longitude": "-75.5130000",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1127,
+          "time": "03:20:18"
+        },
+        {
           "id": 10093,
-          "pair_id": 2560994,
+          "pair_id": 2693092,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -4968,7 +5254,7 @@
         },
         {
           "id": 10092,
-          "pair_id": 2560993,
+          "pair_id": 2693091,
           "name": "Cleveland, OH",
           "icao": "KCLE",
           "iata": "CLE",
@@ -4981,7 +5267,7 @@
         },
         {
           "id": 10094,
-          "pair_id": 2560995,
+          "pair_id": 2693093,
           "name": "Columbus, OH",
           "icao": "KCMH",
           "iata": "CMH",
@@ -4994,7 +5280,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2560996,
+          "pair_id": 2693094,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -5007,7 +5293,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2560997,
+          "pair_id": 2693095,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -5020,7 +5306,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2560999,
+          "pair_id": 2693097,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -5033,7 +5319,7 @@
         },
         {
           "id": 10131,
-          "pair_id": 2561024,
+          "pair_id": 2693121,
           "name": "Guatemala City, Guatemala",
           "icao": "MGGT",
           "iata": "GUA",
@@ -5045,21 +5331,8 @@
           "time": "02:58:37"
         },
         {
-          "id": 10086,
-          "pair_id": 2560989,
-          "name": "Hartford, CT",
-          "icao": "KBDL",
-          "iata": "BDL",
-          "latitude": "41.9385100",
-          "longitude": "-72.6880660",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 913,
-          "time": "02:49:34"
-        },
-        {
           "id": 10100,
-          "pair_id": 2561000,
+          "pair_id": 2693098,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -5072,7 +5345,7 @@
         },
         {
           "id": 10101,
-          "pair_id": 2561001,
+          "pair_id": 2693099,
           "name": "Indianapolis, IN",
           "icao": "KIND",
           "iata": "IND",
@@ -5085,7 +5358,7 @@
         },
         {
           "id": 10107,
-          "pair_id": 2561005,
+          "pair_id": 2693103,
           "name": "Kansas City, MO",
           "icao": "KMCI",
           "iata": "MCI",
@@ -5098,7 +5371,7 @@
         },
         {
           "id": 10106,
-          "pair_id": 2561004,
+          "pair_id": 2693102,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -5111,7 +5384,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561002,
+          "pair_id": 2693100,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -5124,7 +5397,7 @@
         },
         {
           "id": 10104,
-          "pair_id": 2561003,
+          "pair_id": 2693101,
           "name": "Latrobe, PA",
           "icao": "KLBE",
           "iata": "LBE",
@@ -5137,7 +5410,7 @@
         },
         {
           "id": 13085,
-          "pair_id": 2561019,
+          "pair_id": 2693116,
           "name": "Louisville, KY",
           "icao": "KSDF",
           "iata": "SDF",
@@ -5150,7 +5423,7 @@
         },
         {
           "id": 10149,
-          "pair_id": 2561030,
+          "pair_id": 2693128,
           "name": "MDE-Medellin, Colombia",
           "icao": "SKRG",
           "iata": "MDE",
@@ -5162,21 +5435,8 @@
           "time": "03:56:11"
         },
         {
-          "id": 46847,
-          "pair_id": 2561007,
-          "name": "Manchester, NH",
-          "icao": "KMHT",
-          "iata": "MHT",
-          "latitude": "42.9325980",
-          "longitude": "-71.4356990",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 993,
-          "time": "03:01:03"
-        },
-        {
           "id": 82588,
-          "pair_id": 2561006,
+          "pair_id": 2693104,
           "name": "Memphis, TN",
           "icao": "KMEM",
           "iata": "MEM",
@@ -5189,7 +5449,7 @@
         },
         {
           "id": 21491,
-          "pair_id": 2561008,
+          "pair_id": 2693105,
           "name": "Milwaukee, WI",
           "icao": "KMKE",
           "iata": "MKE",
@@ -5202,7 +5462,7 @@
         },
         {
           "id": 10135,
-          "pair_id": 2561026,
+          "pair_id": 2693123,
           "name": "Montego Bay, Jamaica",
           "icao": "MKJS",
           "iata": "MBJ",
@@ -5215,7 +5475,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2561010,
+          "pair_id": 2693107,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -5228,7 +5488,7 @@
         },
         {
           "id": 10087,
-          "pair_id": 2560990,
+          "pair_id": 2693088,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -5241,7 +5501,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2561009,
+          "pair_id": 2693106,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -5254,7 +5514,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560998,
+          "pair_id": 2693096,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -5267,7 +5527,7 @@
         },
         {
           "id": 88010,
-          "pair_id": 2561012,
+          "pair_id": 2693109,
           "name": "Norfolk, VA",
           "icao": "KORF",
           "iata": "ORF",
@@ -5280,7 +5540,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2561011,
+          "pair_id": 2693108,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -5293,7 +5553,7 @@
         },
         {
           "id": 20970,
-          "pair_id": 2561015,
+          "pair_id": 2693112,
           "name": "Pensacola, FL",
           "icao": "KPNS",
           "iata": "PNS",
@@ -5306,7 +5566,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2561013,
+          "pair_id": 2693110,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -5319,7 +5579,7 @@
         },
         {
           "id": 10119,
-          "pair_id": 2561014,
+          "pair_id": 2693111,
           "name": "Pittsburgh, PA",
           "icao": "KPIT",
           "iata": "PIT",
@@ -5332,7 +5592,7 @@
         },
         {
           "id": 10128,
-          "pair_id": 2561022,
+          "pair_id": 2693119,
           "name": "Punta Cana, Dominican Republic",
           "icao": "MDPC",
           "iata": "PUJ",
@@ -5345,7 +5605,7 @@
         },
         {
           "id": 10121,
-          "pair_id": 2561016,
+          "pair_id": 2693113,
           "name": "Richmond, VA",
           "icao": "KRIC",
           "iata": "RIC",
@@ -5358,7 +5618,7 @@
         },
         {
           "id": 94113,
-          "pair_id": 2561017,
+          "pair_id": 2693114,
           "name": "Rochester, NY",
           "icao": "KROC",
           "iata": "ROC",
@@ -5371,7 +5631,7 @@
         },
         {
           "id": 10151,
-          "pair_id": 2561031,
+          "pair_id": 2693129,
           "name": "Saint Thomas, USVI",
           "icao": "TIST",
           "iata": "STT",
@@ -5384,7 +5644,7 @@
         },
         {
           "id": 82587,
-          "pair_id": 2561020,
+          "pair_id": 2693117,
           "name": "Salt Lake City, UT",
           "icao": "KSLC",
           "iata": "SLC",
@@ -5397,7 +5657,7 @@
         },
         {
           "id": 94114,
-          "pair_id": 2561018,
+          "pair_id": 2693115,
           "name": "San Antonio, TX",
           "icao": "KSAT",
           "iata": "SAT",
@@ -5410,7 +5670,7 @@
         },
         {
           "id": 10138,
-          "pair_id": 2561028,
+          "pair_id": 2693125,
           "name": "San Jose, Costa Rica",
           "icao": "MROC",
           "iata": "SJO",
@@ -5423,7 +5683,7 @@
         },
         {
           "id": 10154,
-          "pair_id": 2561032,
+          "pair_id": 2693130,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -5436,7 +5696,7 @@
         },
         {
           "id": 10132,
-          "pair_id": 2561025,
+          "pair_id": 2693122,
           "name": "San Pedro Sula, Honduras",
           "icao": "MHLM",
           "iata": "SAP",
@@ -5449,7 +5709,7 @@
         },
         {
           "id": 10129,
-          "pair_id": 2561023,
+          "pair_id": 2693120,
           "name": "Santo Domingo, Dominican Republic",
           "icao": "MDSD",
           "iata": "SDQ",
@@ -5462,7 +5722,7 @@
         },
         {
           "id": 20971,
-          "pair_id": 2561021,
+          "pair_id": 2693118,
           "name": "St. Louis, MO",
           "icao": "KSTL",
           "iata": "STL",
@@ -5495,7 +5755,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2561055,
+          "pair_id": 2693149,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -5508,7 +5768,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2561056,
+          "pair_id": 2693150,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -5521,7 +5781,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561057,
+          "pair_id": 2693151,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -5552,7 +5812,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2561058,
+          "pair_id": 2693152,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -5565,7 +5825,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2561059,
+          "pair_id": 2693153,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -5578,7 +5838,7 @@
         },
         {
           "id": 10136,
-          "pair_id": 2561072,
+          "pair_id": 2693166,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -5591,7 +5851,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2561060,
+          "pair_id": 2693154,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -5604,7 +5864,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2561061,
+          "pair_id": 2693155,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -5617,7 +5877,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561063,
+          "pair_id": 2693157,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -5630,7 +5890,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2561064,
+          "pair_id": 2693158,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -5643,7 +5903,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561065,
+          "pair_id": 2693159,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -5656,7 +5916,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2561066,
+          "pair_id": 2693160,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -5669,7 +5929,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2561068,
+          "pair_id": 2693162,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -5682,7 +5942,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2561062,
+          "pair_id": 2693156,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -5695,7 +5955,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2561069,
+          "pair_id": 2693163,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -5708,7 +5968,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561067,
+          "pair_id": 2693161,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -5721,7 +5981,7 @@
         },
         {
           "id": 10154,
-          "pair_id": 2561073,
+          "pair_id": 2693167,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -5734,7 +5994,7 @@
         },
         {
           "id": 10132,
-          "pair_id": 2561071,
+          "pair_id": 2693165,
           "name": "San Pedro Sula, Honduras",
           "icao": "MHLM",
           "iata": "SAP",
@@ -5747,7 +6007,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2561070,
+          "pair_id": 2693164,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -5778,7 +6038,7 @@
       "destinations": [
         {
           "id": 10083,
-          "pair_id": 2561074,
+          "pair_id": 2693168,
           "name": "Atlantic City, NJ",
           "icao": "KACY",
           "iata": "ACY",
@@ -5790,21 +6050,8 @@
           "time": "01:36:38"
         },
         {
-          "id": 10090,
-          "pair_id": 2561077,
-          "name": "Baltimore, MD",
-          "icao": "KBWI",
-          "iata": "BWI",
-          "latitude": "39.1754000",
-          "longitude": "-76.6682970",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 347,
-          "time": "01:28:18"
-        },
-        {
           "id": 10088,
-          "pair_id": 2561076,
+          "pair_id": 2693170,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -5817,7 +6064,7 @@
         },
         {
           "id": 10092,
-          "pair_id": 2561078,
+          "pair_id": 2693171,
           "name": "Cleveland, OH",
           "icao": "KCLE",
           "iata": "CLE",
@@ -5829,21 +6076,8 @@
           "time": "01:47:58"
         },
         {
-          "id": 10094,
-          "pair_id": 2561079,
-          "name": "Columbus, OH",
-          "icao": "KCMH",
-          "iata": "CMH",
-          "latitude": "39.9980010",
-          "longitude": "-82.8918990",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 424,
-          "time": "01:39:22"
-        },
-        {
           "id": 76730,
-          "pair_id": 2561280,
+          "pair_id": 2693381,
           "name": "DCA-Washington, DC",
           "icao": "KDCA",
           "iata": "DCA",
@@ -5856,7 +6090,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2561080,
+          "pair_id": 2693172,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -5869,7 +6103,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561082,
+          "pair_id": 2693174,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -5882,7 +6116,7 @@
         },
         {
           "id": 10086,
-          "pair_id": 2561075,
+          "pair_id": 2693169,
           "name": "Hartford, CT",
           "icao": "KBDL",
           "iata": "BDL",
@@ -5894,21 +6128,8 @@
           "time": "02:01:20"
         },
         {
-          "id": 10101,
-          "pair_id": 2561083,
-          "name": "Indianapolis, IN",
-          "icao": "KIND",
-          "iata": "IND",
-          "latitude": "39.7173000",
-          "longitude": "-86.2944030",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 506,
-          "time": "01:51:08"
-        },
-        {
           "id": 10106,
-          "pair_id": 2561085,
+          "pair_id": 2693176,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -5921,7 +6142,7 @@
         },
         {
           "id": 10104,
-          "pair_id": 2561084,
+          "pair_id": 2693175,
           "name": "Latrobe, PA",
           "icao": "KLBE",
           "iata": "LBE",
@@ -5934,7 +6155,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2561081,
+          "pair_id": 2693173,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -5947,7 +6168,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2561087,
+          "pair_id": 2693178,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -5960,7 +6181,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561086,
+          "pair_id": 2693177,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -5973,7 +6194,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2561088,
+          "pair_id": 2693179,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -5986,7 +6207,7 @@
         },
         {
           "id": 10119,
-          "pair_id": 2561089,
+          "pair_id": 2693180,
           "name": "Pittsburgh, PA",
           "icao": "KPIT",
           "iata": "PIT",
@@ -5996,6 +6217,19 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 413,
           "time": "01:37:47"
+        },
+        {
+          "id": 94113,
+          "pair_id": 2693181,
+          "name": "Rochester, NY",
+          "icao": "KROC",
+          "iata": "ROC",
+          "latitude": "43.1189000",
+          "longitude": "-77.6724010",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 569,
+          "time": "02:00:11"
         }
       ],
       "aircrafts": [
@@ -6019,7 +6253,7 @@
       "destinations": [
         {
           "id": 10089,
-          "pair_id": 2561090,
+          "pair_id": 2693182,
           "name": "Burbank, CA",
           "icao": "KBUR",
           "iata": "BUR",
@@ -6032,7 +6266,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561092,
+          "pair_id": 2693184,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6045,7 +6279,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2561093,
+          "pair_id": 2693185,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -6058,7 +6292,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2561091,
+          "pair_id": 2693183,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -6071,7 +6305,7 @@
         },
         {
           "id": 10123,
-          "pair_id": 2561094,
+          "pair_id": 2693186,
           "name": "San Diego, CA",
           "icao": "KSAN",
           "iata": "SAN",
@@ -6084,7 +6318,7 @@
         },
         {
           "id": 10126,
-          "pair_id": 2561095,
+          "pair_id": 2693187,
           "name": "Santa Ana, CA",
           "icao": "KSNA",
           "iata": "SNA",
@@ -6115,7 +6349,7 @@
       "destinations": [
         {
           "id": 10083,
-          "pair_id": 2561116,
+          "pair_id": 2693210,
           "name": "Atlantic City, NJ",
           "icao": "KACY",
           "iata": "ACY",
@@ -6148,7 +6382,7 @@
       "destinations": [
         {
           "id": 10090,
-          "pair_id": 2561117,
+          "pair_id": 2693212,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -6160,8 +6394,21 @@
           "time": "05:31:49"
         },
         {
+          "id": 10089,
+          "pair_id": 2693211,
+          "name": "Burbank, CA",
+          "icao": "KBUR",
+          "iata": "BUR",
+          "latitude": "34.1977030",
+          "longitude": "-118.3563780",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 710,
+          "time": "02:20:25"
+        },
+        {
           "id": 10102,
-          "pair_id": 2561118,
+          "pair_id": 2693213,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6173,8 +6420,21 @@
           "time": "02:13:32"
         },
         {
+          "id": 10103,
+          "pair_id": 2693214,
+          "name": "Los Angeles, CA",
+          "icao": "KLAX",
+          "iata": "LAX",
+          "latitude": "33.9425010",
+          "longitude": "-118.4079970",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 725,
+          "time": "02:22:35"
+        },
+        {
           "id": 10157,
-          "pair_id": 2561119,
+          "pair_id": 2693215,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -6184,6 +6444,32 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 1506,
           "time": "04:14:43"
+        },
+        {
+          "id": 10123,
+          "pair_id": 2693216,
+          "name": "San Diego, CA",
+          "icao": "KSAN",
+          "iata": "SAN",
+          "latitude": "32.7336006",
+          "longitude": "-117.1900024",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 811,
+          "time": "02:34:56"
+        },
+        {
+          "id": 121856,
+          "pair_id": 2693217,
+          "name": "San Jose, CA",
+          "icao": "KSJC",
+          "iata": "SJC",
+          "latitude": "37.3624520",
+          "longitude": "-121.9291880",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 494,
+          "time": "01:49:25"
         }
       ],
       "aircrafts": [
@@ -6205,7 +6491,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2561120,
+          "pair_id": 2693218,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -6218,7 +6504,7 @@
         },
         {
           "id": 10136,
-          "pair_id": 2561131,
+          "pair_id": 2693230,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -6230,8 +6516,21 @@
           "time": "03:41:50"
         },
         {
+          "id": 10096,
+          "pair_id": 2693220,
+          "name": "Dallas\/Fort Worth, TX",
+          "icao": "KDFW",
+          "iata": "DFW",
+          "latitude": "32.8968010",
+          "longitude": "-97.0380020",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1129,
+          "time": "03:20:35"
+        },
+        {
           "id": 10097,
-          "pair_id": 2561122,
+          "pair_id": 2693221,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -6244,7 +6543,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561123,
+          "pair_id": 2693222,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -6257,7 +6556,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2561124,
+          "pair_id": 2693223,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -6270,7 +6569,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561125,
+          "pair_id": 2693224,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6283,7 +6582,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2561126,
+          "pair_id": 2693225,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -6296,7 +6595,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2561128,
+          "pair_id": 2693227,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -6309,7 +6608,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2561129,
+          "pair_id": 2693228,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -6322,7 +6621,7 @@
         },
         {
           "id": 10087,
-          "pair_id": 2561121,
+          "pair_id": 2693219,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -6335,7 +6634,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561127,
+          "pair_id": 2693226,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -6348,7 +6647,7 @@
         },
         {
           "id": 10128,
-          "pair_id": 2561130,
+          "pair_id": 2693229,
           "name": "Punta Cana, Dominican Republic",
           "icao": "MDPC",
           "iata": "PUJ",
@@ -6361,7 +6660,7 @@
         },
         {
           "id": 10154,
-          "pair_id": 2561132,
+          "pair_id": 2693231,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -6392,7 +6691,7 @@
       "destinations": [
         {
           "id": 10096,
-          "pair_id": 2561133,
+          "pair_id": 2693232,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -6405,7 +6704,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561135,
+          "pair_id": 2693234,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -6418,7 +6717,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561136,
+          "pair_id": 2693235,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6431,7 +6730,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2561134,
+          "pair_id": 2693233,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -6461,8 +6760,21 @@
       "longitude": "-80.2329025",
       "destinations": [
         {
+          "id": 10088,
+          "pair_id": 2693236,
+          "name": "Boston, MA",
+          "icao": "KBOS",
+          "iata": "BOS",
+          "latitude": "42.3643000",
+          "longitude": "-71.0052030",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 430,
+          "time": "01:40:13"
+        },
+        {
           "id": 10099,
-          "pair_id": 2561138,
+          "pair_id": 2693238,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -6474,8 +6786,21 @@
           "time": "02:42:41"
         },
         {
+          "id": 10100,
+          "pair_id": 2693239,
+          "name": "IAH-Houston, TX",
+          "icao": "KIAH",
+          "iata": "IAH",
+          "latitude": "29.9843998",
+          "longitude": "-95.3414001",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 970,
+          "time": "02:57:45"
+        },
+        {
           "id": 10106,
-          "pair_id": 2561141,
+          "pair_id": 2693242,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -6488,7 +6813,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561139,
+          "pair_id": 2693240,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6501,7 +6826,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2561140,
+          "pair_id": 2693241,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -6514,7 +6839,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2561143,
+          "pair_id": 2693244,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -6527,7 +6852,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2561137,
+          "pair_id": 2693237,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -6540,7 +6865,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561142,
+          "pair_id": 2693243,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -6571,7 +6896,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561147,
+          "pair_id": 2693248,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -6581,19 +6906,6 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 592,
           "time": "02:03:29"
-        },
-        {
-          "id": 46848,
-          "pair_id": 2561148,
-          "name": "Miami, FL",
-          "icao": "KMIA",
-          "iata": "MIA",
-          "latitude": "25.7931995",
-          "longitude": "-80.2906036",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 610,
-          "time": "02:06:04"
         }
       ],
       "aircrafts": [
@@ -6615,7 +6927,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561149,
+          "pair_id": 2693249,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -6628,7 +6940,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561150,
+          "pair_id": 2693250,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6641,7 +6953,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561151,
+          "pair_id": 2693251,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -6672,7 +6984,7 @@
       "destinations": [
         {
           "id": 10083,
-          "pair_id": 2561154,
+          "pair_id": 2693256,
           "name": "Atlantic City, NJ",
           "icao": "KACY",
           "iata": "ACY",
@@ -6684,21 +6996,8 @@
           "time": "02:41:15"
         },
         {
-          "id": 10088,
-          "pair_id": 2561155,
-          "name": "Boston, MA",
-          "icao": "KBOS",
-          "iata": "BOS",
-          "latitude": "42.3643000",
-          "longitude": "-71.0052030",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1086,
-          "time": "03:14:25"
-        },
-        {
           "id": 10097,
-          "pair_id": 2561156,
+          "pair_id": 2693257,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -6710,21 +7009,8 @@
           "time": "02:54:01"
         },
         {
-          "id": 10101,
-          "pair_id": 2561157,
-          "name": "Indianapolis, IN",
-          "icao": "KIND",
-          "iata": "IND",
-          "latitude": "39.7173000",
-          "longitude": "-86.2944030",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 823,
-          "time": "02:36:39"
-        },
-        {
           "id": 10157,
-          "pair_id": 2561158,
+          "pair_id": 2693258,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -6737,7 +7023,7 @@
         },
         {
           "id": 138034,
-          "pair_id": 2561284,
+          "pair_id": 2693385,
           "name": "Providence, RI",
           "icao": "KPVD",
           "iata": "PVD",
@@ -6747,29 +7033,16 @@
           "types": "MD82,MD83",
           "distance": 1044,
           "time": "03:08:23"
-        },
-        {
-          "id": 10154,
-          "pair_id": 2561159,
-          "name": "San Juan, Puerto Rico",
-          "icao": "TJSJ",
-          "iata": "SJU",
-          "latitude": "18.4393997",
-          "longitude": "-66.0018005",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 998,
-          "time": "03:01:46"
         }
       ],
       "aircrafts": [
-        "MD82",
-        "MD83",
         "A20N",
         "A21N",
         "A319",
         "A320",
-        "A321"
+        "A321",
+        "MD82",
+        "MD83"
       ]
     },
     {
@@ -6783,7 +7056,7 @@
       "destinations": [
         {
           "id": 10090,
-          "pair_id": 2561160,
+          "pair_id": 2693259,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -6796,7 +7069,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2561161,
+          "pair_id": 2693260,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -6809,7 +7082,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561162,
+          "pair_id": 2693261,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6822,7 +7095,7 @@
         },
         {
           "id": 10114,
-          "pair_id": 2561163,
+          "pair_id": 2693262,
           "name": "Oakland, CA",
           "icao": "KOAK",
           "iata": "OAK",
@@ -6834,8 +7107,21 @@
           "time": "01:34:11"
         },
         {
+          "id": 10116,
+          "pair_id": 2693263,
+          "name": "Portland, OR",
+          "icao": "KPDX",
+          "iata": "PDX",
+          "latitude": "45.5886993",
+          "longitude": "-122.5979996",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 811,
+          "time": "02:34:56"
+        },
+        {
           "id": 10125,
-          "pair_id": 2561165,
+          "pair_id": 2693266,
           "name": "Sacramento, CA",
           "icao": "KSMF",
           "iata": "SMF",
@@ -6847,8 +7133,21 @@
           "time": "01:38:21"
         },
         {
+          "id": 82587,
+          "pair_id": 2693265,
+          "name": "Salt Lake City, UT",
+          "icao": "KSLC",
+          "iata": "SLC",
+          "latitude": "40.7857490",
+          "longitude": "-111.9797460",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 544,
+          "time": "01:56:35"
+        },
+        {
           "id": 121856,
-          "pair_id": 2561164,
+          "pair_id": 2693264,
           "name": "San Jose, CA",
           "icao": "KSJC",
           "iata": "SJC",
@@ -6879,7 +7178,7 @@
       "destinations": [
         {
           "id": 10102,
-          "pair_id": 2561179,
+          "pair_id": 2693277,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6889,6 +7188,19 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 753,
           "time": "02:26:36"
+        },
+        {
+          "id": 10103,
+          "pair_id": 2693278,
+          "name": "Los Angeles, CA",
+          "icao": "KLAX",
+          "iata": "LAX",
+          "latitude": "33.9425010",
+          "longitude": "-118.4079970",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 829,
+          "time": "02:37:31"
         }
       ],
       "aircrafts": [
@@ -6909,8 +7221,21 @@
       "longitude": "-121.5910034",
       "destinations": [
         {
+          "id": 10090,
+          "pair_id": 2693290,
+          "name": "Baltimore, MD",
+          "icao": "KBWI",
+          "iata": "BWI",
+          "latitude": "39.1754000",
+          "longitude": "-76.6682970",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 2075,
+          "time": "05:36:25"
+        },
+        {
           "id": 10102,
-          "pair_id": 2561186,
+          "pair_id": 2693291,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6923,7 +7248,7 @@
         },
         {
           "id": 10123,
-          "pair_id": 2561187,
+          "pair_id": 2693292,
           "name": "San Diego, CA",
           "icao": "KSAN",
           "iata": "SAN",
@@ -6954,7 +7279,7 @@
       "destinations": [
         {
           "id": 10102,
-          "pair_id": 2561188,
+          "pair_id": 2693293,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -6967,7 +7292,7 @@
         },
         {
           "id": 10114,
-          "pair_id": 2561189,
+          "pair_id": 2693294,
           "name": "Oakland, CA",
           "icao": "KOAK",
           "iata": "OAK",
@@ -6998,7 +7323,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2561194,
+          "pair_id": 2693299,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -7011,7 +7336,7 @@
         },
         {
           "id": 10083,
-          "pair_id": 2561193,
+          "pair_id": 2693298,
           "name": "Atlantic City, NJ",
           "icao": "KACY",
           "iata": "ACY",
@@ -7024,7 +7349,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2561196,
+          "pair_id": 2693300,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -7036,21 +7361,8 @@
           "time": "02:23:44"
         },
         {
-          "id": 10088,
-          "pair_id": 2561195,
-          "name": "Boston, MA",
-          "icao": "KBOS",
-          "iata": "BOS",
-          "latitude": "42.3643000",
-          "longitude": "-71.0052030",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1030,
-          "time": "03:06:22"
-        },
-        {
           "id": 10093,
-          "pair_id": 2561197,
+          "pair_id": 2693301,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -7063,7 +7375,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2561198,
+          "pair_id": 2693302,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -7076,7 +7388,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2561199,
+          "pair_id": 2693303,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -7089,7 +7401,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561200,
+          "pair_id": 2693304,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7102,7 +7414,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2561201,
+          "pair_id": 2693305,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -7114,21 +7426,8 @@
           "time": "02:16:33"
         },
         {
-          "id": 10101,
-          "pair_id": 2561202,
-          "name": "Indianapolis, IN",
-          "icao": "KIND",
-          "iata": "IND",
-          "latitude": "39.7173000",
-          "longitude": "-86.2944030",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 729,
-          "time": "02:23:09"
-        },
-        {
           "id": 10102,
-          "pair_id": 2561203,
+          "pair_id": 2693306,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -7140,21 +7439,8 @@
           "time": "04:45:26"
         },
         {
-          "id": 13085,
-          "pair_id": 2561206,
-          "name": "Louisville, KY",
-          "icao": "KSDF",
-          "iata": "SDF",
-          "latitude": "38.1744000",
-          "longitude": "-85.7360000",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 633,
-          "time": "02:09:22"
-        },
-        {
           "id": 10111,
-          "pair_id": 2561204,
+          "pair_id": 2693307,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -7167,7 +7453,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2561205,
+          "pair_id": 2693308,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -7177,29 +7463,16 @@
           "types": "A20N,A21N,A319,A320,A321,MD82,MD83",
           "distance": 880,
           "time": "02:44:50"
-        },
-        {
-          "id": 10154,
-          "pair_id": 2561207,
-          "name": "San Juan, Puerto Rico",
-          "icao": "TJSJ",
-          "iata": "SJU",
-          "latitude": "18.4393997",
-          "longitude": "-66.0018005",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1074,
-          "time": "03:12:41"
         }
       ],
       "aircrafts": [
-        "MD82",
-        "MD83",
         "A20N",
         "A21N",
         "A319",
         "A320",
-        "A321"
+        "A321",
+        "MD82",
+        "MD83"
       ]
     },
     {
@@ -7213,7 +7486,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561208,
+          "pair_id": 2693309,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7226,7 +7499,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561209,
+          "pair_id": 2693310,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -7239,7 +7512,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2561210,
+          "pair_id": 2693311,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -7270,7 +7543,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561211,
+          "pair_id": 2693312,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7283,7 +7556,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561212,
+          "pair_id": 2693313,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -7316,7 +7589,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561213,
+          "pair_id": 2693314,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7347,7 +7620,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561214,
+          "pair_id": 2693315,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7359,8 +7632,21 @@
           "time": "02:47:59"
         },
         {
+          "id": 10100,
+          "pair_id": 2693316,
+          "name": "IAH-Houston, TX",
+          "icao": "KIAH",
+          "iata": "IAH",
+          "latitude": "29.9843998",
+          "longitude": "-95.3414001",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 962,
+          "time": "02:56:36"
+        },
+        {
           "id": 10108,
-          "pair_id": 2561215,
+          "pair_id": 2693317,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -7391,7 +7677,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561216,
+          "pair_id": 2693318,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7404,7 +7690,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2561217,
+          "pair_id": 2693319,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -7417,7 +7703,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2561219,
+          "pair_id": 2693321,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -7430,7 +7716,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561218,
+          "pair_id": 2693320,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -7461,7 +7747,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561221,
+          "pair_id": 2693324,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7492,7 +7778,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561222,
+          "pair_id": 2693325,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7505,7 +7791,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561223,
+          "pair_id": 2693326,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -7536,7 +7822,7 @@
       "destinations": [
         {
           "id": 10090,
-          "pair_id": 2561224,
+          "pair_id": 2693327,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -7549,7 +7835,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2561225,
+          "pair_id": 2693328,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -7562,7 +7848,7 @@
         },
         {
           "id": 10097,
-          "pair_id": 2561226,
+          "pair_id": 2693329,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -7575,7 +7861,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561227,
+          "pair_id": 2693330,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7588,7 +7874,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2561228,
+          "pair_id": 2693331,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -7601,7 +7887,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2561230,
+          "pair_id": 2693333,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -7614,7 +7900,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2561231,
+          "pair_id": 2693334,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -7627,7 +7913,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561229,
+          "pair_id": 2693332,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -7640,7 +7926,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2561232,
+          "pair_id": 2693335,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -7673,7 +7959,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561234,
+          "pair_id": 2693337,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7685,21 +7971,8 @@
           "time": "03:00:55"
         },
         {
-          "id": 10100,
-          "pair_id": 2561235,
-          "name": "IAH-Houston, TX",
-          "icao": "KIAH",
-          "iata": "IAH",
-          "latitude": "29.9843998",
-          "longitude": "-95.3414001",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1352,
-          "time": "03:52:36"
-        },
-        {
           "id": 10108,
-          "pair_id": 2561236,
+          "pair_id": 2693338,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -7730,7 +8003,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561237,
+          "pair_id": 2693339,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7761,7 +8034,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561238,
+          "pair_id": 2693340,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7771,6 +8044,37 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 581,
           "time": "02:01:54"
+        }
+      ],
+      "aircrafts": [
+        "A20N",
+        "A21N",
+        "A319",
+        "A320",
+        "A321"
+      ]
+    },
+    {
+      "id": 10141,
+      "name": "Port-au-Prince, Haiti",
+      "icao": "MTPP",
+      "iata": "PAP",
+      "base": false,
+      "latitude": "18.5800000",
+      "longitude": "-72.2925030",
+      "destinations": [
+        {
+          "id": 10099,
+          "pair_id": 2693341,
+          "name": "Fort Lauderdale, FL",
+          "icao": "KFLL",
+          "iata": "FLL",
+          "latitude": "26.0725990",
+          "longitude": "-80.1527020",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 626,
+          "time": "02:08:22"
         }
       ],
       "aircrafts": [
@@ -7792,7 +8096,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561239,
+          "pair_id": 2693342,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7823,7 +8127,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561240,
+          "pair_id": 2693343,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7854,7 +8158,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561241,
+          "pair_id": 2693344,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7867,7 +8171,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561242,
+          "pair_id": 2693345,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -7898,7 +8202,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561243,
+          "pair_id": 2693346,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7929,7 +8233,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561244,
+          "pair_id": 2693347,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7939,6 +8243,19 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 974,
           "time": "02:58:20"
+        },
+        {
+          "id": 10108,
+          "pair_id": 2693348,
+          "name": "Orlando, FL",
+          "icao": "KMCO",
+          "iata": "MCO",
+          "latitude": "28.4293995",
+          "longitude": "-81.3089981",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1127,
+          "time": "03:20:18"
         }
       ],
       "aircrafts": [
@@ -7960,7 +8277,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561245,
+          "pair_id": 2693349,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -7991,7 +8308,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561246,
+          "pair_id": 2693350,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8004,7 +8321,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561247,
+          "pair_id": 2693351,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -8035,7 +8352,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561248,
+          "pair_id": 2693352,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8048,7 +8365,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561249,
+          "pair_id": 2693353,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -8079,7 +8396,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561250,
+          "pair_id": 2693354,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8110,7 +8427,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2561251,
+          "pair_id": 2693355,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -8123,7 +8440,7 @@
         },
         {
           "id": 10090,
-          "pair_id": 2561253,
+          "pair_id": 2693357,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -8136,7 +8453,7 @@
         },
         {
           "id": 10088,
-          "pair_id": 2561252,
+          "pair_id": 2693356,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -8149,7 +8466,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2561254,
+          "pair_id": 2693358,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -8162,7 +8479,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561256,
+          "pair_id": 2693359,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8174,21 +8491,8 @@
           "time": "02:48:51"
         },
         {
-          "id": 10122,
-          "pair_id": 2561263,
-          "name": "Fort Myers, FL",
-          "icao": "KRSW",
-          "iata": "RSW",
-          "latitude": "26.5361996",
-          "longitude": "-81.7552032",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 998,
-          "time": "03:01:46"
-        },
-        {
           "id": 10100,
-          "pair_id": 2561257,
+          "pair_id": 2693360,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -8201,7 +8505,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2561259,
+          "pair_id": 2693362,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -8214,7 +8518,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2561260,
+          "pair_id": 2693363,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -8226,21 +8530,8 @@
           "time": "04:12:51"
         },
         {
-          "id": 10098,
-          "pair_id": 2561255,
-          "name": "Newark, NJ",
-          "icao": "KEWR",
-          "iata": "EWR",
-          "latitude": "40.6925010",
-          "longitude": "-74.1687010",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1400,
-          "time": "03:59:30"
-        },
-        {
           "id": 10157,
-          "pair_id": 2561261,
+          "pair_id": 2693364,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -8253,7 +8544,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561258,
+          "pair_id": 2693361,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -8266,7 +8557,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2561262,
+          "pair_id": 2693365,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -8276,19 +8567,6 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 1372,
           "time": "03:55:28"
-        },
-        {
-          "id": 10127,
-          "pair_id": 2561264,
-          "name": "Tampa, FL",
-          "icao": "KTPA",
-          "iata": "TPA",
-          "latitude": "27.9755001",
-          "longitude": "-82.5332031",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1074,
-          "time": "03:12:41"
         }
       ],
       "aircrafts": [
@@ -8312,7 +8590,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561265,
+          "pair_id": 2693366,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8343,7 +8621,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561266,
+          "pair_id": 2693367,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8374,7 +8652,7 @@
       "destinations": [
         {
           "id": 10084,
-          "pair_id": 2561096,
+          "pair_id": 2693188,
           "name": "Atlanta, GA",
           "icao": "KATL",
           "iata": "ATL",
@@ -8386,8 +8664,21 @@
           "time": "01:54:09"
         },
         {
+          "id": 10088,
+          "pair_id": 2693189,
+          "name": "Boston, MA",
+          "icao": "KBOS",
+          "iata": "BOS",
+          "latitude": "42.3643000",
+          "longitude": "-71.0052030",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 751,
+          "time": "02:26:19"
+        },
+        {
           "id": 10136,
-          "pair_id": 2561111,
+          "pair_id": 2693205,
           "name": "Cancun, Mexico",
           "icao": "MMUN",
           "iata": "CUN",
@@ -8400,7 +8691,7 @@
         },
         {
           "id": 10093,
-          "pair_id": 2561097,
+          "pair_id": 2693190,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -8413,7 +8704,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2561098,
+          "pair_id": 2693191,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -8426,7 +8717,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561099,
+          "pair_id": 2693193,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8439,7 +8730,7 @@
         },
         {
           "id": 10122,
-          "pair_id": 2561109,
+          "pair_id": 2693203,
           "name": "Fort Myers, FL",
           "icao": "KRSW",
           "iata": "RSW",
@@ -8452,7 +8743,7 @@
         },
         {
           "id": 10100,
-          "pair_id": 2561100,
+          "pair_id": 2693194,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -8465,7 +8756,7 @@
         },
         {
           "id": 10106,
-          "pair_id": 2561103,
+          "pair_id": 2693197,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -8478,7 +8769,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561101,
+          "pair_id": 2693195,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -8491,7 +8782,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2561102,
+          "pair_id": 2693196,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -8504,7 +8795,7 @@
         },
         {
           "id": 46848,
-          "pair_id": 2561105,
+          "pair_id": 2693199,
           "name": "Miami, FL",
           "icao": "KMIA",
           "iata": "MIA",
@@ -8517,7 +8808,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2561107,
+          "pair_id": 2693201,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -8530,7 +8821,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2561106,
+          "pair_id": 2693200,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -8542,8 +8833,21 @@
           "time": "02:23:00"
         },
         {
+          "id": 10098,
+          "pair_id": 2693192,
+          "name": "Newark, NJ",
+          "icao": "KEWR",
+          "iata": "EWR",
+          "latitude": "40.6925010",
+          "longitude": "-74.1687010",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 623,
+          "time": "02:07:56"
+        },
+        {
           "id": 10108,
-          "pair_id": 2561104,
+          "pair_id": 2693198,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -8556,7 +8860,7 @@
         },
         {
           "id": 10116,
-          "pair_id": 2561108,
+          "pair_id": 2693202,
           "name": "Portland, OR",
           "icao": "KPDX",
           "iata": "PDX",
@@ -8569,7 +8873,7 @@
         },
         {
           "id": 10154,
-          "pair_id": 2561112,
+          "pair_id": 2693206,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -8582,7 +8886,7 @@
         },
         {
           "id": 10127,
-          "pair_id": 2561110,
+          "pair_id": 2693204,
           "name": "Tampa, FL",
           "icao": "KTPA",
           "iata": "TPA",
@@ -8615,7 +8919,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561233,
+          "pair_id": 2693336,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8645,21 +8949,8 @@
       "longitude": "-85.7360000",
       "destinations": [
         {
-          "id": 10096,
-          "pair_id": 2561171,
-          "name": "Dallas\/Fort Worth, TX",
-          "icao": "KDFW",
-          "iata": "DFW",
-          "latitude": "32.8968010",
-          "longitude": "-97.0380020",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 636,
-          "time": "02:09:48"
-        },
-        {
           "id": 10099,
-          "pair_id": 2561173,
+          "pair_id": 2693273,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8672,7 +8963,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561174,
+          "pair_id": 2693274,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -8685,7 +8976,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2561175,
+          "pair_id": 2693275,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -8697,34 +8988,8 @@
           "time": "04:27:38"
         },
         {
-          "id": 46848,
-          "pair_id": 2561177,
-          "name": "Miami, FL",
-          "icao": "KMIA",
-          "iata": "MIA",
-          "latitude": "25.7931995",
-          "longitude": "-80.2906036",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 792,
-          "time": "02:32:12"
-        },
-        {
-          "id": 10098,
-          "pair_id": 2561172,
-          "name": "Newark, NJ",
-          "icao": "KEWR",
-          "iata": "EWR",
-          "latitude": "40.6925010",
-          "longitude": "-74.1687010",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 556,
-          "time": "01:58:19"
-        },
-        {
           "id": 10108,
-          "pair_id": 2561176,
+          "pair_id": 2693276,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -8734,19 +8999,6 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 625,
           "time": "02:08:13"
-        },
-        {
-          "id": 10127,
-          "pair_id": 2561178,
-          "name": "Tampa, FL",
-          "icao": "KTPA",
-          "iata": "TPA",
-          "latitude": "27.9755001",
-          "longitude": "-82.5332031",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 633,
-          "time": "02:09:22"
         }
       ],
       "aircrafts": [
@@ -8768,7 +9020,7 @@
       "destinations": [
         {
           "id": 10096,
-          "pair_id": 2561144,
+          "pair_id": 2693245,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -8781,7 +9033,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561145,
+          "pair_id": 2693246,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8794,7 +9046,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561146,
+          "pair_id": 2693247,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -8825,7 +9077,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561190,
+          "pair_id": 2693295,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -8838,7 +9090,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561191,
+          "pair_id": 2693296,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -8851,7 +9103,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561192,
+          "pair_id": 2693297,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -8881,8 +9133,21 @@
       "longitude": "-87.8965988",
       "destinations": [
         {
+          "id": 10096,
+          "pair_id": 2693146,
+          "name": "Dallas\/Fort Worth, TX",
+          "icao": "KDFW",
+          "iata": "DFW",
+          "latitude": "32.8968010",
+          "longitude": "-97.0380020",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 741,
+          "time": "02:24:52"
+        },
+        {
           "id": 10102,
-          "pair_id": 2561053,
+          "pair_id": 2693147,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -8895,7 +9160,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561054,
+          "pair_id": 2693148,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -8916,37 +9181,6 @@
       ]
     },
     {
-      "id": 46847,
-      "name": "Manchester, NH",
-      "icao": "KMHT",
-      "iata": "MHT",
-      "base": false,
-      "latitude": "42.9325980",
-      "longitude": "-71.4356990",
-      "destinations": [
-        {
-          "id": 10108,
-          "pair_id": 2561035,
-          "name": "Orlando, FL",
-          "icao": "KMCO",
-          "iata": "MCO",
-          "latitude": "28.4293995",
-          "longitude": "-81.3089981",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 993,
-          "time": "03:01:03"
-        }
-      ],
-      "aircrafts": [
-        "A20N",
-        "A21N",
-        "A319",
-        "A320",
-        "A321"
-      ]
-    },
-    {
       "id": 46848,
       "name": "Miami, FL",
       "icao": "KMIA",
@@ -8956,21 +9190,8 @@
       "longitude": "-80.2906036",
       "destinations": [
         {
-          "id": 10084,
-          "pair_id": 2561036,
-          "name": "Atlanta, GA",
-          "icao": "KATL",
-          "iata": "ATL",
-          "latitude": "33.6367000",
-          "longitude": "-84.4281010",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 517,
-          "time": "01:52:43"
-        },
-        {
           "id": 10090,
-          "pair_id": 2561039,
+          "pair_id": 2693135,
           "name": "Baltimore, MD",
           "icao": "KBWI",
           "iata": "BWI",
@@ -8982,21 +9203,8 @@
           "time": "02:36:39"
         },
         {
-          "id": 10088,
-          "pair_id": 2561038,
-          "name": "Boston, MA",
-          "icao": "KBOS",
-          "iata": "BOS",
-          "latitude": "42.3643000",
-          "longitude": "-71.0052030",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 1094,
-          "time": "03:15:33"
-        },
-        {
           "id": 10093,
-          "pair_id": 2561040,
+          "pair_id": 2693136,
           "name": "Charlotte, NC",
           "icao": "KCLT",
           "iata": "CLT",
@@ -9009,7 +9217,7 @@
         },
         {
           "id": 10096,
-          "pair_id": 2561041,
+          "pair_id": 2693137,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -9021,21 +9229,8 @@
           "time": "02:58:02"
         },
         {
-          "id": 10097,
-          "pair_id": 2561042,
-          "name": "Detroit, MI",
-          "icao": "KDTW",
-          "iata": "DTW",
-          "latitude": "42.2123985",
-          "longitude": "-83.3534012",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 997,
-          "time": "03:01:38"
-        },
-        {
           "id": 10100,
-          "pair_id": 2561044,
+          "pair_id": 2693139,
           "name": "IAH-Houston, TX",
           "icao": "KIAH",
           "iata": "IAH",
@@ -9048,7 +9243,7 @@
         },
         {
           "id": 10106,
-          "pair_id": 2561046,
+          "pair_id": 2693141,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -9061,7 +9256,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561045,
+          "pair_id": 2693140,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9073,21 +9268,8 @@
           "time": "05:09:08"
         },
         {
-          "id": 13085,
-          "pair_id": 2561051,
-          "name": "Louisville, KY",
-          "icao": "KSDF",
-          "iata": "SDF",
-          "latitude": "38.1744000",
-          "longitude": "-85.7360000",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 792,
-          "time": "02:32:12"
-        },
-        {
           "id": 10087,
-          "pair_id": 2561037,
+          "pair_id": 2693134,
           "name": "Nashville, TN",
           "icao": "KBNA",
           "iata": "BNA",
@@ -9100,7 +9282,7 @@
         },
         {
           "id": 10111,
-          "pair_id": 2561047,
+          "pair_id": 2693142,
           "name": "New Orleans, LA",
           "icao": "KMSY",
           "iata": "MSY",
@@ -9113,7 +9295,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2561043,
+          "pair_id": 2693138,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -9126,7 +9308,7 @@
         },
         {
           "id": 10157,
-          "pair_id": 2561048,
+          "pair_id": 2693143,
           "name": "ORD-Chicago, IL",
           "icao": "KORD",
           "iata": "ORD",
@@ -9139,7 +9321,7 @@
         },
         {
           "id": 10117,
-          "pair_id": 2561049,
+          "pair_id": 2693144,
           "name": "Philadelphia, PA",
           "icao": "KPHL",
           "iata": "PHL",
@@ -9151,21 +9333,8 @@
           "time": "02:45:07"
         },
         {
-          "id": 10120,
-          "pair_id": 2561050,
-          "name": "Raleigh\/Durham, NC",
-          "icao": "KRDU",
-          "iata": "RDU",
-          "latitude": "35.8776020",
-          "longitude": "-78.7874980",
-          "callsigns": "NKS",
-          "types": "A20N,A21N,A319,A320,A321",
-          "distance": 610,
-          "time": "02:06:04"
-        },
-        {
           "id": 10154,
-          "pair_id": 2561052,
+          "pair_id": 2693145,
           "name": "San Juan, Puerto Rico",
           "icao": "TJSJ",
           "iata": "SJU",
@@ -9196,7 +9365,7 @@
       "destinations": [
         {
           "id": 10097,
-          "pair_id": 2561268,
+          "pair_id": 2693369,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -9209,7 +9378,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561269,
+          "pair_id": 2693370,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -9222,7 +9391,7 @@
         },
         {
           "id": 10112,
-          "pair_id": 2561270,
+          "pair_id": 2693371,
           "name": "Myrtle Beach, SC",
           "icao": "KMYR",
           "iata": "MYR",
@@ -9249,8 +9418,21 @@
       "longitude": "-111.9797460",
       "destinations": [
         {
+          "id": 10099,
+          "pair_id": 2693285,
+          "name": "Fort Lauderdale, FL",
+          "icao": "KFLL",
+          "iata": "FLL",
+          "latitude": "26.0725990",
+          "longitude": "-80.1527020",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1807,
+          "time": "04:57:56"
+        },
+        {
           "id": 10102,
-          "pair_id": 2561183,
+          "pair_id": 2693286,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9263,7 +9445,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2561184,
+          "pair_id": 2693287,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -9276,7 +9458,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561185,
+          "pair_id": 2693288,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -9286,6 +9468,19 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 1674,
           "time": "04:38:50"
+        },
+        {
+          "id": 10123,
+          "pair_id": 2693289,
+          "name": "San Diego, CA",
+          "icao": "KSAN",
+          "iata": "SAN",
+          "latitude": "32.7336006",
+          "longitude": "-117.1900024",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 544,
+          "time": "01:56:35"
         }
       ],
       "aircrafts": [
@@ -9306,8 +9501,21 @@
       "longitude": "-89.9766998",
       "destinations": [
         {
+          "id": 10096,
+          "pair_id": 2693131,
+          "name": "Dallas\/Fort Worth, TX",
+          "icao": "KDFW",
+          "iata": "DFW",
+          "latitude": "32.8968010",
+          "longitude": "-97.0380020",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 374,
+          "time": "01:32:11"
+        },
+        {
           "id": 10102,
-          "pair_id": 2561033,
+          "pair_id": 2693132,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9320,7 +9528,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561034,
+          "pair_id": 2693133,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -9351,7 +9559,7 @@
       "destinations": [
         {
           "id": 10099,
-          "pair_id": 2561220,
+          "pair_id": 2693322,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -9361,6 +9569,19 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 817,
           "time": "02:35:47"
+        },
+        {
+          "id": 10100,
+          "pair_id": 2693323,
+          "name": "IAH-Houston, TX",
+          "icao": "KIAH",
+          "iata": "IAH",
+          "latitude": "29.9843998",
+          "longitude": "-95.3414001",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 1029,
+          "time": "03:06:14"
         }
       ],
       "aircrafts": [
@@ -9382,7 +9603,7 @@
       "destinations": [
         {
           "id": 10102,
-          "pair_id": 2561152,
+          "pair_id": 2693252,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9392,6 +9613,19 @@
           "types": "A20N,A21N,A319,A320,A321",
           "distance": 300,
           "time": "01:21:33"
+        },
+        {
+          "id": 10103,
+          "pair_id": 2693253,
+          "name": "Los Angeles, CA",
+          "icao": "KLAX",
+          "iata": "LAX",
+          "latitude": "33.9425010",
+          "longitude": "-118.4079970",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 340,
+          "time": "01:27:18"
         }
       ],
       "aircrafts": [
@@ -9413,7 +9647,7 @@
       "destinations": [
         {
           "id": 10102,
-          "pair_id": 2560691,
+          "pair_id": 2692766,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9444,7 +9678,7 @@
       "destinations": [
         {
           "id": 10102,
-          "pair_id": 2560649,
+          "pair_id": 2692726,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9475,7 +9709,7 @@
       "destinations": [
         {
           "id": 10088,
-          "pair_id": 2561113,
+          "pair_id": 2693207,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -9488,7 +9722,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561114,
+          "pair_id": 2693208,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -9501,7 +9735,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561115,
+          "pair_id": 2693209,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -9531,8 +9765,21 @@
       "longitude": "-77.6724010",
       "destinations": [
         {
+          "id": 10112,
+          "pair_id": 2693255,
+          "name": "Myrtle Beach, SC",
+          "icao": "KMYR",
+          "iata": "MYR",
+          "latitude": "33.6796989",
+          "longitude": "-78.9282990",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 569,
+          "time": "02:00:11"
+        },
+        {
           "id": 10108,
-          "pair_id": 2561153,
+          "pair_id": 2693254,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -9562,8 +9809,21 @@
       "longitude": "-98.4698030",
       "destinations": [
         {
+          "id": 10096,
+          "pair_id": 2693267,
+          "name": "Dallas\/Fort Worth, TX",
+          "icao": "KDFW",
+          "iata": "DFW",
+          "latitude": "32.8968010",
+          "longitude": "-97.0380020",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 215,
+          "time": "01:09:21"
+        },
+        {
           "id": 10099,
-          "pair_id": 2561167,
+          "pair_id": 2693269,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -9576,7 +9836,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561168,
+          "pair_id": 2693270,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9589,7 +9849,7 @@
         },
         {
           "id": 10103,
-          "pair_id": 2561169,
+          "pair_id": 2693271,
           "name": "Los Angeles, CA",
           "icao": "KLAX",
           "iata": "LAX",
@@ -9602,7 +9862,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2561166,
+          "pair_id": 2693268,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -9615,7 +9875,7 @@
         },
         {
           "id": 10108,
-          "pair_id": 2561170,
+          "pair_id": 2693272,
           "name": "Orlando, FL",
           "icao": "KMCO",
           "iata": "MCO",
@@ -9646,7 +9906,7 @@
       "destinations": [
         {
           "id": 10088,
-          "pair_id": 2560726,
+          "pair_id": 2692805,
           "name": "Boston, MA",
           "icao": "KBOS",
           "iata": "BOS",
@@ -9658,8 +9918,21 @@
           "time": "02:20:34"
         },
         {
+          "id": 10097,
+          "pair_id": 2692806,
+          "name": "Detroit, MI",
+          "icao": "KDTW",
+          "iata": "DTW",
+          "latitude": "42.2123985",
+          "longitude": "-83.3534012",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 580,
+          "time": "02:01:45"
+        },
+        {
           "id": 10099,
-          "pair_id": 2560728,
+          "pair_id": 2692808,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -9672,7 +9945,7 @@
         },
         {
           "id": 10106,
-          "pair_id": 2560730,
+          "pair_id": 2692810,
           "name": "LGA-New York, NY",
           "icao": "KLGA",
           "iata": "LGA",
@@ -9685,7 +9958,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2560729,
+          "pair_id": 2692809,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9698,7 +9971,7 @@
         },
         {
           "id": 10098,
-          "pair_id": 2560727,
+          "pair_id": 2692807,
           "name": "Newark, NJ",
           "icao": "KEWR",
           "iata": "EWR",
@@ -9728,8 +10001,21 @@
       "longitude": "-121.9291880",
       "destinations": [
         {
+          "id": 10090,
+          "pair_id": 2693279,
+          "name": "Baltimore, MD",
+          "icao": "KBWI",
+          "iata": "BWI",
+          "latitude": "39.1754000",
+          "longitude": "-76.6682970",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 2113,
+          "time": "05:41:52"
+        },
+        {
           "id": 10096,
-          "pair_id": 2561180,
+          "pair_id": 2693280,
           "name": "Dallas\/Fort Worth, TX",
           "icao": "KDFW",
           "iata": "DFW",
@@ -9742,7 +10028,7 @@
         },
         {
           "id": 10102,
-          "pair_id": 2561181,
+          "pair_id": 2693281,
           "name": "Las Vegas, NV",
           "icao": "KLAS",
           "iata": "LAS",
@@ -9754,8 +10040,34 @@
           "time": "01:26:35"
         },
         {
+          "id": 10103,
+          "pair_id": 2693282,
+          "name": "Los Angeles, CA",
+          "icao": "KLAX",
+          "iata": "LAX",
+          "latitude": "33.9425010",
+          "longitude": "-118.4079970",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 267,
+          "time": "01:16:49"
+        },
+        {
+          "id": 10116,
+          "pair_id": 2693283,
+          "name": "Portland, OR",
+          "icao": "KPDX",
+          "iata": "PDX",
+          "latitude": "45.5886993",
+          "longitude": "-122.5979996",
+          "callsigns": "NKS",
+          "types": "A20N,A21N,A319,A320,A321",
+          "distance": 494,
+          "time": "01:49:25"
+        },
+        {
           "id": 10123,
-          "pair_id": 2561182,
+          "pair_id": 2693284,
           "name": "San Diego, CA",
           "icao": "KSAN",
           "iata": "SAN",
@@ -9786,7 +10098,7 @@
       "destinations": [
         {
           "id": 10097,
-          "pair_id": 2561283,
+          "pair_id": 2693384,
           "name": "Detroit, MI",
           "icao": "KDTW",
           "iata": "DTW",
@@ -9799,7 +10111,7 @@
         },
         {
           "id": 10099,
-          "pair_id": 2561281,
+          "pair_id": 2693382,
           "name": "Fort Lauderdale, FL",
           "icao": "KFLL",
           "iata": "FLL",
@@ -9812,7 +10124,7 @@
         },
         {
           "id": 10122,
-          "pair_id": 2561282,
+          "pair_id": 2693383,
           "name": "Fort Myers, FL",
           "icao": "KRSW",
           "iata": "RSW",
